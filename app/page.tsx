@@ -1,65 +1,143 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main>
+      <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-6xl">
+        <div className="flex-1 space-y-6">
+          <h1 className="text-4xl font-bold md:text-5xl">
+            Transforming your <br />
+            IT Landscape
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+          <div className="space-y-12">
+            <p className="text-lg text-gray-60 break-normal">
+              I’m a freelance <strong>Cloud</strong> and <strong>DevOps</strong> engineer helping companies design
+              scalable, secure, and cost-efficient systems. Whether you're modernizing legacy applications or building
+              cloud-native platforms, I can help you deliver robust solutions. Let’s elevate your infrastructure —
+              contact me to discuss your needs.
+            </p>
+          </div>
+          <div className="flex gap-4">
+            <Link
+              href="/contact"
+              className="bg-emerald-700 text-white px-9 py-4 rounded-full hover:bg-emerald-800 transition cursor-pointer"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Get in touch!
+            </Link>
+          </div>
+        </div>
+        <div className="flex-1 space-y-6">
+          <img src="home-page-hero.jpg" alt="home-page-hero-image" width={680} />
+        </div>
+      </section>
+
+      <section className="flex flex-col items-center gap-8 px-6 py-12 bg-[#f6fff8]">
+        {/* Section title */}
+        <h1 className="mb-14 md:mb-26 text-4xl font-bold text-center md:text-5xl">Services that deliver</h1>
+        {/* Services container */}
+        <div className="space-y-12 mx-auto max-w-3xl">
+          {/* Service 1 */}
+          <div className="pb-8 border-b border-gray-300">
+            <p className="mb-3 text-sm text-gray-500 uppercase">Software development & integration</p>
+
+            <p className="text-2xl font-semibold leading-relaxed">
+              Custom software solutions and seamless integration with existing systems
+            </p>
+          </div>
+          <div className="pb-8 border-b border-gray-300">
+            <p className="mb-3 text-sm text-gray-500 uppercase">Devops implementation & consulting</p>
+
+            <p className="text-2xl font-semibold leading-relaxed">
+              Establish robust CI/CD pipelines, automating deployments and improving collaboration
+            </p>
+          </div>
+          <div className="pb-8 border-b border-gray-300">
+            <p className="mb-3 text-sm text-gray-500 uppercase">Cloud migration & optimization</p>
+
+            <p className="text-2xl font-semibold leading-relaxed">
+              Seamless transition to the cloud, maximizing efficiency and cost savings
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Project results section */}
+      <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-6xl">
+        <div className="flex-1 space-y-6">
+          <h1 className="text-4xl font-bold md:text-5xl">Proven project results</h1>
+          <div className="space-y-12">
+            <p className="text-lg text-gray-600 break-all">
+              Explore a selection of my successfully completed projects, demonstrating my ability to deliver
+              high-quality, effective solutions across various industries and technologies. Each project showcases the
+              application of my skills to solve real-world challenges.
+            </p>
+          </div>
+          <div className="flex gap-4">
+            <Link
+              href="/portfolio"
+              className="bg-emerald-700 text-white px-9 py-4 rounded-full hover:bg-emerald-800 transition cursor-pointer"
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              Explore my projects
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="flex-1 space-y-6">
+          <img src="home-page-hero.jpg" alt="home-page-hero-image" width={680} />
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Contact section */}
+      <section className="bg-[#f6fff8] py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          {/* TOP HEADING */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-semibold mb-6">Get in touch today</h2>
+            <p className="max-w-2xl mx-auto text-gray-700 text-lg leading-relaxed">
+              I would be happy to discuss your project with you. Please complete the form below or contact me directly.
+            </p>
+          </div>
+
+          {/* SPLIT SECTION */}
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            {/* LEFT SIDE – CONTACT INFO */}
+            <div className="space-y-6 text-gray-900">
+              <p className="text-2xl tracking-wide">+49 176 802 289 57</p>
+
+              <p className="text-2xl">info@baque-solutions.com</p>
+
+              <p className="text-gray-700">Münchener Straße 42A, 10779 Berlin, Germany</p>
+            </div>
+
+            {/* RIGHT SIDE – FORM */}
+            <form className="space-y-6">
+              <input
+                type="email"
+                placeholder="Your E-mail"
+                className="w-full bg-white border border-gray-400 p-4 focus:outline-none focus:border-gray-700 transition"
+              />
+
+              <input
+                type="text"
+                placeholder="Your Full Name"
+                className="w-full bg-white border border-gray-400 p-4 focus:outline-none focus:border-gray-700 transition"
+              />
+
+              <textarea
+                rows="5"
+                placeholder="Your comments"
+                className="w-full bg-white border border-gray-400 p-4 focus:outline-none focus:border-gray-700 transition"
+              />
+
+              <button
+                type="submit"
+                className="bg-emerald-700 text-white px-9 py-4 rounded-full hover:bg-emerald-800 transition cursor-pointer"
+              >
+                SEND INQUIRY
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
