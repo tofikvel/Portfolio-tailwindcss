@@ -6,17 +6,17 @@ export default function Footer() {
 
   return (
     <footer className="w-full py-6 bg-indigo-200 text-black">
-      <div className="mx-auto flex flex-col items-center space-y-12 px-6 py-6 md:flex-row md:justify-between md:items-center md:space-y-0">
+      <div className="max-w-7xl mx-auto flex flex-col items-center space-y-12 px-6 py-6 md:flex-row md:justify-between md:items-center md:space-y-0k">
         {/* Brand logo (left side) */}
-        <div className="flex flex-col space-y-12 md:flex md:flex-col md:space-y-6">
-          <div className="flex justify-center">
+        <div className="flex flex-col space-y-6 md:flex md:flex-col">
+          <div className="flex justify-center md:flex md:justify-start">
             <Link href="/" className="text-lg font-semibold">
               BAQUE Solutions
             </Link>
           </div>
           {/* Social links and contact details */}
           {/* Contact details */}
-          <div className="flex flex-col items-start space-y-4 md:flex md:flex-col md:items-start md:space-y-4">
+          <div className="flex flex-col items-start space-y-4 md:flex md:flex-col md:items-start md:space-y-6">
             <div className="flex flex-row justify-center space-x-4">
               <span>
                 <svg
@@ -125,8 +125,8 @@ export default function Footer() {
           </div>
         </div>
         {/* Links navigation (right side) */}
-        <div className="flex flex-row text-start space-x-24 md:flex md:flex-col md:space-y-4">
-          <div className="flex flex-col space-y-4 md:flex md:flex-col md:space-y-4">
+        <div className="flex flex-row text-start space-x-24 md:flex md:flex-row">
+          <div className="flex flex-col space-y-4 md:flex md:flex-col md:space-y-6">
             <Link href="/" className="hover:text-gray-600">
               Home
             </Link>
@@ -152,9 +152,9 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="text-center md:text-center">
-          <p>&copy; {copyRightDate} Baque Solutions. All Rights Reserved.</p>
-        </div>
+      </div>
+      <div className="text-center mt-6 md:text-center">
+        <p>&copy; {copyRightDate} Baque Solutions. All Rights Reserved.</p>
       </div>
     </footer>
   );
