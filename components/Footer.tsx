@@ -8,9 +8,9 @@ export default function Footer() {
     <footer className="w-full py-6 bg-indigo-200 text-black">
       <div className="max-w-7xl mx-auto flex flex-col items-center space-y-12 px-6 py-6 md:flex-row md:justify-between md:items-center md:space-y-0k">
         {/* Brand logo (left side) */}
-        <div className="flex flex-col space-y-6 md:flex md:flex-col">
+        <div className="flex flex-col space-y-6 md:flex md:flex-col md:space-y-12">
           <div className="flex justify-center md:flex md:justify-start">
-            <Link href="/" className="text-lg font-semibold">
+            <Link href="/" className="text-bold md:text-3xl md:font-bold">
               BAQUE Solutions
             </Link>
           </div>
@@ -127,6 +127,7 @@ export default function Footer() {
         {/* Links navigation (right side) */}
         <div className="flex flex-row text-start space-x-24 md:flex md:flex-row">
           <div className="flex flex-col space-y-4 md:flex md:flex-col md:space-y-6">
+            <p className="text-bold md:text-2xl md:font-bold">Navigation</p>
             <Link href="/" className="hover:text-gray-600">
               Home
             </Link>
@@ -140,7 +141,8 @@ export default function Footer() {
               Portfolio
             </Link>
           </div>
-          <div className="flex flex-col space-y-4 md:flex md:flex-col md:space-y-4">
+          <div className="flex flex-col space-y-4 md:flex md:flex-col md:space-y-6">
+            <p className="text-bold md:text-2xl md:font-bold">Help</p>
             <Link href="/" className="hover:text-gray-600">
               Conatct
             </Link>
