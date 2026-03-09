@@ -14,25 +14,25 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="text-lg font-semibold">
+          <Link href="/" className="text-xl md:text-2xl font-bold">
             Baque Solutions
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            <Link href="/" className="hover:text-gray-600">
+            <Link href="/" className="md:text-lg md:hover:text-gray-600">
               Home
             </Link>
-            <Link href="/about" className="hover:text-gray-600">
+            <Link href="/about" className="md:text-lg md:hover:text-gray-600">
               About
             </Link>
-            <Link href="/services" className="hover:text-gray-600">
+            <Link href="/services" className="md:text-lg md:hover:text-gray-600">
               Services
             </Link>
-            <Link href="/portfolio" className="hover:text-gray-600">
+            <Link href="/portfolio" className="md:text-lg md:hover:text-gray-600">
               Portfolio
             </Link>
-            <Link href="/contact" className="hover:text-gray-600">
+            <Link href="/contact" className="md:text-lg md:hover:text-gray-600">
               Contact
             </Link>
           </div>

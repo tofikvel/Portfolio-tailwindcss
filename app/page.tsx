@@ -4,8 +4,8 @@ import Image from "next/image"
 export default function Home() {
   return (
     <main>
-      <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-24 mx-auto md:flex-row max-w-6xl">
-        <div className="flex-1 space-y-6 md:space-y-12">
+      <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-20 mx-auto md:flex-row max-w-6xl">
+        <div className="flex-1 space-y-8 md:space-y-12">
           <h1 className="text-4xl font-bold md:text-5xl">
             Transforming your <br />
             IT Landscape
@@ -32,30 +32,30 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center gap-8 px-6 py-24 bg-slate-200">
+      <section className="flex flex-col items-center gap-8 px-6 py-20 bg-blue-50">
         {/* Section title */}
-        <h1 className="mb-14 md:mb-20 text-4xl font-bold text-center md:text-5xl">Services that deliver</h1>
+        <h1 className="mb-12 text-3xl font-bold text-center md:text-5xl md:mb-20">Services that deliver</h1>
         {/* Services container */}
         <div className="space-y-12 mx-auto max-w-3xl">
           {/* Service 1 */}
           <div className="pb-8 border-b border-gray-300">
-            <p className="mb-3 text-lg text-gray-500 uppercase">Software development & integration</p>
+            <p className="mb-3 text-md text-gray-500 uppercase">Software development & integration</p>
 
-            <p className="text-2xl font-semibold leading-relaxed md:text-3xl">
+            <p className="text-xl font-semibold leading-relaxed md:text-3xl">
               Custom software solutions and seamless integration with existing systems
             </p>
           </div>
           <div className="pb-8 border-b border-gray-300">
-            <p className="mb-3 text-lg text-gray-500 uppercase">Devops implementation & consulting</p>
+            <p className="mb-3 text-md text-gray-500 uppercase">Devops implementation & consulting</p>
 
-            <p className="text-2xl font-semibold leading-relaxed md:text-3xl">
+            <p className="text-xl font-semibold leading-relaxed md:text-3xl">
               Establish robust CI/CD pipelines, automating deployments and improving collaboration
             </p>
           </div>
           <div className="pb-8 border-b border-gray-300">
-            <p className="mb-3 text-lg text-gray-500 uppercase">Cloud migration & optimization</p>
+            <p className="mb-3 text-md text-gray-500 uppercase">Cloud migration & optimization</p>
 
-            <p className="text-2xl font-semibold leading-relaxed md:text-3xl">
+            <p className="text-xl font-semibold leading-relaxed md:text-3xl">
               Seamless transition to the cloud, maximizing efficiency and cost savings
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function Home() {
       {/* Project results section */}
       <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-24 mx-auto md:flex-row max-w-6xl">
         <div className="flex-1 space-y-6 md:space-y-12">
-          <h1 className="text-4xl font-bold md:text-5xl">Proven project results</h1>
+          <h1 className="text-3xl font-bold md:text-5xl">Proven project results</h1>
           <div className="space-y-12">
             <p className="text-xl text-gray-600 leading-relaxed md:text-2xl">
               Explore a selection of my successfully completed projects, demonstrating my ability to deliver
@@ -88,12 +88,12 @@ export default function Home() {
       </section>
 
       {/* Contact section */}
-      <section className="bbg-slate-200 py-24">
+      <section className="bbg-slate-200 py-20 bg-blue-50">
         <div className="max-w-6xl mx-auto px-6">
           {/* TOP HEADING */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-semibold mb-6 md:mb-12 md:text-5xl">Get in touch today</h2>
-            <p className="max-w-2xl mx-auto text-gray-700 text-xl leading-relaxed">
+            <h2 className="text-3xl font-semibold mb-6 md:mb-12 md:text-5xl">Get in touch today</h2>
+            <p className="max-w-2xl mx-auto text-gray-700 text-md leading-relaxed">
               I would be happy to discuss your project with you. Please complete the form below or contact me directly.
             </p>
           </div>
@@ -162,7 +162,7 @@ export default function Home() {
             </div>
 
             {/* RIGHT SIDE – FORM */}
-            <form className="flex flex-col justify-center space-y-6 md:space-y-6">
+            <form className="flex flex-col justify-center space-y-6 md:space-y-6 md:flex md:flex-col">
               <input
                 type="email"
                 placeholder="Your E-mail"
