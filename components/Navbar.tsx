@@ -38,19 +38,17 @@ export default function Navbar() {
           </div>
 
           {/* Hamburger */}
-          <button onClick={toggleMenu} className="md:hidden relative w-8 h-8 flex flex-col justify-center items-center">
+          <button onClick={toggleMenu} className="relative w-8 h-8 flex flex-col justify-center items-center cursor-pointer md:hidden">
             <span
-              className={`absolute h-0.5 w-6 bg-black transition-transform duration-300 ${
-                menuOpen ? "rotate-45" : "-translate-y-2"
-              }`}
+              className={`absolute h-0.5 w-6 bg-black transition-transform duration-300 ${menuOpen ? "rotate-45" : "-translate-y-2"
+                }`}
             />
             <span
               className={`absolute h-0.5 w-6 bg-black transition-opacity duration-300 ${menuOpen ? "opacity-0" : ""}`}
             />
             <span
-              className={`absolute h-0.5 w-6 bg-black transition-transform duration-300 ${
-                menuOpen ? "-rotate-45" : "translate-y-2"
-              }`}
+              className={`absolute h-0.5 w-6 bg-black transition-transform duration-300 ${menuOpen ? "-rotate-45" : "translate-y-2"
+                }`}
             />
           </button>
         </div>
