@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer className="left-0 w-full py-6 bg-slate-300 text-black">
-      <div className="max-w-7xl mx-auto flex flex-col items-center space-y-12 px-6 py-6 md:flex-row md:justify-between md:items-center md:space-y-0k">
+      <div className="max-w-6xl mx-auto flex flex-col items-center space-y-12 px-6 py-6 md:flex-row md:justify-between md:items-center md:space-y-0k">
         {/* Brand logo (left side) */}
         <div className="flex flex-col space-y-6 md:flex md:flex-col md:space-y-12">
           <div className="flex justify-center md:flex md:justify-start">
