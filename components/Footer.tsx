@@ -17,7 +17,7 @@ export default function Footer() {
           {/* Social links and contact details */}
           {/* Contact details */}
           <div className="flex flex-col items-start space-y-4 md:flex md:flex-col md:items-start md:space-y-6">
-            <div className="flex flex-row justify-center space-x-4">
+            <div className="flex flex-row justify-center items-center space-x-4">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -34,9 +34,9 @@ export default function Footer() {
                   />
                 </svg>
               </span>
-              <span>+49 176 802 289 57</span>
+              <span className="text-md md:text-xl md:font-medium">+49 176 802 289 57</span>
             </div>
-            <div className="flex flex-row justify-center space-x-4">
+            <div className="flex flex-row justify-center items-center space-x-4">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -53,9 +53,9 @@ export default function Footer() {
                   />
                 </svg>
               </span>
-              <span>info@baque-solutions.com</span>
+              <span className="text-md md:text-xl md:font-medium">info@baque-solutions.com</span>
             </div>
-            <div className="flex flex-row justify-center space-x-4">
+            <div className="flex flex-row justify-center items-center space-x-4">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,14 +73,14 @@ export default function Footer() {
                   />
                 </svg>
               </span>
-              <span>Münchener Straße 42A, 10779 Berlin, Germany</span>
+              <p className="text-md md:text-lg md:font-medium">Münchener Straße 42A, 10779 Berlin, Germany</p>
             </div>
             {/* Social links (icons) */}
-            <div className="flex flex-row justify-center space-x-6 md:flex md:flex-row md:justify-start md:space-x-4">
+            <div className="flex flex-row justify-center items-center space-x-6 w-full md:flex md:flex-row md:justify-start md:space-x-4">
               <Link href="#">
                 <span>
                   <svg
-                    className="w-6 h-6 text-gray-800 dark:text-black"
+                    className="w-8 h-8 text-gray-800 dark:text-black"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -100,7 +100,7 @@ export default function Footer() {
               <Link href="#">
                 <span>
                   <svg
-                    className="w-6 h-6 text-gray-800 dark:text-black"
+                    className="w-8 h-8 text-gray-800 dark:text-black"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -127,7 +127,7 @@ export default function Footer() {
         {/* Links navigation (right side) */}
         <div className="flex flex-row text-start space-x-24 md:flex md:flex-row">
           <div className="flex flex-col space-y-4 md:flex md:flex-col md:space-y-6">
-            <p className="text-bold md:text-2xl md:font-bold">Navigation</p>
+            <p className="font-bold text-lg text-bold md:text-xl md:font-bold">Navigation</p>
             <Link href="/" className="hover:text-gray-600">
               Home
             </Link>
@@ -142,7 +142,7 @@ export default function Footer() {
             </Link>
           </div>
           <div className="flex flex-col space-y-4 md:flex md:flex-col md:space-y-6">
-            <p className="text-bold md:text-2xl md:font-bold">Help</p>
+            <p className="font-bold text-lg text-bold md:text-xl md:font-bold">Help</p>
             <Link href="/" className="hover:text-gray-600">
               Conatct
             </Link>

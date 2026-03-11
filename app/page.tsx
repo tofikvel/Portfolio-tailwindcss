@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Home() {
   return (
     <main>
-      <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-20 mx-auto md:flex-row max-w-6xl">
+      <section className="flex flex-col-reverse items-center gap-8 px-6 py-12 mx-auto md:flex-row md:justify-between max-w-6xl">
         <div className="flex-1 space-y-8 md:space-y-12">
           <h1 className="text-4xl font-bold md:text-5xl">
             Transforming your <br />
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center gap-8 px-6 py-20 bg-blue-50">
+      <section className="flex flex-col items-center gap-8 px-6 py-20 bg-sky-100">
         {/* Section title */}
         <h1 className="mb-12 text-3xl font-bold text-center md:text-5xl md:mb-20">Services that deliver</h1>
         {/* Services container */}
@@ -88,14 +88,18 @@ export default function Home() {
       </section>
 
       {/* Contact section */}
-      <section className="bbg-slate-200 py-20 bg-blue-50">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="bg-sky-100 flex flex-col-reverse items-center justify-between gap-8 px-6 py-20 mx-auto md:flex-col">
+        <div className="flex-1md:space-y-24">
           {/* TOP HEADING */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-semibold mb-6 md:mb-12 md:text-5xl">Get in touch today</h2>
-            <p className="max-w-2xl mx-auto text-gray-700 text-md leading-relaxed">
-              I would be happy to discuss your project with you. Please complete the form below or contact me directly.
-            </p>
+            <div className="w-full md:flex md:justify-center">
+              <h2 className="text-3xl font-semibold mb-8 md:mb-12 md:text-5xl">Get in touch today</h2>
+            </div>
+            <div className="w-full md:flex md:justify-center">
+              <p className="text-gray-700 text-xl max-w-xl md:text-2xl leading-relaxed">
+                I would be happy to discuss your project with you. Please complete the form below or contact me directly.
+              </p>
+            </div>
           </div>
           {/* SPLIT SECTION */}
           <div className="grid md:grid-cols-2 gap-16 items-start">
@@ -118,7 +122,7 @@ export default function Home() {
                     />
                   </svg>
                 </span>
-                <p className="text-xl tracking-wide md:text-2xl">+49 176 802 289 57</p>
+                <p className="text-lg tracking-wide md:text-2xl">+49 176 802 289 57</p>
               </div>
               <div className="flex flex-row gap-4 items-center md:flex md:flex-row md:items-center md:gap-4">
                 <span>
@@ -137,7 +141,7 @@ export default function Home() {
                     />
                   </svg>
                 </span>
-                <p className="text-xl tracking-wide md:text-2xl">info@baque-solutions.com</p>
+                <p className="text-lg tracking-wide md:text-2xl">info@baque-solutions.com</p>
               </div>
               <div className="flex flex-row gap-4 items-center md:flex md:flex-row md:items-center md:gap-4">
                 <span>
@@ -157,7 +161,7 @@ export default function Home() {
                     />
                   </svg>
                 </span>
-                <p className="text-xl tracking-wide md:text-2xl">Münchener Straße 42A, 10779 Berlin, Germany</p>
+                <p className="text-lg tracking-wide md:text-2xl">Münchener Straße 42A, 10779 Berlin, Germany</p>
               </div>
             </div>
 
@@ -182,7 +186,7 @@ export default function Home() {
               />
               <button
                 type="submit"
-                className="bg-emerald-700 text-white px-9 py-4 rounded-full hover:bg-emerald-800 transition cursor-pointer"
+                className="bg-emerald-700 text-white text-sm px-9 py-4 rounded-full hover:bg-emerald-800 transition cursor-pointer"
               >
                 SEND INQUIRY
               </button>
