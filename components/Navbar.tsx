@@ -10,14 +10,13 @@ export default function Navbar() {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <nav className="w-full bg-white text-black shadow-sm">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex justify-between items-center h-16">
+    <nav className="bg-sky-50 shadow-sm">
+      <div className="max-w-6xl mx-auto px-6 md:px-0">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="text-xl md:text-2xl font-bold">
             Baque Solutions
           </Link>
-
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
             <Link href="/" className="md:text-lg md:hover:text-gray-600">
@@ -38,17 +37,22 @@ export default function Navbar() {
           </div>
 
           {/* Hamburger */}
-          <button onClick={toggleMenu} className="relative w-8 h-8 flex flex-col justify-center items-center cursor-pointer md:hidden">
+          <button
+            onClick={toggleMenu}
+            className="relative w-8 h-8 flex flex-col justify-center items-center cursor-pointer md:hidden"
+          >
             <span
-              className={`absolute h-0.5 w-6 bg-black transition-transform duration-300 ${menuOpen ? "rotate-45" : "-translate-y-2"
-                }`}
+              className={`absolute h-0.5 w-6 bg-black transition-transform duration-300 ${
+                menuOpen ? "rotate-45" : "-translate-y-2"
+              }`}
             />
             <span
               className={`absolute h-0.5 w-6 bg-black transition-opacity duration-300 ${menuOpen ? "opacity-0" : ""}`}
             />
             <span
-              className={`absolute h-0.5 w-6 bg-black transition-transform duration-300 ${menuOpen ? "-rotate-45" : "translate-y-2"
-                }`}
+              className={`absolute h-0.5 w-6 bg-black transition-transform duration-300 ${
+                menuOpen ? "-rotate-45" : "translate-y-2"
+              }`}
             />
           </button>
         </div>
