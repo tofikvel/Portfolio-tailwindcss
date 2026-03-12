@@ -5,19 +5,19 @@ export default function Footer() {
   const copyRightDate = new Date().getFullYear();
 
   return (
-    <footer className="left-0 w-full py-6 bg-slate-300 text-black">
-      <div className="max-w-6xl mx-auto flex flex-col items-center space-y-12 px-6 py-6 md:flex-row md:justify-between md:items-center md:space-y-0k">
-        {/* Brand logo (left side) */}
-        <div className="flex flex-col space-y-6 md:flex md:flex-col md:space-y-12">
-          <div className="flex justify-center md:flex md:justify-start">
-            <Link href="/" className="text-bold md:text-3xl md:font-bold">
+    <footer className="bg-slate-300 py-6">
+      <div className="max-w-6xl mx-auto flex flex-col items-center px-6 py-6 gap-12 mb-4 md:flex-row md:justify-between">
+        {/* Brand logo and contact details (left side) */}
+        <div className="flex flex-col gap-12">
+          {/* Brand logo */}
+          <div className="text-center md:text-start">
+            <Link href="/" className="text-xl text-bold md:text-3xl">
               BAQUE Solutions
             </Link>
           </div>
-          {/* Social links and contact details */}
-          {/* Contact details */}
-          <div className="flex flex-col items-start space-y-4 md:flex md:flex-col md:items-start md:space-y-6">
-            <div className="flex flex-row justify-center items-center space-x-4">
+          {/* Contact details and social links */}
+          <div className="flex flex-col items-start gap-6">
+            <div className="flex flex-row items-center gap-4">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -34,9 +34,9 @@ export default function Footer() {
                   />
                 </svg>
               </span>
-              <span className="text-md md:text-xl md:font-medium">+49 176 802 289 57</span>
+              <span className="text-lg">+49 176 802 289 57</span>
             </div>
-            <div className="flex flex-row justify-center items-center space-x-4">
+            <div className="flex flex-row items-center gap-4">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -53,9 +53,9 @@ export default function Footer() {
                   />
                 </svg>
               </span>
-              <span className="text-md md:text-xl md:font-medium">info@baque-solutions.com</span>
+              <span className="text-lg">info@baque-solutions.com</span>
             </div>
-            <div className="flex flex-row justify-center items-center space-x-4">
+            <div className="flex flex-row items-center gap-4">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,10 +73,10 @@ export default function Footer() {
                   />
                 </svg>
               </span>
-              <p className="text-md md:text-lg md:font-medium">Münchener Straße 42A, 10779 Berlin, Germany</p>
+              <p className="text-lg">Münchener Straße 42A, 10779 Berlin, Germany</p>
             </div>
             {/* Social links (icons) */}
-            <div className="flex flex-row justify-center items-center space-x-6 w-full md:flex md:flex-row md:justify-start md:space-x-4">
+            <div className="flex flex-row gap-6">
               <Link href="#">
                 <span>
                   <svg
@@ -124,38 +124,39 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        {/* Links navigation (right side) */}
-        <div className="flex flex-row text-start space-x-24 md:flex md:flex-row">
+        {/* Additional links (right side) */}
+        <div className="flex flex-row gap-24">
           <div className="flex flex-col space-y-4 md:flex md:flex-col md:space-y-6">
-            <p className="font-bold text-lg text-bold md:text-xl md:font-bold">Navigation</p>
-            <Link href="/" className="hover:text-gray-600">
+            <h3 className="font-bold text-xl text-bold">Navigation</h3>
+            <Link href="/" className="text-lg hover:text-gray-600">
               Home
             </Link>
-            <Link href="/about" className="hover:text-gray-600">
+            <Link href="/about" className="text-lg hover:text-gray-600">
               About
             </Link>
-            <Link href="/services" className="hover:text-gray-600">
+            <Link href="/services" className="text-lg hover:text-gray-600">
               Services
             </Link>
-            <Link href="/portfolio" className="hover:text-gray-600">
+            <Link href="/portfolio" className="text-lg hover:text-gray-600">
               Portfolio
             </Link>
           </div>
           <div className="flex flex-col space-y-4 md:flex md:flex-col md:space-y-6">
-            <p className="font-bold text-lg text-bold md:text-xl md:font-bold">Help</p>
-            <Link href="/" className="hover:text-gray-600">
+            <h3 className="font-bold text-xl text-bold">Help</h3>
+            <Link href="/" className="text-lg hover:text-gray-600">
               Conatct
             </Link>
-            <Link href="/about" className="hover:text-gray-600">
+            <Link href="/about" className="text-lg hover:text-gray-600">
               Imprint
             </Link>
-            <Link href="/services" className="hover:text-gray-600">
+            <Link href="/services" className="text-lg hover:text-gray-600">
               Privacy Policy
             </Link>
           </div>
         </div>
       </div>
-      <div className="text-center mt-6 md:text-center">
+      {/* Copyright */}
+      <div className="text-center">
         <p>&copy; {copyRightDate} Baque Solutions. All Rights Reserved.</p>
       </div>
     </footer>
