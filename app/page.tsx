@@ -7,11 +7,11 @@ export default function Home() {
       <section className="md:h-screen flex justify-center items-center gap-8 px-6 py-12 mx-auto">
         <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:space-y-12 md:flex md:flex-row">
           <div className="flex-1 space-y-8 md:gap-12">
-            <h1 className="text-4xl font-bold md:text-5xl">
+            <h1 className="text-3xl text-center font-bold md:text-5xl md:text-start">
               Transforming your <br />
               IT Landscape
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed md:text-2xl">
+            <p className="text-lg text-gray-600 leading-relaxed md:text-2xl">
               I’m a freelance <strong>Cloud</strong> and <strong>DevOps</strong> engineer helping companies design
               scalable, secure, and cost-efficient systems. Whether you are modernizing legacy applications or building
               cloud-native platforms, I can help you deliver robust solutions. Let’s elevate your infrastructure —
@@ -37,9 +37,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section className="md:h-screen flex justify-center gap-8 px-6 py-12 mx-auto bg-sky-100">
-        <div className="flex flex-col justify-center gap-12 max-w-6xl">
+      <section className="flex justify-center gap-8 px-6 py-12 mx-auto bg-sky-100 md:py-24">
+        <div className="flex flex-col justify-center gap-12 max-w-6xl md:gap-28">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-center md:text-5xl">Services that deliver</h1>
           </div>
@@ -68,11 +67,11 @@ export default function Home() {
       </section>
 
       {/* Project results section */}
-      <section className="md:h-screen flex justify-center items-center gap-8 px-6 py-12 mx-auto">
+      <section className="flex justify-center items-center gap-8 px-6 py-12 mx-auto md:py-12">
         <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:space-y-12 md:flex md:flex-row">
           <div className="flex-1 space-y-6 md:space-y-12">
             <div className="flex-1 space-y-8 md:gap-12">
-              <h1 className="text-4xl font-bold md:text-5xl">Proven project results</h1>
+              <h1 className="text-3xl font-bold md:text-5xl text-center md:text-start">Proven project results</h1>
               <p className="text-xl text-gray-600 leading-relaxed md:text-2xl">
                 Explore a selection of my successfully completed projects, demonstrating my ability to deliver
                 high-quality, effective solutions across various industries and technologies. Each project showcases the
@@ -99,7 +98,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Contact section */}
       <section className="bg-sky-100 md:h-screen flex justify-center items-center gap-8 px-6 py-12 mx-auto">
         <div className="md:space-y-24 max-w-6xl">
