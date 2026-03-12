@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <section className="md:min-h-[calc(100svh-64px)] flex justify-center mx-auto px-6 py-12">
-        <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:gap-12 md:flex md:flex-row border">
+        <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:gap-12 md:flex md:flex-row">
           <div className="flex-1 space-y-8 md:gap-12">
             <h1 className="text-3xl text-center font-bold md:text-5xl md:text-start">
               Transforming your <br />
@@ -69,22 +69,20 @@ export default function Home() {
       {/* Project results section */}
       <section className="flex justify-center px-6 py-12 mx-auto md:py-24">
         <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:flex md:flex-row">
-          <div className="flex-1 space-y-6 gap-12">
-            <div className="flex-1 space-y-8 md:gap-12">
-              <h1 className="text-3xl font-bold md:text-4xl text-center md:text-start">Proven project results</h1>
-              <p className="text-xl text-gray-600 leading-relaxed md:text-xl">
-                Explore a selection of my successfully completed projects, demonstrating my ability to deliver
-                high-quality, effective solutions across various industries and technologies. Each project showcases the
-                application of my skills to solve real-world challenges.
-              </p>
-              <div className="flex justify-center md:flex md:justify-start">
-                <Link
-                  href="/portfolio"
-                  className="bg-emerald-700 text-white px-6 py-4 rounded-full hover:bg-emerald-800 transition cursor-pointer md:px-12 md:py-4 uppercase"
-                >
-                  explore my projects
-                </Link>
-              </div>
+          <div className="flex flex-col flex-1 gap-12">
+            <h1 className="text-3xl font-bold md:text-4xl text-center md:text-start">Proven project results</h1>
+            <p className="text-xl text-gray-600 leading-relaxed md:text-xl">
+              Explore a selection of my successfully completed projects, demonstrating my ability to deliver
+              high-quality, effective solutions across various industries and technologies. Each project showcases the
+              application of my skills to solve real-world challenges.
+            </p>
+            <div className="flex justify-center md:flex md:justify-start">
+              <Link
+                href="/portfolio"
+                className="bg-emerald-700 text-white px-6 py-4 rounded-full hover:bg-emerald-800 transition cursor-pointer md:px-12 md:py-4 uppercase"
+              >
+                explore my projects
+              </Link>
             </div>
           </div>
           <div className="flex flex-1">

@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function ServicesPage() {
   return (
     <main>
@@ -118,7 +121,43 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
+      <section className="border px-6 py-24">
+        <div className="mx-auto flex flex-1 flex-col max-w-6xl gap-24">
+          <div className="flex flex-col items-center justify-center text-center gap-6">
+            <h1 className="text-3xl font-bold md:text-5xl">My Services</h1>
+            <p className="text-md text-gray-500 max-w-2xl md:text-2xl">
+              From cloud infrastructure to deployment automation, I provide tailored tech solutions that help your business grow, scale, and stay secure. Here&apos;s how I can support your company:
+            </p>
+          </div>
+          <div className="flex flex-col-reverse gap-6 max-w-6xl md:flex md:flex-row-reverse">
+            <div className="flex flex-col flex-1 justify-between">
+              <div className="flex flex-col gap-3">
+                <h1 className="text-3xl font-bold md:text-4xl text-start">Custom Software Development</h1>
+                <p className="text-xl md:text-lg">
+                  Build solutions that truly serve your business goals.
+                  <br /> I help companies design, develop, and maintain robust, scalable applications — from MVPs to production-ready systems.
+                </p>
+              </div>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-3xl font-bold md:text-2xl text-center md:text-start">What I offer:</h3>
+                <p className="text-md md:text-lg">1. End-to-end web & backend development</p>
+                <p className="text-md md:text-lg">2. API design and integration</p>
+                <p className="text-md md:text-lg">3. System architecture & technical consulting</p>
+                <p className="text-md md:text-lg">4. Performance optimization and code reviews</p>
+              </div>
+            </div>
+            <div className="flex flex-1">
+              <Image
+                src="/home-page-hero.jpg"
+                alt="home-page-hero-image"
+                width={680}
+                height={600}
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
