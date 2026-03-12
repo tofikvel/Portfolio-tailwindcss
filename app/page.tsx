@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <section className="md:h-screen flex justify-center items-center gap-8 px-6 py-12 mx-auto">
-        <div className="flex-1 flex flex-col-reverse items-center gap-12 max-w-6xl md:space-y-12 md:flex md:flex-row">
+        <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:space-y-12 md:flex md:flex-row">
           <div className="flex-1 space-y-8 md:gap-12">
             <h1 className="text-4xl font-bold md:text-5xl">
               Transforming your <br />
@@ -38,24 +38,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="md:h-screen flex justify-center items-center gap-8 px-6 py-12 mx-auto bg-sky-100">
-        <div className="flex-1 flex flex-col gap-12 max-w-6xl md:space-y-12">
-          {/* Section title */}
+      <section className="md:h-screen flex justify-center gap-8 px-6 py-12 mx-auto bg-sky-100">
+        <div className="flex flex-col justify-center gap-12 max-w-6xl">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-center md:text-5xl">Services that deliver</h1>
           </div>
-          <div className="flex flex-col gap-12">
-            {/* Service 1 */}
+          {/* Service 1 */}
+          <div className="flex flex-col gap-12 max-w-5xl">
             <div className="pb-8 border-b border-gray-300">
               <p className="mb-3 text-md text-gray-500 uppercase">Software development & integration</p>
-
               <p className="text-xl font-semibold leading-relaxed md:text-3xl">
                 Custom software solutions and seamless integration with existing systems
               </p>
             </div>
             <div className="pb-8 border-b border-gray-300">
               <p className="mb-3 text-md text-gray-500 uppercase">Devops implementation & consulting</p>
-
               <p className="text-xl font-semibold leading-relaxed md:text-3xl">
                 Establish robust CI/CD pipelines, automating deployments and improving collaboration
               </p>
@@ -68,12 +65,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Services container */}
       </section>
 
       {/* Project results section */}
       <section className="md:h-screen flex justify-center items-center gap-8 px-6 py-12 mx-auto">
-        <div className="flex-1 flex flex-col-reverse items-center gap-12 max-w-6xl md:space-y-12 md:flex md:flex-row">
+        <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:space-y-12 md:flex md:flex-row">
           <div className="flex-1 space-y-6 md:space-y-12">
             <div className="flex-1 space-y-8 md:gap-12">
               <h1 className="text-4xl font-bold md:text-5xl">Proven project results</h1>
@@ -106,7 +102,7 @@ export default function Home() {
 
       {/* Contact section */}
       <section className="bg-sky-100 md:h-screen flex justify-center items-center gap-8 px-6 py-12 mx-auto">
-        <div className="flex-1 md:space-y-24 max-w-6xl">
+        <div className="md:space-y-24 max-w-6xl">
           {/* TOP HEADING */}
           <div className="text-center mb-12">
             <div className="w-full md:flex md:justify-center">
@@ -120,7 +116,7 @@ export default function Home() {
             </div>
           </div>
           {/* SPLIT SECTION */}
-          <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div className="flex 1 grid md:grid-cols-2 gap-16 items-start">
             {/* LEFT SIDE – CONTACT INFO */}
             <div className="space-y-6 text-gray-900 md:space-y-10">
               <div className="flex flex-row gap-4 items-center md:flex md:flex-row md:items-center md:gap-4">

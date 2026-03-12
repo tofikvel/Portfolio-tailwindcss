@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <main>
-      <section className="md:h-screen flex justify-center items-center gap-8 px-6 py-12 mx-auto">
-        <div className="flex-1 flex flex-col-reverse items-center gap-12 max-w-6xl md:space-y-12 md:flex md:flex-row">
+      <section className="md:h-screen flex justify-center gap-8 px-6 py-12 mx-auto">
+        <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:space-y-12 md:flex md:flex-row">
           <div className="flex-1 space-y-6">
             <div className="space-y-4">
               <h1 className="text-3xl font-bold text-center md:text-5xl md:text-start">Javad Zeynal</h1>
@@ -15,7 +15,7 @@ export default function AboutPage() {
             </div>
             <hr className="my-8 border-gray-300" />
             {/* Flag icons */}
-            <div className="flex flex-row items-center justify-center gap-4 md:flex md:flex-row md:items-center md:justify-start">
+            <div className="flex flex-row items-center justify-center gap-6 md:justify-start">
               <span>
                 <svg
                   className="w-9 h-9 md:w-10 md:h-10"
@@ -134,34 +134,36 @@ export default function AboutPage() {
         </div>
       </section>
       {/* Certificates */}
-      <section className="flex justify-center items-center gap-8 px-6 py-12 mx-auto">
-        <div className="flex-1 flex flex-col-reverse items-center gap-12 max-w-6xl md:space-y-12 md:flex md:flex-row">
-          <div className="grid grid-cols-2 w-[320px] mx-auto">
-            <Image
-              src="/certs/aws-1.png"
-              alt="cert-img"
-              className="w-[150px] h-[150px] object-contain"
-              width={150}
-              height={150}
-            />
-            <Image
-              src="/certs/aws-2.png"
-              alt="cert-img"
-              className="w-[150px] h-[150px] object-contain"
-              width={150}
-              height={150}
-            />
-            <div className="col-span-2 flex justify-center -mt-6">
+      <section className="flex justify-center px-6 py-12">
+        <div className="max-w-6xl w-full flex flex-col gap-12 items-center md:flex-row">
+          <div className="flex-1 flex justify-center">
+            <div className="grid grid-cols-2">
               <Image
-                src="/certs/aws-3.png"
+                src="/certs/aws-1.png"
                 alt="cert-img"
-                className="w-[150px] h-[150px] object-contain"
                 width={150}
                 height={150}
+                className="w-[150px] h-[150px] object-contain"
               />
+              <Image
+                src="/certs/aws-2.png"
+                alt="cert-img"
+                width={150}
+                height={150}
+                className="w-[150px] h-[150px] object-contain"
+              />
+              <div className="col-span-2 flex justify-center">
+                <Image
+                  src="/certs/aws-3.png"
+                  alt="cert-img"
+                  width={150}
+                  height={150}
+                  className="w-[150px] h-[150px] object-contain"
+                />
+              </div>
             </div>
           </div>
-          <div className="mx-auto">
+          <div className="flex-1 flex justify-center">
             <Image
               src="/certs/psm.png"
               alt="cert-img"
@@ -170,35 +172,37 @@ export default function AboutPage() {
               className="w-[135px] h-[135px] object-contain"
             />
           </div>
-          <div className="grid grid-cols-2 gap-4 w-[320px] mx-auto">
-            <Image
-              src="/certs/kubernetes-1.png"
-              alt="cert-img"
-              width={150}
-              height={150}
-              className="w-[150px] h-[150px] object-contain"
-            />
-            <Image
-              src="/certs/kubernetes-2.png"
-              alt="cert-img"
-              width={150}
-              height={150}
-              className="w-[150px] h-[150px] object-contain"
-            />
-            <Image
-              src="/certs/terraform.png"
-              alt="cert-img"
-              width={150}
-              height={150}
-              className="w-[150px] h-[150px] object-contain"
-            />
-            <Image
-              src="/certs/databricks.png"
-              alt="cert-img"
-              width={150}
-              height={150}
-              className="w-[150px] h-[150px] object-contain"
-            />
+          <div className="flex-1 flex justify-center">
+            <div className="grid grid-cols-2">
+              <Image
+                src="/certs/kubernetes-1.png"
+                alt="cert-img"
+                width={150}
+                height={150}
+                className="w-[150px] h-[150px] object-contain"
+              />
+              <Image
+                src="/certs/kubernetes-2.png"
+                alt="cert-img"
+                width={150}
+                height={150}
+                className="w-[150px] h-[150px] object-contain"
+              />
+              <Image
+                src="/certs/terraform.png"
+                alt="cert-img"
+                width={150}
+                height={150}
+                className="w-[150px] h-[150px] object-contain"
+              />
+              <Image
+                src="/certs/databricks.png"
+                alt="cert-img"
+                width={150}
+                height={150}
+                className="w-[150px] h-[150px] object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
