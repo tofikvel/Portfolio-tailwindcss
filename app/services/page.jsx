@@ -1,8 +1,8 @@
 export default function ServicesPage() {
   return (
     <main>
-      <section className="flex min-h-[calc(100svh-64px)] bg-[url(/services-bg.jpg)] bg-cover bg-fixed bg-no-repeat bg-mist-900 bg-blend-overlay">
-        <div className="mx-auto flex flex-1 flex-col max-w-6xl px-6 py-6">
+      <section className="flex px-6 min-h-[calc(100svh-64px)] bg-[url(/services-bg.jpg)] bg-cover bg-fixed bg-no-repeat bg-mist-900 bg-blend-overlay">
+        <div className="mx-auto flex flex-1 flex-col max-w-6xl">
           <div className="flex flex-1 flex-col items-center justify-center text-center gap-6 md:gap-8">
             <h1 className="text-3xl font-bold text-white md:text-7xl">
               IT and Cloud Consulting
@@ -31,8 +31,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <section className="flex">
-        <div className="mx-auto max-w-6xl flex flex-col justify-center px-6 gap-12 py-24 md:gap-28">
+      <section className="min-h-[calc(100svh-64px)] flex justify-center items-center px-6 py-24 mx-auto">
+        <div className="max-w-6xl flex flex-col gap-12 md:gap-24">
           <div className="flex flex-col items-center justify-center text-center gap-6">
             <h1 className="text-3xl font-bold md:text-5xl">Why Work With Me?</h1>
             <p className="text-md text-gray-500 max-w-2xl md:text-2xl">
