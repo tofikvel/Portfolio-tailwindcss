@@ -31,8 +31,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <section className="flex py-24">
-        <div className="mx-auto max-w-6xl flex flex-col justify-center px-6 gap-12 py-12 md:gap-28">
+      <section className="flex">
+        <div className="mx-auto max-w-6xl flex flex-col justify-center px-6 gap-12 py-24 md:gap-28">
           <div className="flex flex-col items-center justify-center text-center gap-6">
             <h1 className="text-3xl font-bold md:text-5xl">Why Work With Me?</h1>
             <p className="text-md text-gray-500 max-w-2xl md:text-2xl">
@@ -118,6 +118,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
     </main>
   );
 }
