@@ -35,15 +35,15 @@ export default function ServicesPage() {
         </div>
       </section>
       <section className="min-h-[calc(100svh-64px)] flex justify-center items-center px-6 py-24 mx-auto">
-        <div className="max-w-6xl flex flex-col gap-12 md:gap-32">
-          <div className="flex flex-col items-center justify-center text-center gap-6">
+        <div className="max-w-6xl flex flex-col gap-12">
+          <div className="flex flex-col items-center text-center gap-6 md:mb-12">
             <h1 className="text-3xl font-bold md:text-4xl">Why Work With Me?</h1>
             <p className="text-lg text-gray-500 max-w-2xl md:text-2xl">
               I combine deep technical expertise with a hands-on, results-driven approach to deliver real value for your
               business.
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center gap-6 md:flex md:flex-row">
+          <div className="flex flex-col gap-6 md:flex md:flex-row">
             <div className="flex flex-col items-center text-center gap-4">
               <svg aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +120,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <section className="flex justify-center items-center px-6 py-24 bg-sky-50">
+      <section className="bg-sky-50 flex justify-center items-center px-6 py-12 md:py-24">
         <div className="mx-auto flex flex-1 flex-col max-w-6xl gap-12 md:gap-24">
           <div className="flex flex-col items-center md:text-center gap-6">
             <h1 className="text-3xl font-bold md:text-4xl">My Services</h1>
@@ -213,7 +213,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <section className="flex justify-center items-center px-6 py-20">
+      <section className="flex justify-center items-center px-6 py-12 md:py-24">
         <div className="max-w-6xl flex flex-col gap-12 md:gap-20">
           <h1 className="text-3xl font-bold text-center md:text-4xl">What Will You Get?</h1>
           <div className="flex flex-col gap-6 max-w-4xl">

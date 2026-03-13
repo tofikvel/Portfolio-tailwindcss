@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <main>
-      <section className="md:h-screen flex justify-center gap-8 px-6 py-12 mx-auto">
-        <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:space-y-12 md:flex md:flex-row">
+      <section className="min-h-[calc(100svh-64px)] flex justify-center px-6 py-12 mx-auto">
+        <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:flex md:flex-row">
           <div className="flex-1 space-y-6">
             <div className="space-y-4">
               <h1 className="text-3xl font-bold text-center md:text-5xl md:text-start">Javad Zeynal</h1>
