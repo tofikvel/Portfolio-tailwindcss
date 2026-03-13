@@ -35,9 +35,9 @@ export default function ServicesPage() {
         </div>
       </section>
       <section className="min-h-[calc(100svh-64px)] flex justify-center items-center px-6 py-24 mx-auto">
-        <div className="max-w-6xl flex flex-col gap-12 md:gap-24">
+        <div className="max-w-6xl flex flex-col gap-12 md:gap-32">
           <div className="flex flex-col items-center justify-center text-center gap-6">
-            <h1 className="text-3xl font-bold md:text-5xl">Why Work With Me?</h1>
+            <h1 className="text-3xl font-bold md:text-4xl">Why Work With Me?</h1>
             <p className="text-lg text-gray-500 max-w-2xl md:text-2xl">
               I combine deep technical expertise with a hands-on, results-driven approach to deliver real value for your
               business.
@@ -52,9 +52,9 @@ export default function ServicesPage() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="#000000"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
                 <path d="M4 14l8 -3l8 3" />
@@ -74,9 +74,9 @@ export default function ServicesPage() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="#000000"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" />
                 <path d="M7 20h10" />
@@ -102,9 +102,9 @@ export default function ServicesPage() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="#000000"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="M20.984 12.53a9 9 0 1 0 -7.552 8.355" />
                 <path d="M12 7v5l3 3" />
@@ -123,7 +123,7 @@ export default function ServicesPage() {
       <section className="flex justify-center items-center px-6 py-24 bg-sky-50">
         <div className="mx-auto flex flex-1 flex-col max-w-6xl gap-12 md:gap-24">
           <div className="flex flex-col items-center md:text-center gap-6">
-            <h1 className="text-3xl font-bold md:text-5xl">My Services</h1>
+            <h1 className="text-3xl font-bold md:text-4xl">My Services</h1>
             <p className="text-md text-gray-500 max-w-2xl md:text-2xl leading-relaxed">
               From cloud infrastructure to deployment automation, I provide tailored tech solutions that help your business grow, scale, and stay secure. Here&apos;s how I can support your company:
             </p>
@@ -136,8 +136,8 @@ export default function ServicesPage() {
                   Build solutions that truly serve your business goals. I help companies design, develop, and maintain robust, scalable applications — from MVPs to production-ready systems.
                 </p>
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-xl font-bold text-center md:text-2xl md:text-start">What I offer:</h3>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-xl font-bold text-start md:text-2xl">What I offer:</h3>
                 <p className="text-md md:text-lg">1. End-to-end web & backend development</p>
                 <p className="text-md md:text-lg">2. API design and integration</p>
                 <p className="text-md md:text-lg">3. System architecture & technical consulting</p>
@@ -164,8 +164,8 @@ export default function ServicesPage() {
                   I assist businesses in moving their infrastructure to cloud platforms like AWS, ensuring secure, cost-effective, and scalable environments.
                 </p>
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-xl font-bold text-center md:text-2xl md:text-start">Key focus areas:</h3>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-xl font-bold text-start md:text-2xl">Key focus areas:</h3>
                 <p className="text-md md:text-lg">1. Migration strategy & execution</p>
                 <p className="text-md md:text-lg">2. Cloud cost analysis and optimization</p>
                 <p className="text-md md:text-lg">3. Cloud security best practices (IAM, encryption, backups)</p>
@@ -192,8 +192,8 @@ export default function ServicesPage() {
                   I work with teams to streamline their deployment pipelines, improve system reliability, and boost productivity.
                 </p>
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-xl font-bold text-center md:text-2xl md:text-start">What I can help with:</h3>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-xl font-bold text-start md:text-2xl">What I can help with:</h3>
                 <p className="text-md md:text-lg">1. Designing and implementing CI/CD pipelines</p>
                 <p className="text-md md:text-lg">2. Automating deployments (e.g., with GitHub Actions, GitLab CI, Jenkins)n</p>
                 <p className="text-md md:text-lg">3. Containerization with Docker & Kubernetes</p>
@@ -213,14 +213,12 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <section className="flex justify-center items-center px-6 py-24">
-        <div className="max-w-6xl flex flex-col gap-12 md:gap-24">
-          <div className="flex border">
-            <h1 className="text-3xl font-bold md:text-5xl">What Will You Get?</h1>
-          </div>
-          <div className="flex-flex-col gap-6">
-            <div className="flex-flex-row gap-4">
-              <span>
+      <section className="flex justify-center items-center px-6 py-20">
+        <div className="max-w-6xl flex flex-col gap-12 md:gap-20">
+          <h1 className="text-3xl font-bold text-center md:text-4xl">What Will You Get?</h1>
+          <div className="flex flex-col gap-6 max-w-4xl">
+            <div className="flex flex-row items-center gap-4">
+              <span className="hidden md:block">
                 <svg aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="64"
@@ -228,14 +226,74 @@ export default function ServicesPage() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#ff2d55"
-                  stroke-width="1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path d="M9 11l3 3l8 -8" />
                   <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
                 </svg>
               </span>
+              <div className="flex flex-col gap-2">
+                <h2 className="text-lg font-bold md:text-2xl">
+                  Clarity & Technical Direction
+                </h2>
+                <p className="text-md md:text-xl">
+                  You’ll gain a clear architectural vision and actionable roadmap. I help you align your business goals with modern technologies and best practices — from cloud design to CI/CD strategy.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row items-center gap-4">
+              <span className="hidden md:block">
+                <svg aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ff2d55"
+                  strokeWidth="1"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M9 11l3 3l8 -8" />
+                  <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                </svg>
+              </span>
+              <div className="flex flex-col gap-2">
+                <h2 className="text-lg font-bold md:text-2xl">
+                  Time & Cost Efficiency
+                </h2>
+                <p className="text-md md:text-xl">
+                  With streamlined pipelines, infrastructure automation, and cloud cost optimization, you reduce overhead and avoid technical debt — saving both time and money.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row items-center gap-4">
+              <span className="hidden md:block">
+                <svg aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ff2d55"
+                  strokeWidth="1"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M9 11l3 3l8 -8" />
+                  <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                </svg>
+              </span>
+              <div className="flex flex-col gap-2">
+                <h2 className="text-lg font-bold md:text-2xl">
+                  Scalable & Productive Systems
+                </h2>
+                <p className="text-md md:text-xl">
+                  I build solutions that grow with your business. From infrastructure to development workflows, everything is designed to maximize team productivity and long-term maintainability.
+                </p>
+              </div>
             </div>
           </div>
         </div>

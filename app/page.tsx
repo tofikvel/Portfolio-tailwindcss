@@ -43,7 +43,7 @@ export default function Home() {
             <h1 className="text-3xl font-bold text-center md:text-4xl">Services that deliver</h1>
           </div>
           {/* Service 1 */}
-          <div className="flex flex-col gap-12 max-w-5xl">
+          <div className="flex flex-col gap-12 max-w-4xl">
             <div className="pb-8 border-b border-gray-300">
               <p className="mb-3 text-sm text-gray-500 uppercase">Software development & integration</p>
               <p className="text-xl font-semibold leading-relaxed md:text-2xl">
