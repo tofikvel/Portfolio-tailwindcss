@@ -1,7 +1,8 @@
-import Link from "next/link";
 import Image from "next/image";
 
 export default function ServicesPage() {
+
+
   return (
     <main>
       <section className="flex justify-center px-6 min-h-[calc(100svh-64px)] bg-[url(/services-bg.jpg)] bg-cover bg-fixed bg-no-repeat bg-mist-900 bg-blend-overlay">
@@ -15,7 +16,7 @@ export default function ServicesPage() {
             </p>
           </div>
           <div className="flex justify-center pb-6">
-            <button className="cursor-pointer p-3">
+            <a href="#why-work-with-me" className="cursor-pointer p-3">
               <svg
                 className="w-8 h-8 text-white animate-bounce"
                 xmlns="http://www.w3.org/2000/svg"
@@ -30,11 +31,11 @@ export default function ServicesPage() {
                   d="m19 9-7 7-7-7"
                 />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </section>
-      <section className="min-h-[calc(100svh-64px)] flex justify-center items-center px-6 py-24 mx-auto">
+      <section className="min-h-[calc(100svh-64px)] flex justify-center items-center px-6 py-24 mx-auto" id="why-work-with-me">
         <div className="max-w-6xl flex flex-col gap-12">
           <div className="flex flex-col items-center text-center gap-6 md:mb-12">
             <h1 className="text-3xl font-bold md:text-4xl">Why Work With Me?</h1>
