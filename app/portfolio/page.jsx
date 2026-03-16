@@ -28,8 +28,8 @@ export default function Portfoliopage() {
               <span>Learn more</span>
             </Link>
           </div>
-          <div className="flex flex-col gap-6 md:flex md:flex-row">
-            <div className="flex flex-col items-center gap-4 max-w-87.5">
+          <div className="grid grid-col md:grid-cols-3 gap-6 w-fit md:place-items-start">
+            <div className="flex flex-col gap-4 md:max-w-87.5">
               <div className="flex">
                 <Image
                   src="/home-page-hero.jpg"
@@ -114,8 +114,8 @@ export default function Portfoliopage() {
               <span>Learn more</span>
             </Link>
           </div>
-          <div className="flex flex-col gap-6 md:flex md:flex-row">
-            <div className="flex flex-col items-center gap-4 max-w-87.5">
+          <div className="grid grid-col md:grid-cols-3 gap-6 w-fit md:place-items-start">
+            <div className="flex flex-col items-center gap-4 md:max-w-87.5">
               <div className="flex">
                 <Image
                   src="/home-page-hero.jpg"
@@ -200,8 +200,8 @@ export default function Portfoliopage() {
               <span>Learn more</span>
             </Link>
           </div>
-          <div className="flex flex-col gap-6 md:flex md:flex-row">
-            <div className="flex flex-col items-center gap-4 max-w-87.5">
+          <div className="grid grid-col md:grid-cols-3 gap-6 w-fit md:place-items-start">
+            <div className="flex flex-col items-center gap-4 md:max-w-87.5">
               <div className="flex">
                 <Image
                   src="/home-page-hero.jpg"
@@ -263,7 +263,5 @@ export default function Portfoliopage() {
         </div>
       </section>
     </main>
-
-
   )
 }
