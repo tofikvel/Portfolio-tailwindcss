@@ -106,7 +106,7 @@ export default function AboutPage() {
                 </svg>
               </span>
             </div>
-            <div className="flex flex-col gap-">
+            <div className="flex flex-col gap-4">
               <span className="text-md font-bold md:text-xl">About me</span>
               <p className="text-md text-gray-60 break-normal md:text-xl leading-relaxed">
                 I am an IT consultant with over 5 years of commercial experience in the Cloud, DevOps, and software
@@ -135,35 +135,33 @@ export default function AboutPage() {
       </section>
       {/* Certificates */}
       <section className="flex justify-center px-6 py-12">
-        <div className="max-w-6xl w-full flex flex-col gap-12 items-center md:flex-row">
-          <div className="flex-1 flex justify-center">
-            <div className="grid grid-cols-2">
-              <Image
-                src="/certs/aws-1.png"
-                alt="cert-img"
-                width={150}
-                height={150}
-                className="w-[150px] h-[150px] object-contain"
-              />
-              <Image
-                src="/certs/aws-2.png"
-                alt="cert-img"
-                width={150}
-                height={150}
-                className="w-[150px] h-[150px] object-contain"
-              />
-              <div className="col-span-2 flex justify-center">
-                <Image
-                  src="/certs/aws-3.png"
-                  alt="cert-img"
-                  width={150}
-                  height={150}
-                  className="w-[150px] h-[150px] object-contain"
-                />
-              </div>
-            </div>
+        <div className="max-w-6xl w-full flex flex-col justify-center gap-12 items-center md:flex-row md:justify-between">
+          <div className="grid grid-cols-2 gap-x-6 w-fit">
+            <Image
+              src="/certs/aws-1.png"
+              alt="cert-img"
+              width={150}
+              height={150}
+              className="w-[150px] h-[150px] object-contain"
+            />
+
+            <Image
+              src="/certs/aws-2.png"
+              alt="cert-img"
+              width={150}
+              height={150}
+              className="w-[150px] h-[150px] object-contain"
+            />
+
+            <Image
+              src="/certs/aws-3.png"
+              alt="cert-img"
+              width={150}
+              height={150}
+              className="w-[150px] h-[150px] object-contain col-span-2 justify-self-center"
+            />
           </div>
-          <div className="flex-1 flex justify-center">
+          <div className="flex justify-center">
             <Image
               src="/certs/psm.png"
               alt="cert-img"
@@ -172,7 +170,7 @@ export default function AboutPage() {
               className="w-[135px] h-[135px] object-contain"
             />
           </div>
-          <div className="flex-1 flex justify-center">
+          <div className="flex justify-center">
             <div className="grid grid-cols-2">
               <Image
                 src="/certs/kubernetes-1.png"

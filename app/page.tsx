@@ -40,24 +40,24 @@ export default function Home() {
       <section className="bg-sky-100 flex justify-center px-6 py-12 mx-auto md:py-24">
         <div className="flex flex-col gap-12 max-w-6xl md:gap-20">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-center md:text-4xl">Services that deliver</h1>
+            <h1 className="text-3xl font-bold text-center md:text-5xl">Services that deliver</h1>
           </div>
           {/* Service 1 */}
           <div className="flex flex-col gap-12 max-w-4xl">
             <div className="pb-8 border-b border-gray-300">
-              <p className="mb-3 text-sm text-gray-500 uppercase">Software development & integration</p>
+              <p className="mb-3 text-md text-gray-500 uppercase">Software development & integration</p>
               <p className="text-xl font-semibold leading-relaxed md:text-2xl">
                 Custom software solutions and seamless integration with existing systems
               </p>
             </div>
             <div className="pb-8 border-b border-gray-300">
-              <p className="mb-3 text-sd text-gray-500 uppercase">Devops implementation & consulting</p>
+              <p className="mb-3 text-md text-gray-500 uppercase">Devops implementation & consulting</p>
               <p className="text-xl font-semibold leading-relaxed md:text-2xl">
                 Establish robust CI/CD pipelines, automating deployments and improving collaboration
               </p>
             </div>
             <div className="pb-8 border-b border-gray-300">
-              <p className="mb-3 text-sd text-gray-500 uppercase">Cloud migration & optimization</p>
+              <p className="mb-3 text-md text-gray-500 uppercase">Cloud migration & optimization</p>
               <p className="text-xl font-semibold leading-relaxed md:text-2xl">
                 Seamless transition to the cloud, maximizing efficiency and cost savings
               </p>
@@ -70,7 +70,7 @@ export default function Home() {
       <section className="flex justify-center px-6 py-12 mx-auto md:py-24">
         <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:flex md:flex-row">
           <div className="flex flex-col flex-1 gap-12">
-            <h1 className="text-3xl font-bold md:text-4xl text-center md:text-start">Proven project results</h1>
+            <h1 className="text-3xl font-bold md:text-5xl text-center md:text-start">Proven project results</h1>
             <p className="text-xl text-gray-600 leading-relaxed md:text-xl">
               Explore a selection of my successfully completed projects, demonstrating my ability to deliver
               high-quality, effective solutions across various industries and technologies. Each project showcases the
@@ -102,7 +102,7 @@ export default function Home() {
           {/* TOP HEADING */}
           <div className="flex flex-col text-center mb-12">
             <h2 className="text-3xl font-semibold mb-8 md:text-5xl">Get in touch today</h2>
-            <p className="text-gray-700 text-lg md:text-xl">
+            <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
               I would be happy to discuss your project with you. <br /> Please complete the form below or contact me
               directly.
             </p>

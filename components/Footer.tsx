@@ -5,7 +5,7 @@ export default function Footer() {
   const copyRightDate = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-300 px-6 py-6 border-t border-gray-400 shadow-[0_-4px_10px_rgba(0,0,0,0.1)]">
+    <footer className="bg-black text-white px-6 py-12">
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-12 py-6 mb-4 md:flex-row md:justify-between">
         {/* Brand logo and contact details (left side) */}
         <div className="flex flex-col gap-12">

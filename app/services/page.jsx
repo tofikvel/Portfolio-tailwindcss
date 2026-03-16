@@ -45,20 +45,7 @@ export default function ServicesPage() {
           </div>
           <div className="flex flex-col gap-6 md:flex md:flex-row">
             <div className="flex flex-col items-center text-center gap-4">
-              <svg aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="64"
-                height="64"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#000000"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
-                <path d="M4 14l8 -3l8 3" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="currentColor" d="M4.616 20q-.691 0-1.153-.462T3 18.384V8.616q0-.691.463-1.153T4.615 7H9V5.615q0-.69.463-1.153T10.616 4h2.769q.69 0 1.153.462T15 5.615V7h4.385q.69 0 1.152.463T21 8.616v9.769q0 .69-.463 1.153T19.385 20zm0-1h14.769q.23 0 .423-.192t.192-.424V8.616q0-.231-.192-.424T19.385 8H4.615q-.23 0-.423.192T4 8.616v9.769q0 .23.192.423t.423.192M10 7h4V5.615q0-.23-.192-.423T13.385 5h-2.77q-.23 0-.423.192T10 5.615zM4 19V8z" /></svg>
               <div>
                 <h3 className="text-2xl font-bold mb-4">Proven Experience</h3>
                 <p className="text-md text-gray-500 max-w-lg md:text-lg">
@@ -67,26 +54,7 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="flex flex-col items-center text-center gap-4">
-              <svg aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="64"
-                height="64"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#000000"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" />
-                <path d="M7 20h10" />
-                <path d="M9 16v4" />
-                <path d="M15 16v4" />
-                <path d="M9 12v-4" />
-                <path d="M12 12v-1" />
-                <path d="M15 12v-2" />
-                <path d="M12 12v-1" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="currentColor" d="M4.616 20q-.691 0-1.153-.462T3 18.384V5.616q0-.691.463-1.153T4.615 4h14.77q.69 0 1.152.463T21 5.616v12.769q0 .69-.463 1.153T19.385 20zm0-1h14.769q.23 0 .423-.192t.192-.424V5.616q0-.231-.192-.424T19.385 5H4.615q-.23 0-.423.192T4 5.616v12.769q0 .23.192.423t.423.192M9 16.5q.214 0 .357-.143T9.5 16t-.143-.357T9 15.5H6q-.213 0-.357.143T5.5 16t.143.357T6 16.5zm5.55-3.613l-1.071-1.072q-.146-.146-.354-.152t-.354.158q-.14.146-.133.354t.153.354l1.194 1.194q.242.242.565.242t.566-.242l3.319-3.32q.146-.145.156-.344q.009-.198-.156-.363q-.166-.165-.357-.165t-.357.165zM9 12.5q.214 0 .357-.143T9.5 12t-.143-.357T9 11.5H6q-.213 0-.357.143T5.5 12t.143.357T6 12.5zm0-4q.214 0 .357-.143T9.5 8t-.143-.357T9 7.5H6q-.213 0-.357.143T5.5 8t.143.357T6 8.5zM4 19V5z" /></svg>
               <div>
                 <h3 className="text-2xl font-bold mb-4">Tailored Solutions</h3>
                 <p className="text-md text-gray-500 max-w-lg md:text-lg">
@@ -95,21 +63,7 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="flex flex-col items-center text-center gap-4">
-              <svg aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="64"
-                height="64"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#000000"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M20.984 12.53a9 9 0 1 0 -7.552 8.355" />
-                <path d="M12 7v5l3 3" />
-                <path d="M19 16l-2 3h4l-2 3" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="currentColor" d="M5.017 12.5H8q.14 0 .256.07t.183.21L10 15.867l3.562-7.085q.14-.287.448-.287q.307 0 .448.287l1.86 3.719h2.665q-.183-2.742-2.2-4.621T12 6T7.217 7.879t-2.2 4.621M12 20q2.766 0 4.783-1.879t2.2-4.621H16q-.14 0-.256-.07t-.183-.21L14 10.134l-3.561 7.103q-.141.287-.448.277t-.449-.296L7.682 13.5H5.018q.183 2.742 2.2 4.621T12 20m0 1q-1.658 0-3.113-.626t-2.545-1.716t-1.716-2.546T4 13h1q0 2.9 2.05 4.95T12 20t4.95-2.05T19 13h1q0 1.658-.626 3.113t-1.716 2.545t-2.546 1.716T12 21m-8-8q0-1.658.626-3.113t1.716-2.545t2.546-1.716T12 5q1.454 0 2.812.52t2.492 1.469l1.092-1.093l.708.708l-1.092 1.092q.95 1.135 1.469 2.493T20 13h-1q0-2.9-2.05-4.95T12 6T7.05 8.05T5 13zM9.385 2.5v-1h5.23v1zM12 20q-2.9 0-4.95-2.05T5 13t2.05-4.95T12 6t4.95 2.05T19 13t-2.05 4.95T12 20m0-7" /></svg>
               <div>
                 <h3 className="text-2xl font-bold mb-4">Built for the Long Term</h3>
                 <p className="text-md text-gray-500 max-w-lg md:text-lg">
@@ -213,7 +167,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <section className="flex justify-center items-center px-6 py-12 md:py-24">
+      <section className="bg-gradient-to-b from-slate-800 via-slate-900 to-black flex justify-center text-white items-center px-6 py-12 md:py-24">
         <div className="max-w-6xl flex flex-col gap-12 md:gap-20">
           <h1 className="text-3xl font-bold text-center md:text-4xl">What Will You Get?</h1>
           <div className="flex flex-col gap-6 max-w-4xl">
