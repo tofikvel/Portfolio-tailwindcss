@@ -1,0 +1,30 @@
+{
+  "Home": {
+    "hero-title": "Transformieren Sie Ihre IT-Landschaft",
+    "hero-subtitle": "Ich bin freiberuflicher Cloud- und DevOps-Ingenieur und helfe Unternehmen dabei, skalierbare, sichere und kosteneffiziente Systeme zu entwerfen. Egal, ob Sie alte Anwendungen modernisieren oder cloud-native Plattformen aufbauen – ich unterstütze Sie dabei, robuste Lösungen bereitzustellen. Lassen Sie uns Ihre Infrastruktur auf das nächste Level bringen – kontaktieren Sie mich, um Ihre Anforderungen zu besprechen.",
+    "hero-cta": "Kontakt aufnehmen",
+    "services-title": "Leistungen, die überzeugen",
+    "services-1-subtitle": "Softwareentwicklung & Integration",
+    "services-1-title": "Individuelle Softwarelösungen und nahtlose Integration in bestehende Systeme",
+    "services-2-subtitle": "DevOps-Implementierung & Beratung",
+    "services-2-title": "Aufbau robuster CI/CD-Pipelines, Automatisierung von Deployments und Förderung der Zusammenarbeit",
+    "services-3-subtitle": "Cloud-Migration & Optimierung",
+    "services-3-title": "Reibungsloser Übergang in die Cloud mit maximaler Effizienz und Kosteneinsparungen",
+    "proven-proj-title": "Erwiesene Projekterfolges",
+    "proven-proj-desc": "Entdecken Sie eine Auswahl meiner erfolgreich abgeschlossenen Projekte. Sie zeigen meine Fähigkeit, hochwertige und effektive Lösungen für verschiedene Branchen und Technologien zu liefern. Jedes Projekt veranschaulicht, wie ich meine Fähigkeiten einsetze, um reale Herausforderungen zu lösen.",
+    "proven-proj-cta": "PROJEKTE ENTDECKEN",
+    "contact-title": "Nehmen Sie noch heute Kontakt auf",
+    "contact-subtitle": "Ich bespreche Ihr Projekt gerne mit Ihnen.Bitte füllen Sie das Formular unten aus oder kontaktieren Sie mich direkt.",
+    "contact-cta": "ANFRAGE SENDEN",
+    "contact-placeholder-email": "Ihre E-mail",
+    "contact-placeholder-name": "Ihr Name",
+    "contact-placeholder-text": "Ihre Nachricht"
+  },
+  "Navbar": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "services": "Leistungen",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  }
+}

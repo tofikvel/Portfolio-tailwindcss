@@ -1,13 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import LocaleSwitcher from "./LocaleSwitcher";
+import { Link, usePathname } from '../i18n/navigation'
+import { useTranslations } from 'next-intl';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
+
+  const t = useTranslations('Navbar');
 
   return (
     <nav className="bg-sky-50 shadow-sm">
@@ -20,20 +24,21 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
             <Link href="/" className="md:text-lg md:hover:text-gray-600">
-              Home
+              {t('home')}
             </Link>
             <Link href="/about" className="md:text-lg md:hover:text-gray-600">
-              About
+              {t('about')}
             </Link>
             <Link href="/services" className="md:text-lg md:hover:text-gray-600">
-              Services
+              {t('services')}
             </Link>
             <Link href="/portfolio" className="md:text-lg md:hover:text-gray-600">
-              Portfolio
+              {t('portfolio')}
             </Link>
             <Link href="/contact" className="md:text-lg md:hover:text-gray-600">
-              Contact
+              {t('contact')}
             </Link>
+            <LocaleSwitcher />
           </div>
 
           {/* Hamburger */}

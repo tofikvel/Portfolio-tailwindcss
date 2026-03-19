@@ -1,28 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
+
+  const t = useTranslations('Home');
+
   return (
     <main>
       <section className="md:min-h-[calc(100svh-64px)] flex justify-center mx-auto px-6 py-12">
         <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:flex md:flex-row">
           <div className="flex flex-col flex-1 gap-6">
             <h1 className="text-3xl text-center font-bold md:text-5xl md:text-start">
-              Transforming your <br />
-              IT Landscape
+              {t('hero-title')}
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed md:text-2xl">
-              I’m a freelance <strong>Cloud</strong> and <strong>DevOps</strong> engineer helping companies design
-              scalable, secure, and cost-efficient systems. Whether you are modernizing legacy applications or building
-              cloud-native platforms, I can help you deliver robust solutions. Let’s elevate your infrastructure —
-              contact me to discuss your needs.
+              {t('hero-subtitle')}
             </p>
             <div className="flex justify-center md:flex md:justify-start">
               <Link
                 href="/portfolio"
                 className="bg-emerald-700 text-white px-6 py-4 rounded-full hover:bg-emerald-800 transition cursor-pointer md:px-12 md:py-4"
               >
-                Get in touch!
+                {t('hero-cta')}
               </Link>
             </div>
           </div>
@@ -40,26 +40,26 @@ export default function Home() {
       <section className="bg-sky-100 flex justify-center px-6 py-12 mx-auto md:py-24">
         <div className="flex flex-col gap-12 max-w-6xl md:gap-20">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-center md:text-5xl">Services that deliver</h1>
+            <h1 className="text-3xl font-bold text-center md:text-5xl">{t("services-title")}</h1>
           </div>
           {/* Service 1 */}
           <div className="flex flex-col gap-12 max-w-4xl">
             <div className="pb-8 border-b border-gray-300">
-              <p className="mb-3 text-md text-gray-500 uppercase">Software development & integration</p>
+              <p className="mb-3 text-md text-gray-500 uppercase">{t("services-1-subtitle")}</p>
               <p className="text-xl font-semibold leading-relaxed md:text-2xl">
-                Custom software solutions and seamless integration with existing systems
+                {t("services-1-title")}
               </p>
             </div>
             <div className="pb-8 border-b border-gray-300">
-              <p className="mb-3 text-md text-gray-500 uppercase">Devops implementation & consulting</p>
+              <p className="mb-3 text-md text-gray-500 uppercase">{t("services-2-subtitle")}</p>
               <p className="text-xl font-semibold leading-relaxed md:text-2xl">
-                Establish robust CI/CD pipelines, automating deployments and improving collaboration
+                {t("services-2-title")}
               </p>
             </div>
             <div className="pb-8 border-b border-gray-300">
-              <p className="mb-3 text-md text-gray-500 uppercase">Cloud migration & optimization</p>
+              <p className="mb-3 text-md text-gray-500 uppercase">{t("services-3-subtitle")}</p>
               <p className="text-xl font-semibold leading-relaxed md:text-2xl">
-                Seamless transition to the cloud, maximizing efficiency and cost savings
+                {t("services-3-title")}
               </p>
             </div>
           </div>
@@ -70,18 +70,16 @@ export default function Home() {
       <section className="flex justify-center px-6 py-12 mx-auto md:py-24">
         <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:flex md:flex-row">
           <div className="flex flex-col flex-1 gap-12">
-            <h1 className="text-3xl font-bold md:text-5xl text-center md:text-start">Proven project results</h1>
+            <h1 className="text-3xl font-bold md:text-5xl text-center md:text-start">{t("proven-proj-title")}</h1>
             <p className="text-xl text-gray-600 leading-relaxed md:text-xl">
-              Explore a selection of my successfully completed projects, demonstrating my ability to deliver
-              high-quality, effective solutions across various industries and technologies. Each project showcases the
-              application of my skills to solve real-world challenges.
+              {t("proven-proj-desc")}
             </p>
             <div className="flex justify-center md:flex md:justify-start">
               <Link
                 href="/portfolio"
                 className="bg-emerald-700 text-white px-6 py-4 rounded-full hover:bg-emerald-800 transition cursor-pointer md:px-12 md:py-4 uppercase"
               >
-                explore my projects
+                {t("proven-proj-cta")}
               </Link>
             </div>
           </div>
@@ -101,36 +99,35 @@ export default function Home() {
         <div className="max-w-6xl flex flex-col justify-center items-center w-full">
           {/* TOP HEADING */}
           <div className="flex flex-col text-center mb-12">
-            <h2 className="text-3xl font-semibold mb-8 md:text-5xl">Get in touch today</h2>
+            <h2 className="text-3xl font-semibold mb-8 md:text-5xl">{t("contact-title")}</h2>
             <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
-              I would be happy to discuss your project with you. <br /> Please complete the form below or contact me
-              directly.
+              {t("contact-subtitle")}
             </p>
           </div>
           <div className="flex max-w-2xl w-full">
             <form className="flex flex-col justify-center gap-4 w-full">
               <input
                 type="email"
-                placeholder="Your E-mail"
+                placeholder={t("contact-placeholder-email")}
                 className="w-full bg-white border border-gray-400 p-4 rounded-sm focus:outline-none focus:border-gray-700 transition"
               />
 
               <input
                 type="text"
-                placeholder="Your Full Name"
+                placeholder={t("contact-placeholder-name")}
                 className="w-full bg-white border border-gray-400 p-4 rounded-sm focus:outline-none focus:border-gray-700 transition"
               />
 
               <textarea
                 rows={5}
-                placeholder="Your comments"
+                placeholder={t("contact-placeholder-text")}
                 className="w-full bg-white border border-gray-400 p-4 rounded-sm focus:outline-none focus:border-gray-700 transition resize-none md:mb-4"
               />
               <button
                 type="submit"
                 className="bg-emerald-700 text-white text-sm px-9 py-4 rounded-sm hover:bg-emerald-800 transition cursor-pointer"
               >
-                SEND INQUIRY
+                {t("contact-cta")}
               </button>
             </form>
           </div>

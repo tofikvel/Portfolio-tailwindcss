@@ -1,0 +1,41 @@
+{
+  "Home": {
+    "hero-title": "Transforming your IT Landscape",
+    "hero-subtitle": "I’m a freelance Cloud and DevOps engineer helping companies design scalable systems.",
+    "hero-cta": "Get in touch!",
+    "services-title": "Services that deliver",
+    "services-1-subtitle": "Software development & integration",
+    "services-1-title": "Custom software solutions and seamless integration with existing systems",
+    "services-2-subtitle": "Devops implementation & consulting",
+    "services-2-title": "Establish robust CI/CD pipelines, automating deployments and improving collaboration",
+    "services-3-subtitle": "Cloud migration & optimization",
+    "services-3-title": "Seamless transition to the cloud, maximizing efficiency and cost savings",
+    "proven-proj-title": "Proven project results",
+    "proven-proj-desc": "Explore a selection of my successfully completed projects, demonstrating my ability to deliver high-quality, effective solutions across various industries and technologies. Each project showcases the application of my skills to solve real-world challenges",
+    "proven-proj-cta": "explore my projects",
+    "contact-title": "Get in touch today",
+    "contact-subtitle": "I would be happy to discuss your project with you.Please complete the form below or contact me directly.",
+    "contact-cta": "SEND INQUIRY",
+    "contact-placeholder-email": "Your E-mail",
+    "contact-placeholder-name": "Your Full Name",
+    "contact-placeholder-text": "Your comments"
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "navigation-title": "Navigation",
+    "help-title": "Help",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "imprint": "Imprint",
+    "privacy-policy": "Privacy Policy"
+  }
+}
