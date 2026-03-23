@@ -14,7 +14,7 @@ export default function ProjectOne() {
                         <h1 className="text-3xl font-bold md:text-5xl">{t("project-title")}</h1>
                         <h3 className="text-lg font-light md:text-xl">{t("project-author")}</h3>
                     </div>
-                    <div className="flex flex-col gap-8">
+                    <div className="flex flex-col gap-10">
                         <div className="flex flex-col gap-2">
                             <h4 className="font-bold text-xl md:text-2xl">{t("project-abstract")}</h4>
                             <p className="text-lg font-light md:text-xl leading-relaxed">
