@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 export default function Home() {
 
   const t = useTranslations('Home');
+  const tc = useTranslations('Contact');
 
   return (
     <main>
@@ -99,35 +100,35 @@ export default function Home() {
         <div className="max-w-6xl flex flex-col justify-center items-center w-full">
           {/* TOP HEADING */}
           <div className="flex flex-col text-center mb-12">
-            <h2 className="text-3xl font-semibold mb-8 md:text-5xl">{t("contact-title")}</h2>
+            <h2 className="text-3xl font-semibold mb-8 md:text-5xl">{tc("contact-title")}</h2>
             <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
-              {t("contact-subtitle")}
+              {tc("contact-subtitle")}
             </p>
           </div>
           <div className="flex max-w-2xl w-full">
             <form className="flex flex-col justify-center gap-4 w-full">
               <input
                 type="email"
-                placeholder={t("contact-placeholder-email")}
+                placeholder={tc("contact-placeholder-email")}
                 className="w-full bg-white border border-gray-400 p-4 rounded-sm focus:outline-none focus:border-gray-700 transition"
               />
 
               <input
                 type="text"
-                placeholder={t("contact-placeholder-name")}
+                placeholder={tc("contact-placeholder-name")}
                 className="w-full bg-white border border-gray-400 p-4 rounded-sm focus:outline-none focus:border-gray-700 transition"
               />
 
               <textarea
                 rows={5}
-                placeholder={t("contact-placeholder-text")}
+                placeholder={tc("contact-placeholder-text")}
                 className="w-full bg-white border border-gray-400 p-4 rounded-sm focus:outline-none focus:border-gray-700 transition resize-none md:mb-4"
               />
               <button
                 type="submit"
                 className="bg-emerald-700 text-white text-sm px-9 py-4 rounded-sm hover:bg-emerald-800 transition cursor-pointer"
               >
-                {t("contact-cta")}
+                {tc("contact-cta")}
               </button>
             </form>
           </div>

@@ -12,7 +12,9 @@
     "services-3-title": "Seamless transition to the cloud, maximizing efficiency and cost savings",
     "proven-proj-title": "Proven project results",
     "proven-proj-desc": "Explore a selection of my successfully completed projects, demonstrating my ability to deliver high-quality, effective solutions across various industries and technologies. Each project showcases the application of my skills to solve real-world challenges",
-    "proven-proj-cta": "explore my projects",
+    "proven-proj-cta": "explore my projects"
+  },
+  "Contact": {
     "contact-title": "Get in touch today",
     "contact-subtitle": "I would be happy to discuss your project with you.Please complete the form below or contact me directly.",
     "contact-cta": "SEND INQUIRY",
@@ -20,6 +22,94 @@
     "contact-placeholder-name": "Your Full Name",
     "contact-placeholder-text": "Your comments"
   },
+  "About": {
+    "about-pre-desc": "Based in Germany. I work with clients across Europe and internationally, in both German and English.",
+    "about-title": "About Me",
+    "about-desc": "I am an IT consultant with over 5 years of commercial experience in the Cloud, DevOps, and software development fields, specializing in the use of cloud technologies — particularly AWS — to enhance operational efficiency, scalability, and system reliability. Expertise includes designing and implementing RESTful interfaces, automation tools, and CI/CD pipelines that streamline workflows, improve system performance, and enable fast, secure, and reliable software delivery. Skilled in developing robust software solutions that align with organizational goals as well as building modern, resilient infrastructures that support business growth. My main focus is on helping clients leverage technology to achieve sustainable success through efficient architecture, automation, and development practices."
+  },
+  "Services": {
+    "hero-title": "IT and Cloud Consulting",
+    "hero-subtitle": "Cloud solutions, CI/CD automation, and custom software development for scalable and secure businesses.",
+    "wwwm-title": "Why Work With Me?",
+    "wwwm-subtitle": "I combine deep technical expertise with a hands-on, results-driven approach to deliver real value for your business.",
+    "wwwm-1-title": "Proven Experience",
+    "wwwm-1-subtitle": "I’ve worked across industries helping companies launch, scale, and secure their systems in the cloud.",
+    "wwwm-2-title": "Tailored Solutions",
+    "wwwm-2-subtitle": "Every project is different. I take the time to understand your goals and design solutions that fit — no cookie-cutter templates.",
+    "wwwm-3-title": "Built for the Long Term",
+    "wwwm-4-subtitle": "From CI/CD pipelines to cost-optimized infrastructure, I build with scalability, maintainability, and the future in mind.",
+
+    "my-serv-title": "My Services",
+    "my-serv-subtitle": "From cloud infrastructure to deployment automation, I provide tailored tech solutions that help your business grow, scale, and stay secure. Here's how I can support your company:",
+    "service-1-title": "Custom Software Development",
+    "service-1-desc": "Build solutions that truly serve your business goals. I help companies design, develop, and maintain robust, scalable applications — from MVPs to production-ready systems.",
+    "service-1-ol-title": "What I offer:",
+    "service-1-li-1": "1. End-to-end web & backend development",
+    "service-1-li-2": "2. API design and integration",
+    "service-1-li-3": "3. System architecture & technical consulting",
+    "service-1-li-4": "4. Performance optimization and code reviews",
+    "service-1-conclusion": "Whether you're launching a new product or modernizing a legacy application, I can help turn your vision into reality..",
+
+    "service-2-title": "Cloud Migration & Optimization",
+    "service-2-desc": "Take full advantage of the cloud — without the stress. I assist businesses in moving their infrastructure to cloud platforms like AWS, ensuring secure, cost-effective, and scalable environments.",
+    "service-2-ol-title": "Key focus areas:",
+    "service-2-li-1": "1. Migration strategy & execution",
+    "service-2-li-2": "2. Cloud cost analysis and optimization",
+    "service-2-li-3": "3. Cloud security best practices (IAM, encryption, backups)",
+    "service-2-li-4": "4. Infrastructure-as-Code",
+    "service-2-conclusion": "From simple setups to complex enterprise environments, I provide guidance and hands-on support to help you migrate with confidence.",
+
+    "service-3-title": "DevOps & CI/CD Enablement",
+    "service-3-desc": "Accelerate your development cycles with automation and best practices. I work with teams to streamline their deployment pipelines, improve system reliability, and boost productivity.",
+    "service-3-ol-title": "What I can help with:",
+    "service-3-li-1": "1. Designing and implementing CI/CD pipelines",
+    "service-3-li-2": "2. Automating deployments (e.g., with GitHub Actions, GitLab CI, Jenkins'n",
+    "service-3-li-3": "3. Containerization with Docker & Kubernetes",
+    "service-3-li-4": "4. Infrastructure monitoring & alerting",
+    "service-3-conclusion": "If your project needs a more efficient development workflow or a reliable deployment process, I’ll help you put the right systems in place.",
+    "wwyg-title": "What Will You Get?",
+    "wwyg-1-title": "Clarity & Technical Direction",
+    "wwyg-1-desc": "You’ll gain a clear architectural vision and actionable roadmap. I help you align your business goals with modern technologies and best practices — from cloud design to CI/CD strategy.",
+    "wwyg-2-title": "Time & Cost Efficiency",
+    "wwyg-2-desc": "With streamlined pipelines, infrastructure automation, and cloud cost optimization, you reduce overhead and avoid technical debt — saving both time and money.",
+    "wwyg-3-title": "Scalable & Productive Systems",
+    "wwyg-3-desc": "I build solutions that grow with your business. From infrastructure to development workflows, everything is designed to maximize team productivity and long-term maintainability."
+  },
+  
+  "Portfolio": {
+    "section-1-title": "Event-driven Cloud-native Data Lake for Enterprise Use",
+    "section-1-subtitle": "The AWS based storage platform which allows to store, discover and distribute structured and unstructured data at scale.",
+    "section-project-link": "Learn more.",
+    "section-1-block-1-title": "Cloud infrastructure & automation",
+    "section-1-block-1-subtitle": "Designed and deployed a fully serverless, AWS-based architecture using Terraform. Automated provisioning of services such as DynamoDB, Lambda, and API Gateway. Implemented lifecycle management, monitoring, and event-driven automation to ensure scalability and reliability.",
+    "section-1-block-2-title": "Backend development & data architecture",
+    "section-1-block-2-subtitle": "Developed a RESTful API layer on top of the system using API Gateway. Created backend application logic in Python, handling core business processes and data workflows. Designed an efficient NoSQL database architecture with DynamoDB.",
+    "section-1-block-3-title": "Architecture consulting",
+    "section-1-block-3-subtitle": "Collaborated closely with stakeholders to define best architectural approaches. Provided guidance on access management, security, and scalable design patterns. Delivered a comprehensive platform with operational visibility, governance controls.",
+
+    "section-2-title": "From legacy constraints to GitOps-enabled Microservices: A journey with AWS ECS and Fargate",
+    "section-2-subtitle": "A cloud-native modernization journey that transformed a legacy AWS microservices platform into a scalable, modular, and GitOps-enabled architecture. This engagement focused on improving service isolation, deployment agility, and operational efficiency using AWS ECS, Fargate, and CI/CD best practices.",
+    "section-2-link": "Learn more.",
+    "section-2-block-1-title": "Microservice Refactoring & Container Architecture",
+    "section-2-block-1-subtitle": "Transformed a legacy ECS deployment model into a modern, modular service architecture. Broke down tightly coupled microservices running in a single ECS task into independent services. Improved reliability, reduced redeployment risks, and enabled true microservice-level agility on AWS Fargate.",
+    "section-2-block-2-title": "DevOps Modernization with GitOps Principles",
+    "section-2-block-2-subtitle": "Redesigned the CI/CD lifecycle to align with GitOps methodologies. Implemented change detection logic to rebuild and redeploy only the affected services within a shared monorepo. This drastically reduced build times, minimized ECR churn, and eliminated unnecessary deployments.",
+    "section-2-block-3-title": "Architecture Consulting & Legacy Modernization",
+    "section-2-block-3-subtitle": "Guided the client through a careful modernization journey — not by replacing everything, but by strategically evolving what worked. Addressed hidden constraints in their “it just works” architecture and aligned infrastructure with long-term scalability and maintainability goals.",
+
+    "section-3-title": "Cloud Cost Optimization at Scale: Transforming AWS Analytics for Efficiency",
+    "section-3-subtitle": "A focused cost optimization initiative that redesigned an existing AWS analytics platform to eliminate waste and align resources with real usage.",
+    "section-3-link": "Learn more.",
+    "section-3-block-1-title": "Cloud Cost Optimization Strategy",
+    "section-3-block-1-subtitle": "Redesigned and automated a cloud-native analytics platform to reduce AWS operational costs by over 65%. Used Terraform to restructure data processing and storage workflows with services like ",
+    "section-3-block-2-title": "Scalable Data Lake & Processing Architecture",
+    "section-3-block-2-subtitle": "Refactored the data lake architecture to support efficient, scalable analytics. Migrated raw data to Parquet with compression and partitioning to dramatically reduce Athena scan costs. Enabled faster insights at a fraction of the cost.",
+    "section-3-block-3-title": "Architecture Advisory & Governance",
+    "section-3-block-3-subtitle": "Worked closely with the client to guide architectural decisions rooted in cost-efficiency, resilience, and future growth. Designed a step-by-step optimization roadmap grounded in actual usage patterns."
+  },
+
+
+
   "Navbar": {
     "home": "Home",
     "about": "About",

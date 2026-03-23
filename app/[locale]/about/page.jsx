@@ -1,6 +1,10 @@
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export default function AboutPage() {
+
+  const t = useTranslations('About');
+
   return (
     <main>
       <section className="min-h-[calc(100svh-64px)] flex justify-center px-6 py-12 mx-auto">
@@ -9,8 +13,7 @@ export default function AboutPage() {
             <div className="space-y-4">
               <h1 className="text-3xl font-bold text-center md:text-5xl md:text-start">Javad Zeynal</h1>
               <p className="text-gray-600 text-md italic leading-relaxed md:text-xl">
-                &quot;Based in Germany. I work with clients across Europe and internationally, in both German and
-                English.&quot;
+                {t("about-pre-desc")}
               </p>
             </div>
             <hr className="my-8 border-gray-300" />
@@ -107,17 +110,9 @@ export default function AboutPage() {
               </span>
             </div>
             <div className="flex flex-col gap-4">
-              <span className="text-md font-bold md:text-xl">About me</span>
+              <span className="text-md font-bold md:text-xl">{t("about-title")}</span>
               <p className="text-md text-gray-60 break-normal md:text-xl leading-relaxed">
-                I am an IT consultant with over 5 years of commercial experience in the Cloud, DevOps, and software
-                development fields, specializing in the use of cloud technologies — particularly AWS — to enhance
-                operational efficiency, scalability, and system reliability. Expertise includes designing and
-                implementing RESTful interfaces, automation tools, and CI/CD pipelines that streamline workflows,
-                improve system performance, and enable fast, secure, and reliable software delivery. Skilled in
-                developing robust software solutions that align with organizational goals as well as building modern,
-                resilient infrastructures that support business growth. My main focus is on helping clients leverage
-                technology to achieve sustainable success through efficient architecture, automation, and development
-                practices.
+                {t("about-desc")}
               </p>
             </div>
           </div>

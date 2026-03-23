@@ -12,19 +12,119 @@
     "services-3-title": "Reibungsloser Übergang in die Cloud mit maximaler Effizienz und Kosteneinsparungen",
     "proven-proj-title": "Erwiesene Projekterfolges",
     "proven-proj-desc": "Entdecken Sie eine Auswahl meiner erfolgreich abgeschlossenen Projekte. Sie zeigen meine Fähigkeit, hochwertige und effektive Lösungen für verschiedene Branchen und Technologien zu liefern. Jedes Projekt veranschaulicht, wie ich meine Fähigkeiten einsetze, um reale Herausforderungen zu lösen.",
-    "proven-proj-cta": "PROJEKTE ENTDECKEN",
+    "proven-proj-cta": "PROJEKTE ENTDECKEN"
+  },
+  "Contact": {
     "contact-title": "Nehmen Sie noch heute Kontakt auf",
-    "contact-subtitle": "Ich bespreche Ihr Projekt gerne mit Ihnen.Bitte füllen Sie das Formular unten aus oder kontaktieren Sie mich direkt.",
-    "contact-cta": "ANFRAGE SENDEN",
+    "contact-subtitle": "Ich bespreche Ihr Projekt gerne mit Ihnen.Bitte füllen Sie das Formular unten aus oder kontaktieren Sie mich direkt..",
+    "contact-cta": "SANFRAGE SENDEN",
     "contact-placeholder-email": "Ihre E-mail",
     "contact-placeholder-name": "Ihr Name",
-    "contact-placeholder-text": "Ihre Nachricht"
+    "contact-placeholder-text": "Ihre Nachrich"
   },
+  "About": {
+    "about-pre-desc": "Ich arbeite mit Kunden in ganz Europa und international – auf Deutsch und Englisch.",
+    "about-title": "Über mich",
+    "about-desc": "Ich bin IT-Consultant mit über 5 Jahren Berufserfahrung in den Bereichen Cloud, DevOps und Softwareentwicklung – mit Spezialisierung auf Cloud-Technologien, insbesondere AWS, um die betriebliche Effizienz, Skalierbarkeit und Systemzuverlässigkeit zu steigern. Meine Expertise umfasst die Konzeption und Umsetzung von RESTful-Schnittstellen, Automatisierungstools sowie CI/CD-Pipelines zur Optimierung von Arbeitsabläufen.Ziel ist es, Systemleistung zu verbessern sowie eine schnelle, sichere und zuverlässige Softwarebereitstellung zu ermöglichen. Ich entwickle robuste Softwarelösungen, die auf die Geschäftsziele meiner Kunden abgestimmt sind, und baue moderne, resiliente Infrastrukturen zur Unterstützung des Unternehmenswachstums. Mein Hauptfokus liegt darauf, Kunden zu helfen, Technologien effektiv einzusetzen, um nachhaltigen Erfolg durch effiziente Architektur, Automatisierung und Entwicklungsprozesse zu erzielen."
+  },
+  "Services": {
+    "hero-title": "IT - und Cloud-Beratung",
+    "hero-subtitle": "Cloud-Lösungen, CI/CD-Automatisierung und individuelle Softwareentwicklung für skalierbare und sichere Unternehmen.",
+    "wwwm-title": "Warum BAQUE Solutions?",
+    "wwwm-subtitle": "Ich kombiniere tiefgehendes technisches Know-how mit einem praxisorientierten, ergebnisfokussierten Ansatz, um echten Mehrwert für Ihr Unternehmen zu schaffen",
+    "wwwm-1-title": "Erwiesene Erfahrung",
+    "wwwm-1-subtitle": "Ich habe branchenübergreifend Unternehmen dabei unterstützt, ihre Systeme in der Cloud zu starten, zu skalieren und abzusichern.",
+    "wwwm-2-title": "Maßgeschneiderte Lösungen",
+    "wwwm-2-subtitle": "Jedes Projekt ist einzigartig. Ich nehme mir die Zeit, Ihre Ziele zu verstehen und passende Lösungen zu entwickeln – keine Standardvorlagen.",
+    "wwwm-3-title": "Langfristig gedacht",
+    "wwwm-4-subtitle": "Von CI/CD-Pipelines bis hin zu kostenoptimierter Infrastruktur – ich entwickle mit Blick auf Skalierbarkeit, Wartbarkeit und Zukunftssicherheit.",
+
+    "my-serv-title": "Meine Leistungen",
+    "my-serv-subtitle": "Von Cloud-Infrastruktur bis hin zu Deployment-Automatisierung biete ich maßgeschneiderte Technologielösungen, die Ihrem Unternehmen helfen, zu wachsen, zu skalieren und sicher zu bleiben.",
+    "service-1-title": "Individuelle Softwareentwicklung",
+    "service-1-desc": "Individuelle Softwareentwicklung Ich helfe Unternehmen bei der Konzeption, Entwicklung und Wartung robuster, skalierbarer Anwendungen – von MVPs bis hin zu produktionsreifen Systemen.",
+    "service-1-ol-title": "Was ich anbiete:",
+    "service-1-li-1": "1. End-to-End Web- und Backend-Entwicklung",
+    "service-1-li-2": "2. API-Design und Integration",
+    "service-1-li-3": "3. Systemarchitektur & technische Beratung",
+    "service-1-li-4": "4. Performance-Optimierung und Code-Reviews",
+    "service-1-conclusion": "Ob Sie ein neues Produkt auf den Markt bringen oder eine Legacy-Anwendung modernisieren – ich helfe Ihnen, Ihre Vision in die Realität umzusetzen.",
+
+    "service-2-title": "Cloud-Migration & Optimierung",
+    "service-2-desc": "Nutzen Sie die Vorteile der Cloud – ganz ohne Stress.Ich unterstütze Unternehmen dabei, ihre Infrastruktur in Cloud-Plattformen wie AWS zu verlagern – sicher, kosteneffizient und skalierbar.",
+    "service-2-ol-title": "Fokusbereiche:",
+    "service-2-li-1": "1. Migrationsstrategie & Umsetzung",
+    "service-2-li-2": "2. Cloud-Kostenanalyse und -optimierung",
+    "service-2-li-3": "3. Cloud-Sicherheits-Standards (IAM, Verschlüsselung, Backups)",
+    "service-2-li-4": "4. Infrastructure-as-Code",
+    "service-2-conclusion": "Von einfachen Setups bis zu komplexen Unternehmensumgebungen: Ich biete praxisnahe Unterstützung, um Ihre Migration erfolgreich zu gestalten.",
+
+    "service-3-title": "DevOps & CI/CD Enablement",
+    "service-3-desc": "DevOps & CI/CD Enablement Beschleunigen Sie Ihre Entwicklungszyklen durch Automatisierung und Best Practices.Ich arbeite mit Teams zusammen, um ihre Deployment-Pipelines zu optimieren, die Zuverlässigkeit zu erhöhen und die Produktivität zu steigern.",
+    "service-3-ol-title": "Dabei unterstütze ich:",
+    "service-3-li-1": "1. Design und Implementierung von CI/CD-Pipelines",
+    "service-3-li-2": "2. Automatisierung von Deployments (z. B. mit GitHub Actions, GitLab CI, Jenkins)",
+    "service-3-li-3": "3. Containerisierung mit Docker & Kubernetes",
+    "service-3-li-4": "4. Infrastrukturüberwachung & Alerting",
+    "service-3-conclusion": "Wenn Sie einen effizienteren Entwicklungsprozess oder ein zuverlässigeres Deployment benötigen, helfe ich Ihnen, die richtigen Systeme aufzubauen.",
+
+    "wwyg-title": "Was bekommen Sie?",
+    "wwyg-1-title": "Klarheit & technische Orientierung",
+    "wwyg-1-desc": "Sie erhalten eine klare architektonische Vision und einen umsetzbaren Fahrplan. Ich helfe Ihnen, Ihre Geschäftsziele mit modernen Technologien und Best Practices in Einklang zu bringen – von Cloud-Architektur bis hin zur CI/CD-Strategie.",
+    "wwyg-2-title": "Zeit - & Kostenersparnis",
+    "wwyg-2-desc": "Durch optimierte Pipelines, Infrastrukturautomatisierung und Cloud-Kostenoptimierung reduzieren Sie Overhead und vermeiden technische Schulden – das spart sowohl Zeit als auch Geld.",
+    "wwyg-3-title": "Skalierbare & produktive Systeme",
+    "wwyg-3-desc": "Ich entwickle Lösungen, die mit Ihrem Unternehmen wachsen. Von der Infrastruktur bis hin zu Entwicklungs-Workflows ist alles darauf ausgelegt, die Produktivität Ihres Teams zu maximieren und langfristige Wartbarkeit sicherzustellen."
+  },
+
+"Portfolio": {
+    "section-1-title": "Event-driven Cloud-native Data Lake für Enterprise",
+    "section-1-subtitle": "Die auf AWS basierende Plattform ermöglicht es, strukturierte und unstrukturierte Daten in großem Umfang zu speichern, zu entdecken und zu verteilen.",
+    "section-project-link": "Mehr erfahren",
+    "section-1-block-1-title": "Cloud-Infrastruktur & Automatisierungn",
+    "section-1-block-1-subtitle": "Entwicklung und Bereitstellung einer vollständig serverlosen, AWS-basierten Architektur mit Terraform. Automatisierte Bereitstellung von Diensten wie DynamoDB, Lambda und API Gateway. Umsetzung von Lifecycle-Management, Monitoring und ereignisgesteuerter Automatisierung zur Gewährleistung von Skalierbarkeit und Zuverlässigkeit.",
+    "section-1-block-2-title": "Backend-Entwicklung & Datenarchitektur",
+    "section-1-block-2-subtitle": "Entwicklung einer RESTful API-Schicht auf Basis von API Gateway. Erstellung der Backend-Geschäftslogik in Python zur Abwicklung von Kernprozessen und Datenflüssen. Entwurf einer effizienten NoSQL-Datenarchitektur mit DynamoDB.",
+    "section-1-block-3-title": "Architekturberatung",
+    "section-1-block-3-subtitle": "Enge Zusammenarbeit mit Stakeholdern zur Definition optimaler Architekturansätze. Beratung zu Zugriffskontrolle, Sicherheit und skalierbaren Designmustern. Bereitstellung einer umfassenden Plattform mit operativer Transparenz und Governance-Kontrollen..",
+
+    "section-2-title": "Von Legacy zu GitOps-fähigen Microservices: Infrastruktur mit AWS ECS und Fargate",
+    "section-2-subtitle": "Eine cloud-native Modernisierungsreise, bei der eine veraltete AWS-Microservices-Plattform in eine skalierbare, modulare und GitOps-fähige Architektur überführt wurde. Der Fokus lag auf der Verbesserung von Service-Isolation, Deployment-Agilität und operativer Effizienz mithilfe von AWS ECS, Fargate und CI/CD Best Practices.",
+    "section-2-link": "Mehr erfahren",
+    "section-2-block-1-title": "Microservice-Refactoring & Container-Architektur",
+    "section-2-block-1-subtitle": "Ein veraltetes ECS-Deploymentmodell wurde in eine moderne, modulare Servicearchitektur überführt. Enge Kopplungen wurden aufgebrochen, sodass Microservices nun unabhängig in einzelnen ECS-Tasks laufen. Das erhöhte die Zuverlässigkeit, reduzierte Deployment-Risiken und ermöglichte echte Microservice-Agilität mit AWS Fargate.",
+    "section-2-block-2-title": "DevOps-Modernisierung mit GitOps-Prinzipien",
+    "section-2-block-2-subtitle": "Der CI/CD-Lebenszyklus wurde auf GitOps-Methoden umgestellt. Änderungs-Detection-Logik wurde implementiert, um nur die betroffenen Services innerhalb eines gemeinsamen Monorepos neu zu bauen und bereitzustellen. Dadurch konnten Build-Zeiten drastisch reduziert, unnötige Deployments vermieden und ECR-Churn minimiert werden.",
+    "section-2-block-3-title": "Architekturberatung & Legacy-Modernisierung",
+    "section-2-block-3-subtitle": "Der Kunde wurde durch eine strategische und behutsame Modernisierung begleitet – nicht durch radikalen Austausch, sondern durch gezielte Weiterentwicklung bestehender Lösungen. Versteckte Einschränkungen der bisherigen „läuft doch“-Architektur wurden erkannt und die Infrastruktur auf langfristige Skalierbarkeit und Wartbarkeit ausgerichtet.",
+
+    "section-3-title": "Cloud-Kostenoptimierung im großen Maßstab: AWS Analytics effizient gestalten",
+    "section-3-subtitle": "Eine gezielte Initiative zur Kostenoptimierung, bei der eine bestehende AWS-Analyseplattform neugestaltet wurde, um Verschwendung zu vermeiden und Ressourcen an die tatsächliche Nutzung anzupassen.",
+    "section-3-link": "Mehr erfahren",
+    "section-3-block-1-title": "Strategie zur Cloud-Kostenoptimierung",
+    "section-3-block-1-subtitle": "Neugestaltung und Automatisierung einer cloud-nativen Analyseplattform zur Reduzierung der AWS-Betriebskosten um über 65 %. Verwendung von Terraform zur Neustrukturierung der Datenverarbeitung und Speicherabläufe mit Diensten wie Amazon S3, Glue und Redshift.",
+    "section-3-block-2-title": "Skalierbare Data-Lake- & Verarbeitungsarchitektur",
+    "section-3-block-2-subtitle": "Die Data-Lake-Architektur wurde überarbeitet, um effiziente, skalierbare Analysen zu unterstützen. Rohdaten wurden in das Parquet-Format mit Komprimierung und Partitionierung migriert, um die Athena-Abfragekosten drastisch zu senken. Schnellere Einblicke bei einem Bruchteil der Kosten wurden ermöglicht.",
+    "section-3-block-3-title": "Architekturberatung & Governance",
+    "section-3-block-3-subtitle": "Enge Zusammenarbeit mit dem Kunden, um architektonische Entscheidungen zu treffen, die auf Kosteneffizienz, Resilienz und zukünftiges Wachstum ausgerichtet sind. Entwicklung eines schrittweisen Optimierungsfahrplans auf Basis realer Nutzungsmuster."
+  },
+
   "Navbar": {
     "home": "Startseite",
     "about": "Über mich",
     "services": "Leistungen",
     "portfolio": "Portfolio",
     "contact": "Kontakt"
+  },
+  "Footer": {
+    "navigation-title": "Navigation",
+    "help-title": "HILFE",
+    "home": "Startseite",
+    "about": "Über mich",
+    "services": "Leistungen",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt",
+    "imprint": "Impressum",
+    "privacy-policy": "Datenschutzerklärung"
   }
 }

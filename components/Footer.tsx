@@ -1,8 +1,10 @@
 "use client";
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
   const copyRightDate = new Date().getFullYear();
+  const t = useTranslations("Footer")
 
   return (
     <footer className="bg-black text-white px-6 py-12">
@@ -44,30 +46,30 @@ export default function Footer() {
         {/* Additional links (right side) */}
         <div className="flex flex-row gap-24">
           <div className="flex flex-col space-y-4 md:flex md:flex-col md:space-y-6">
-            <h3 className="font-bold text-xl text-bold">Navigation</h3>
+            <h3 className="font-bold text-xl text-bold">{t("navigation-title")}</h3>
             <Link href="/" className="text-lg hover:text-gray-600">
-              Home
+              {t("home")}
             </Link>
             <Link href="/about" className="text-lg hover:text-gray-600">
-              About
+              {t("about")}
             </Link>
             <Link href="/services" className="text-lg hover:text-gray-600">
-              Services
+              {t("services")}
             </Link>
             <Link href="/portfolio" className="text-lg hover:text-gray-600">
-              Portfolio
+              {t("portfolio")}
             </Link>
           </div>
           <div className="flex flex-col space-y-4 md:flex md:flex-col md:space-y-6">
-            <h3 className="font-bold text-xl text-bold">Help</h3>
-            <Link href="/" className="text-lg hover:text-gray-600">
-              Conatct
+            <h3 className="font-bold text-xl text-bold">{t("help-title")}</h3>
+            <Link href="/contact" className="text-lg hover:text-gray-600">
+              {t("contact")}
             </Link>
-            <Link href="/about" className="text-lg hover:text-gray-600">
-              Imprint
+            <Link href="#" className="text-lg hover:text-gray-600">
+              {t("imprint")}
             </Link>
-            <Link href="/services" className="text-lg hover:text-gray-600">
-              Privacy Policy
+            <Link href="#" className="text-lg hover:text-gray-600">
+              {t("privacy-policy")}
             </Link>
           </div>
         </div>
