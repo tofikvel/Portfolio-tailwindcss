@@ -20,7 +20,7 @@ export default function Home() {
             </p>
             <div className="flex justify-center md:flex md:justify-start">
               <Link
-                href="/portfolio"
+                href="/contact"
                 className="bg-emerald-700 text-white px-6 py-4 rounded-full hover:bg-emerald-800 transition cursor-pointer md:px-12 md:py-4"
               >
                 {t('hero-cta')}

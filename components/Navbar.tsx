@@ -2,12 +2,11 @@
 
 import { useState } from "react";
 import LocaleSwitcher from "./LocaleSwitcher";
-import { Link, usePathname } from '../i18n/navigation'
+import { Link } from '../i18n/navigation'
 import { useTranslations } from 'next-intl';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
@@ -15,7 +14,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-sky-50 shadow-sm">
-      <div className="max-w-6xl mx-auto px-6 md:px-0">
+      <div className="max-w-6xl mx-auto px-6 md:px-6">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="text-xl md:text-2xl font-bold">
