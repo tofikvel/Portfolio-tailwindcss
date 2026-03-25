@@ -154,6 +154,18 @@
     "project-contact-btn": "ANFRAGE SENDEN"
   },
 
+  "Imprint": {
+    "imprint-heading": "Impressum",
+    "imprint-host-name": "Javad Zeynal",
+    "imprint-host-position": "IT- und Cloud-Beratung",
+    "imprint-host-addess": "Münchener Straße 42A, 10779 Berlin",
+    "imprint-contact-heading": "Kontakt",
+    "imprint-host-number": "Telefon: +49 176 80228957",
+    "imprint-host-email": "E-mail: info@baque-solutions.com",
+    "imprint-host-tax": "Steuernummer: 18/604/03171",
+    "imprint-trademark": "Alle Markenzeichen auf dieser Website sind markenrechtlich geschützt."
+  },
+
   "Navbar": {
     "home": "Startseite",
     "about": "Über mich",

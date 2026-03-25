@@ -153,6 +153,18 @@
     "project-contact-btn": "GET IN TOUCH"
   },
 
+  "Imprint": {
+    "imprint-heading": "Imprint",
+    "imprint-host-name": "Javad Zeynal",
+    "imprint-host-position": "IT and Cloud Consulting",
+    "imprint-host-addess": "Münchener Straße 42A, 10779 Berlin",
+    "imprint-contact-heading": "Contact",
+    "imprint-host-number": "Phone: +49 176 80228957",
+    "imprint-host-email": "Email: info@baque-solutions.com",
+    "imprint-host-tax": "Tax number: 18/604/03171",
+    "imprint-trademark": "All trademarks on this website are legally protected."
+  },
+
 
   "Navbar": {
     "home": "Home",

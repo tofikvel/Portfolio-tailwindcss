@@ -65,10 +65,10 @@ export default function Footer() {
             <Link href="/contact" className="text-lg hover:text-gray-600">
               {t("contact")}
             </Link>
-            <Link href="#" className="text-lg hover:text-gray-600">
+            <Link href="/imprint" className="text-lg hover:text-gray-600">
               {t("imprint")}
             </Link>
-            <Link href="#" className="text-lg hover:text-gray-600">
+            <Link href="/policy" className="text-lg hover:text-gray-600">
               {t("privacy-policy")}
             </Link>
           </div>

@@ -101,15 +101,13 @@ export default function ServicesPage() {
                 <p className="text-md md:text-lg font-semibold italic">{t("service-1-conclusion")}</p>
               </div>
             </div>
-            <div className="flex flex-1">
-              <Image
-                src="/home-page-hero.jpg"
-                alt="home-page-hero-image"
-                width={680}
-                height={600}
-                className="w-full h-auto"
-              />
-            </div>
+            <Image
+              src="/home-page-hero.jpg"
+              alt="home-page-hero-image"
+              width={680}
+              height={600}
+              className="max-w-145 h-135"
+            />
           </div>
           <div className="flex flex-col-reverse gap-6 max-w-6xl md:flex md:flex-row">
             <div className="flex flex-col flex-1 items-start justify-center gap-6">
@@ -128,15 +126,13 @@ export default function ServicesPage() {
                 <p className="text-md md:text-lg font-semibold italic">{t("service-2-conclusion")}</p>
               </div>
             </div>
-            <div className="flex flex-1">
-              <Image
-                src="/home-page-hero.jpg"
-                alt="home-page-hero-image"
-                width={680}
-                height={600}
-                className="w-full h-auto"
-              />
-            </div>
+            <Image
+              src="/home-page-hero.jpg"
+              alt="home-page-hero-image"
+              width={680}
+              height={600}
+              className="max-w-145 h-135"
+            />
           </div>
           <div className="flex flex-col-reverse gap-6 max-w-6xl md:flex md:flex-row-reverse">
             <div className="flex flex-col flex-1 items-start justify-center gap-6">
@@ -155,15 +151,13 @@ export default function ServicesPage() {
                 <p className="text-md md:text-lg font-semibold italic">{t("service-3-conclusion")}</p>
               </div>
             </div>
-            <div className="flex flex-1">
-              <Image
-                src="/home-page-hero.jpg"
-                alt="home-page-hero-image"
-                width={680}
-                height={600}
-                className="w-full h-auto"
-              />
-            </div>
+            <Image
+              src="/home-page-hero.jpg"
+              alt="home-page-hero-image"
+              width={680}
+              height={600}
+              className="max-w-145 h-135"
+            />
           </div>
         </div>
       </section>

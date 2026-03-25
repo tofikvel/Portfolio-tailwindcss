@@ -18,7 +18,7 @@ export default function LocaleSwitcher() {
     return (
         <select
             value={locale}
-            onChange={e => switchLocale(e.target.value)}>
+            onChange={e => switchLocale(e.target.value)} className='cursor-pointer'>
             <option value="en">EN</option>
             <option value="de">DE</option>
         </select>
