@@ -71,7 +71,7 @@ export default function Home() {
       {/* Project results section */}
       <section className="flex justify-center px-6 py-12 mx-auto md:py-24">
         <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:flex md:flex-row">
-          <div className="flex flex-col flex-1 gap-12">
+          <div className="flex flex-col flex-1 gap-8">
             <h1 className="text-3xl font-bold md:text-5xl text-center md:text-start">{t("proven-proj-title")}</h1>
             <p className="text-xl text-gray-600 leading-relaxed md:text-xl">
               {t("proven-proj-desc")}

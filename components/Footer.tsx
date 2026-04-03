@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useTranslations } from 'next-intl';
+import Image from "next/image";
 
 export default function Footer() {
   const copyRightDate = new Date().getFullYear();
@@ -12,9 +13,22 @@ export default function Footer() {
         {/* Brand logo and contact details (left side) */}
         <div className="flex flex-col gap-12">
           {/* Brand logo */}
-          <div className="text-center md:text-start">
+          <div className="md:text-start flex justify-center md:justify-start">
             <Link href="/" className="text-xl text-bold md:text-3xl">
-              BAQUE Solutions
+              <Image
+                              className="block md:hidden object-contain"
+                              src="/icons/baque-primary-symbol-white.png"
+                              width={50}
+                              height={50}
+                              alt="brand-nav-logo-small"
+                            />
+                            <Image
+                              className="hidden md:block object-contain"
+                              src="/icons/baque-primary-logo-white.png"
+                              width={200}
+                              height={200}
+                              alt="brand-nav-logo-large"
+                            />
             </Link>
           </div>
           {/* Contact details and social links */}
@@ -43,8 +57,8 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        {/* Additional links (right side) */}
-        <div className="flex flex-row gap-24">
+        {/* Additional links */}
+        <div className="flex flex-row gap-20">
           <div className="flex flex-col space-y-4 md:flex md:flex-col md:space-y-6">
             <h3 className="font-bold text-xl text-bold">{t("navigation-title")}</h3>
             <Link href="/" className="text-lg hover:text-gray-600">

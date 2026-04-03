@@ -14,14 +14,14 @@ export default function Navbar() {
   const t = useTranslations('Navbar');
 
   return (
-    <nav className="shadow-sm">
-      <div className="max-w-6xl mx-auto px-6 md:px-6 flex justify-between items-center h-24">
+    <nav className="shadow-lg">
+      <div className="max-w-6xl mx-auto px-6 md:px-6 flex justify-between items-center h-18 md:h-24">
         <Link href="/" className="text-xl md:text-2xl font-bold">
             <Image
                 className="block md:hidden object-contain"
                 src="/icons/baque-primary-symbol-black.png"
-                width={50}
-                height={50}
+                width={45}
+                height={45}
                 alt="brand-nav-logo-small"
               />
               <Image
