@@ -4,6 +4,7 @@ import { useState } from "react";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { Link } from '../i18n/navigation'
 import { useTranslations } from 'next-intl';
+import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,13 +14,24 @@ export default function Navbar() {
   const t = useTranslations('Navbar');
 
   return (
-    <nav className="bg-sky-50 shadow-sm">
-      <div className="max-w-6xl mx-auto px-6 md:px-6">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <Link href="/" className="text-xl md:text-2xl font-bold">
-            Baque Solutions
-          </Link>
+    <nav className="shadow-sm">
+      <div className="max-w-6xl mx-auto px-6 md:px-6 flex justify-between items-center h-24">
+        <Link href="/" className="text-xl md:text-2xl font-bold">
+            <Image
+                className="block md:hidden object-contain"
+                src="/icons/baque-primary-symbol-black.png"
+                width={50}
+                height={50}
+                alt="brand-nav-logo-small"
+              />
+              <Image
+                className="hidden md:block object-contain"
+                src="/icons/baque-primary-logo-black.png"
+                width={200}
+                height={200}
+                alt="brand-nav-logo-large"
+              />
+        </Link>
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
             <Link href="/" className="md:text-lg md:hover:text-gray-600">
@@ -57,7 +69,6 @@ export default function Navbar() {
                 }`}
             />
           </button>
-        </div>
       </div>
 
       {/* Mobile Menu */}
