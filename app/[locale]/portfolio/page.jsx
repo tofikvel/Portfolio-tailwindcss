@@ -1,9 +1,8 @@
-import Link from "next/link"
-import Image from "next/image"
-import { useTranslations } from 'next-intl';
+import Link from "next/link";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function PortfolioPage() {
-
   const t = useTranslations("Portfolio");
 
   return (
@@ -11,15 +10,12 @@ export default function PortfolioPage() {
       <section className="flex justify-center mx-auto px-6 py-12 md:py-24">
         <div className="flex flex-col gap-8 max-w-6xl">
           <div className="flex flex-col justify-center items-center text-center gap-8">
-            <h1 className="text-xl md:text-4xl text-center max-w-3xl">
-              {t("section-1-title")}
-            </h1>
-            <h2 className="text-lg md:text-2xl max-w-3xl">
-              {t("section-1-subtitle")}
-            </h2>
-            <Link href="#" className="flex flex-row gap-2 items-center">
+            <h1 className="text-xl md:text-4xl text-center max-w-3xl">{t("section-1-title")}</h1>
+            <h2 className="text-lg md:text-2xl max-w-3xl">{t("section-1-subtitle")}</h2>
+            <Link href="/project-1" className="flex flex-row gap-2 items-center">
               <span>
-                <svg aria-hidden="true"
+                <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="36"
                   height="36"
@@ -44,12 +40,8 @@ export default function PortfolioPage() {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">
-                  {t("section-1-block-1-title")}
-                </h3>
-                <p className="text-md md:text-lg leading-relaxed">
-                  {t("section-1-block-1-subtitle")}
-                </p>
+                <h3 className="text-md md:text-xl font-bold">{t("section-1-block-1-title")}</h3>
+                <p className="text-md md:text-lg leading-relaxed">{t("section-1-block-1-subtitle")}</p>
               </div>
             </div>
             <div className="flex flex-col justify-center items-center gap-4 max-w-87.5">
@@ -63,12 +55,8 @@ export default function PortfolioPage() {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">
-                  {t("section-1-block-2-title")}
-                </h3>
-                <p className="text-md md:text-lg leading-relaxed">
-                  {t("section-1-block-2-subtitle")}
-                </p>
+                <h3 className="text-md md:text-xl font-bold">{t("section-1-block-2-title")}</h3>
+                <p className="text-md md:text-lg leading-relaxed">{t("section-1-block-2-subtitle")}</p>
               </div>
             </div>
             <div className="flex flex-col justify-center items-center gap-4 max-w-87.5">
@@ -82,12 +70,8 @@ export default function PortfolioPage() {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">
-                  {t("section-1-block-3-title")}
-                </h3>
-                <p className="text-md md:text-lg leading-relaxed">
-                  {t("section-1-block-3-subtitle")}
-                </p>
+                <h3 className="text-md md:text-xl font-bold">{t("section-1-block-3-title")}</h3>
+                <p className="text-md md:text-lg leading-relaxed">{t("section-1-block-3-subtitle")}</p>
               </div>
             </div>
           </div>
@@ -96,15 +80,12 @@ export default function PortfolioPage() {
       <section className="bg-sky-50 flex justify-center mx-auto px-6 py-12 md:py-24">
         <div className="flex flex-col gap-8 max-w-6xl">
           <div className="flex flex-col justify-center items-center text-center gap-8">
-            <h1 className="text-xl md:text-4xl text-center max-w-3xl">
-              {t("section-2-title")}
-            </h1>
-            <h2 className="text-lg md:text-2xl max-w-3xl">
-              {t("section-2-subtitle")}
-            </h2>
-            <Link href="#" className="flex flex-row gap-2 items-center">
+            <h1 className="text-xl md:text-4xl text-center max-w-3xl">{t("section-2-title")}</h1>
+            <h2 className="text-lg md:text-2xl max-w-3xl">{t("section-2-subtitle")}</h2>
+            <Link href="/project-2" className="flex flex-row gap-2 items-center">
               <span>
-                <svg aria-hidden="true"
+                <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="36"
                   height="36"
@@ -129,12 +110,8 @@ export default function PortfolioPage() {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">
-                  {t("section-2-block-1-title")}
-                </h3>
-                <p className="text-md md:text-lg leading-relaxed">
-                  {t("section-2-block-1-subtitle")}
-                </p>
+                <h3 className="text-md md:text-xl font-bold">{t("section-2-block-1-title")}</h3>
+                <p className="text-md md:text-lg leading-relaxed">{t("section-2-block-1-subtitle")}</p>
               </div>
             </div>
             <div className="flex flex-col justify-center items-center gap-4 max-w-87.5">
@@ -148,12 +125,8 @@ export default function PortfolioPage() {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">
-                  {t("section-2-block-2-title")}
-                </h3>
-                <p className="text-md md:text-lg leading-relaxed">
-                  {t("section-2-block-2-subtitle")}
-                </p>
+                <h3 className="text-md md:text-xl font-bold">{t("section-2-block-2-title")}</h3>
+                <p className="text-md md:text-lg leading-relaxed">{t("section-2-block-2-subtitle")}</p>
               </div>
             </div>
             <div className="flex flex-col justify-center items-center gap-4 max-w-87.5">
@@ -167,12 +140,8 @@ export default function PortfolioPage() {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">
-                  {t("section-2-block-3-title")}
-                </h3>
-                <p className="text-md md:text-lg leading-relaxed">
-                  {t("section-2-block-3-subtitle")}
-                </p>
+                <h3 className="text-md md:text-xl font-bold">{t("section-2-block-3-title")}</h3>
+                <p className="text-md md:text-lg leading-relaxed">{t("section-2-block-3-subtitle")}</p>
               </div>
             </div>
           </div>
@@ -181,15 +150,12 @@ export default function PortfolioPage() {
       <section className="flex justify-center mx-auto px-6 py-12 md:py-24">
         <div className="flex flex-col gap-8 max-w-6xl">
           <div className="flex flex-col justify-center items-center text-center gap-8">
-            <h1 className="text-xl md:text-4xl text-center max-w-3xl">
-              {t("section-3-title")}
-            </h1>
-            <h2 className="text-lg md:text-2xl max-w-3xl">
-              {t("section-3-subtitle")}
-            </h2>
-            <Link href="#" className="flex flex-row gap-2 items-center">
+            <h1 className="text-xl md:text-4xl text-center max-w-3xl">{t("section-3-title")}</h1>
+            <h2 className="text-lg md:text-2xl max-w-3xl">{t("section-3-subtitle")}</h2>
+            <Link href="/project-3" className="flex flex-row gap-2 items-center">
               <span>
-                <svg aria-hidden="true"
+                <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="36"
                   height="36"
@@ -214,12 +180,8 @@ export default function PortfolioPage() {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">
-                  {t("section-3-block-1-title")}
-                </h3>
-                <p className="text-md md:text-lg leading-relaxed">
-                  {t("section-3-block-1-subtitle")}
-                </p>
+                <h3 className="text-md md:text-xl font-bold">{t("section-3-block-1-title")}</h3>
+                <p className="text-md md:text-lg leading-relaxed">{t("section-3-block-1-subtitle")}</p>
               </div>
             </div>
             <div className="flex flex-col justify-center items-center gap-4 max-w-87.5">
@@ -233,12 +195,8 @@ export default function PortfolioPage() {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">
-                  {t("section-3-block-2-title")}
-                </h3>
-                <p className="text-md md:text-lg leading-relaxed">
-                  {t("section-3-block-2-subtitle")}
-                </p>
+                <h3 className="text-md md:text-xl font-bold">{t("section-3-block-2-title")}</h3>
+                <p className="text-md md:text-lg leading-relaxed">{t("section-3-block-2-subtitle")}</p>
               </div>
             </div>
             <div className="flex flex-col justify-center items-center gap-4 max-w-87.5">
@@ -252,17 +210,13 @@ export default function PortfolioPage() {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">
-                  {t("section-3-block-3-title")}
-                </h3>
-                <p className="text-md md:text-lg leading-relaxed">
-                  {t("section-3-block-3-subtitle")}
-                </p>
+                <h3 className="text-md md:text-xl font-bold">{t("section-3-block-3-title")}</h3>
+                <p className="text-md md:text-lg leading-relaxed">{t("section-3-block-3-subtitle")}</p>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-  )
+  );
 }

@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import LocaleSwitcher from "./LocaleSwitcher";
-import { Link } from '../i18n/navigation'
-import { useTranslations } from 'next-intl';
+import { Link } from "../i18n/navigation";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -11,69 +11,73 @@ export default function Navbar() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
-  const t = useTranslations('Navbar');
+  const t = useTranslations("Navbar");
 
   return (
     <nav className="shadow-lg">
       <div className="max-w-6xl mx-auto px-6 md:px-6 flex justify-between items-center h-18 md:h-24">
         <Link href="/" className="text-xl md:text-2xl font-bold">
-            <Image
-                className="block md:hidden object-contain"
-                src="/icons/baque-primary-symbol-black.png"
-                width={45}
-                height={45}
-                alt="brand-nav-logo-small"
-              />
-              <Image
-                className="hidden md:block object-contain"
-                src="/icons/baque-primary-logo-black.png"
-                width={200}
-                height={200}
-                alt="brand-nav-logo-large"
-              />
+          <Image
+            className="block md:hidden object-contain"
+            src="/icons/baque-primary-symbol-black.png"
+            width={45}
+            height={45}
+            alt="brand-nav-logo-small"
+          />
+          <Image
+            className="hidden md:block object-contain"
+            src="/icons/baque-primary-logo-black.png"
+            width={200}
+            height={200}
+            alt="brand-nav-logo-large"
+          />
         </Link>
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6">
-            <Link href="/" className="md:text-lg md:hover:text-gray-600">
-              {t('home')}
-            </Link>
-            <Link href="/about" className="md:text-lg md:hover:text-gray-600">
-              {t('about')}
-            </Link>
-            <Link href="/services" className="md:text-lg md:hover:text-gray-600">
-              {t('services')}
-            </Link>
-            <Link href="/portfolio" className="md:text-lg md:hover:text-gray-600">
-              {t('portfolio')}
-            </Link>
-            <Link href="/contact" className="md:text-lg md:hover:text-gray-600">
-              {t('contact')}
-            </Link>
-            <LocaleSwitcher />
-          </div>
+        {/* Desktop Menu */}
+        <div className="hidden md:flex space-x-6">
+          <Link href="/" className="md:text-lg md:hover:text-gray-600">
+            {t("home")}
+          </Link>
+          <Link href="/about" className="md:text-lg md:hover:text-gray-600">
+            {t("about")}
+          </Link>
+          <Link href="/services" className="md:text-lg md:hover:text-gray-600">
+            {t("services")}
+          </Link>
+          <Link href="/portfolio" className="md:text-lg md:hover:text-gray-600">
+            {t("portfolio")}
+          </Link>
+          <Link href="/contact" className="md:text-lg md:hover:text-gray-600">
+            {t("contact")}
+          </Link>
+          <LocaleSwitcher />
+        </div>
 
-          {/* Hamburger */}
-          <button
-            onClick={toggleMenu}
-            className="relative w-8 h-8 flex flex-col justify-center items-center cursor-pointer md:hidden"
-          >
-            <span
-              className={`absolute h-0.5 w-6 bg-black transition-transform duration-300 ${menuOpen ? "rotate-45" : "-translate-y-2"
-                }`}
-            />
-            <span
-              className={`absolute h-0.5 w-6 bg-black transition-opacity duration-300 ${menuOpen ? "opacity-0" : ""}`}
-            />
-            <span
-              className={`absolute h-0.5 w-6 bg-black transition-transform duration-300 ${menuOpen ? "-rotate-45" : "translate-y-2"
-                }`}
-            />
-          </button>
+        {/* Hamburger */}
+        <button
+          onClick={toggleMenu}
+          className="relative w-8 h-8 flex flex-col justify-center items-center cursor-pointer md:hidden"
+        >
+          <span
+            className={`absolute h-0.5 w-6 bg-black transition-transform duration-300 ${
+              menuOpen ? "rotate-45" : "-translate-y-2"
+            }`}
+          />
+          <span
+            className={`absolute h-0.5 w-6 bg-black transition-opacity duration-300 ${menuOpen ? "opacity-0" : ""}`}
+          />
+          <span
+            className={`absolute h-0.5 w-6 bg-black transition-transform duration-300 ${
+              menuOpen ? "-rotate-45" : "translate-y-2"
+            }`}
+          />
+        </button>
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-60" : "max-h-0"}`}>
-        <div className="flex flex-col px-6 pb-4 text-center space-y-6">
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 flex justify-center ${menuOpen ? "max-h-80" : "max-h-0"}`}
+      >
+        <div className="flex flex-col px-6 py-6 gap-6">
           <Link onClick={closeMenu} href="/">
             Home
           </Link>
@@ -89,6 +93,7 @@ export default function Navbar() {
           <Link onClick={closeMenu} href="/contact">
             Contact
           </Link>
+          <LocaleSwitcher />
         </div>
       </div>
     </nav>
