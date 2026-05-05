@@ -37,7 +37,7 @@
     "wwwm-2-title": "Tailored Solutions",
     "wwwm-2-subtitle": "Every project is different. I take the time to understand your goals and design solutions that fit — no cookie-cutter templates.",
     "wwwm-3-title": "Built for the Long Term",
-    "wwwm-4-subtitle": "From CI/CD pipelines to cost-optimized infrastructure, I build with scalability, maintainability, and the future in mind.",
+    "wwwm-3-subtitle": "From CI/CD pipelines to cost-optimized infrastructure, I build with scalability, maintainability, and the future in mind.",
 
     "my-serv-title": "My Services",
     "my-serv-subtitle": "From cloud infrastructure to deployment automation, I provide tailored tech solutions that help your business grow, scale, and stay secure. Here's how I can support your company:",
@@ -75,7 +75,7 @@
     "wwyg-3-title": "Scalable & Productive Systems",
     "wwyg-3-desc": "I build solutions that grow with your business. From infrastructure to development workflows, everything is designed to maximize team productivity and long-term maintainability."
   },
-  
+
   "Portfolio": {
     "section-1-title": "Event-driven Cloud-native Data Lake for Enterprise Use",
     "section-1-subtitle": "The AWS based storage platform which allows to store, discover and distribute structured and unstructured data at scale.",
@@ -219,7 +219,6 @@
     "data-collection-2-subtitle": "Inquiry by Email, Phone, or Fax",
     "data-collection-2-body": "If you contact us by email, phone, or fax, your inquiry, including all resulting personal data (name, inquiry), will be stored and processed by us for the purpose of handling your request. We do not share this data without your consent. The processing of this data is based on Art. 6(1)(b) GDPR, provided your request is related to the performance of a contract or necessary for pre-contractual measures. In all other cases, processing is based on our legitimate interest in the effective processing of inquiries addressed to us (Art. 6(1)(f) GDPR) or on your consent (Art. 6(1)(a) GDPR) if requested; consent may be revoked at any time. The data you send to us via contact inquiries will remain with us until you request deletion, revoke your consent to storage, or the purpose of data storage ceases to apply (e.g., after completion of your request). Mandatory statutory provisions – in particular statutory retention periods – remain unaffected."
   },
-
 
   "Navbar": {
     "home": "Home",

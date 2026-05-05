@@ -37,7 +37,7 @@
     "wwwm-2-title": "Maßgeschneiderte Lösungen",
     "wwwm-2-subtitle": "Jedes Projekt ist einzigartig. Ich nehme mir die Zeit, Ihre Ziele zu verstehen und passende Lösungen zu entwickeln – keine Standardvorlagen.",
     "wwwm-3-title": "Langfristig gedacht",
-    "wwwm-4-subtitle": "Von CI/CD-Pipelines bis hin zu kostenoptimierter Infrastruktur – ich entwickle mit Blick auf Skalierbarkeit, Wartbarkeit und Zukunftssicherheit.",
+    "wwwm-3-subtitle": "Von CI/CD-Pipelines bis hin zu kostenoptimierter Infrastruktur – ich entwickle mit Blick auf Skalierbarkeit, Wartbarkeit und Zukunftssicherheit.",
 
     "my-serv-title": "Meine Leistungen",
     "my-serv-subtitle": "Von Cloud-Infrastruktur bis hin zu Deployment-Automatisierung biete ich maßgeschneiderte Technologielösungen, die Ihrem Unternehmen helfen, zu wachsen, zu skalieren und sicher zu bleiben.",
@@ -77,7 +77,7 @@
     "wwyg-3-desc": "Ich entwickle Lösungen, die mit Ihrem Unternehmen wachsen. Von der Infrastruktur bis hin zu Entwicklungs-Workflows ist alles darauf ausgelegt, die Produktivität Ihres Teams zu maximieren und langfristige Wartbarkeit sicherzustellen."
   },
 
-"Portfolio": {
+  "Portfolio": {
     "section-1-title": "Event-driven Cloud-native Data Lake für Enterprise",
     "section-1-subtitle": "Die auf AWS basierende Plattform ermöglicht es, strukturierte und unstrukturierte Daten in großem Umfang zu speichern, zu entdecken und zu verteilen.",
     "section-project-link": "Mehr erfahren",

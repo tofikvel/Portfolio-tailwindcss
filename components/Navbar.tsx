@@ -14,7 +14,7 @@ export default function Navbar() {
   const t = useTranslations("Navbar");
 
   return (
-    <nav className="shadow-lg">
+    <nav className="shadow-2xl">
       <div className="max-w-6xl mx-auto px-6 md:px-6 flex justify-between items-center h-18 md:h-24">
         <Link href="/" className="text-xl md:text-2xl font-bold">
           <Image
