@@ -6,212 +6,274 @@ export default function PortfolioPage() {
   const t = useTranslations("Portfolio");
 
   return (
-    <main>
-      <section className="flex justify-center mx-auto px-6 py-12 md:py-24">
-        <div className="flex flex-col gap-8 max-w-6xl">
-          <div className="flex flex-col justify-center items-center text-center gap-8">
-            <h1 className="text-xl md:text-4xl text-center max-w-3xl">{t("section-1-title")}</h1>
-            <h2 className="text-lg md:text-2xl max-w-3xl">{t("section-1-subtitle")}</h2>
-            <Link href="/project-1" className="flex flex-row gap-2 items-center">
-              <span>
-                <svg
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M12 2l.324 .005a10 10 0 1 1 -.648 0l.324 -.005zm.613 5.21a1 1 0 0 0 -1.32 1.497l2.291 2.293h-5.584l-.117 .007a1 1 0 0 0 .117 1.993h5.584l-2.291 2.293l-.083 .094a1 1 0 0 0 1.497 1.32l4 -4l.073 -.082l.064 -.089l.062 -.113l.044 -.11l.03 -.112l.017 -.126l.003 -.075l-.007 -.118l-.029 -.148l-.035 -.105l-.054 -.113l-.071 -.111a1.008 1.008 0 0 0 -.097 -.112l-4 -4z" />
-                </svg>
-              </span>
+    <main className="bg-slate-950 text-white">
+      <section className="px-6 py-28 text-white">
+        <div className="max-w-7xl mx-auto flex flex-col gap-12">
+          {/* HEADER */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+            <div className="space-y-4 max-w-2xl">
+              <h1 className="text-3xl md:text-5xl font-bold">
+                {t("section-1-title")}
+              </h1>
+              <p className="text-gray-400 text-lg">{t("section-1-subtitle")}</p>
+            </div>
+
+            <Link
+              href="/project-1"
+              className="group flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition"
+            >
               <span>{t("section-project-link")}</span>
+              <span className="transition-transform group-hover:translate-x-1">
+                →
+              </span>
             </Link>
           </div>
-          <div className="grid grid-col md:grid-cols-3 gap-6 w-fit md:place-items-start">
-            <div className="flex flex-col gap-4 md:max-w-87.5">
-              <div className="flex">
+
+          {/* FEATURED PROJECT */}
+          <div className="group relative rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="/cloud-infra-aws.jpg"
+              alt=""
+              width={1200}
+              height={600}
+              className="w-full h-[420px] object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+            {/* Content */}
+            <div className="absolute bottom-0 p-8">
+              <h2 className="text-2xl md:text-3xl font-semibold mb-2">
+                {t("section-1-block-1-title")}
+              </h2>
+              <p className="text-gray-300 max-w-xl">
+                {t("section-1-block-1-subtitle")}
+              </p>
+            </div>
+          </div>
+
+          {/* SECONDARY PROJECTS */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* CARD 2 */}
+            <div className="group">
+              <div className="relative rounded-xl overflow-hidden">
                 <Image
-                  src="/home-page-hero.jpg"
-                  alt="home-page-hero-image"
-                  width={380}
-                  height={300}
-                  className="rounded-lg h-75 w-full object-cover"
+                  src="/backend-dev.jpg"
+                  alt=""
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover transition-transform group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">{t("section-1-block-1-title")}</h3>
-                <p className="text-md md:text-lg leading-relaxed">{t("section-1-block-1-subtitle")}</p>
+
+              <div className="mt-4 space-y-2">
+                <h3 className="text-xl font-semibold">
+                  {t("section-1-block-2-title")}
+                </h3>
+                <p className="text-gray-400">
+                  {t("section-1-block-2-subtitle")}
+                </p>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center gap-4 max-w-87.5">
-              <div className="flex">
+
+            {/* CARD 3 */}
+            <div className="group">
+              <div className="relative rounded-xl overflow-hidden">
                 <Image
-                  src="/home-page-hero.jpg"
-                  alt="home-page-hero-image"
-                  width={380}
-                  height={300}
-                  className="rounded-lg h-75 w-full object-cover"
+                  src="/consulting.jpg"
+                  alt=""
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover transition-transform group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">{t("section-1-block-2-title")}</h3>
-                <p className="text-md md:text-lg leading-relaxed">{t("section-1-block-2-subtitle")}</p>
-              </div>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-4 max-w-87.5">
-              <div className="flex">
-                <Image
-                  src="/home-page-hero.jpg"
-                  alt="home-page-hero-image"
-                  width={380}
-                  height={300}
-                  className="rounded-lg h-75 w-full object-cover"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">{t("section-1-block-3-title")}</h3>
-                <p className="text-md md:text-lg leading-relaxed">{t("section-1-block-3-subtitle")}</p>
+
+              <div className="mt-4 space-y-2">
+                <h3 className="text-xl font-semibold">
+                  {t("section-1-block-3-title")}
+                </h3>
+                <p className="text-gray-400">
+                  {t("section-1-block-3-subtitle")}
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-sky-50 flex justify-center mx-auto px-6 py-12 md:py-24">
-        <div className="flex flex-col gap-8 max-w-6xl">
-          <div className="flex flex-col justify-center items-center text-center gap-8">
-            <h1 className="text-xl md:text-4xl text-center max-w-3xl">{t("section-2-title")}</h1>
-            <h2 className="text-lg md:text-2xl max-w-3xl">{t("section-2-subtitle")}</h2>
-            <Link href="/project-2" className="flex flex-row gap-2 items-center">
-              <span>
-                <svg
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M12 2l.324 .005a10 10 0 1 1 -.648 0l.324 -.005zm.613 5.21a1 1 0 0 0 -1.32 1.497l2.291 2.293h-5.584l-.117 .007a1 1 0 0 0 .117 1.993h5.584l-2.291 2.293l-.083 .094a1 1 0 0 0 1.497 1.32l4 -4l.073 -.082l.064 -.089l.062 -.113l.044 -.11l.03 -.112l.017 -.126l.003 -.075l-.007 -.118l-.029 -.148l-.035 -.105l-.054 -.113l-.071 -.111a1.008 1.008 0 0 0 -.097 -.112l-4 -4z" />
-                </svg>
-              </span>
+
+      <section className="bg-slate-900/40 px-6 py-28 text-white">
+        <div className="max-w-7xl mx-auto flex flex-col gap-12">
+          {/* HEADER */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+            <div className="space-y-4 max-w-2xl">
+              <h1 className="text-3xl md:text-5xl font-bold">
+                {t("section-2-title")}
+              </h1>
+              <p className="text-gray-400 text-lg">{t("section-2-subtitle")}</p>
+            </div>
+
+            <Link
+              href="/project-2"
+              className="group flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition"
+            >
               <span>{t("section-project-link")}</span>
+              <span className="transition-transform group-hover:translate-x-1">
+                →
+              </span>
             </Link>
           </div>
-          <div className="grid grid-col md:grid-cols-3 gap-6 w-fit md:place-items-start">
-            <div className="flex flex-col items-center gap-4 md:max-w-87.5">
-              <div className="flex">
+
+          {/* FEATURED */}
+          <div className="group relative rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="/microservice-container.jpg"
+              alt=""
+              width={1200}
+              height={600}
+              className="w-full h-[420px] object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+            <div className="absolute bottom-0 p-8">
+              <h2 className="text-2xl md:text-3xl font-semibold mb-2">
+                {t("section-2-block-1-title")}
+              </h2>
+              <p className="text-gray-300 max-w-xl">
+                {t("section-2-block-1-subtitle")}
+              </p>
+            </div>
+          </div>
+
+          {/* SECONDARY */}
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="group">
+              <div className="relative rounded-xl overflow-hidden">
                 <Image
-                  src="/home-page-hero.jpg"
-                  alt="home-page-hero-image"
-                  width={380}
-                  height={300}
-                  className="rounded-lg h-75 w-full object-cover"
+                  src="/project-2-2.jpg"
+                  alt=""
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover transition-transform group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">{t("section-2-block-1-title")}</h3>
-                <p className="text-md md:text-lg leading-relaxed">{t("section-2-block-1-subtitle")}</p>
+              <div className="mt-4 space-y-2">
+                <h3 className="text-xl font-semibold">
+                  {t("section-2-block-2-title")}
+                </h3>
+                <p className="text-gray-400">
+                  {t("section-2-block-2-subtitle")}
+                </p>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center gap-4 max-w-87.5">
-              <div className="flex">
+
+            <div className="group">
+              <div className="relative rounded-xl overflow-hidden">
                 <Image
-                  src="/home-page-hero.jpg"
-                  alt="home-page-hero-image"
-                  width={380}
-                  height={300}
-                  className="rounded-lg h-75 w-full object-cover"
+                  src="/project-2-3.jpg"
+                  alt=""
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover transition-transform group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">{t("section-2-block-2-title")}</h3>
-                <p className="text-md md:text-lg leading-relaxed">{t("section-2-block-2-subtitle")}</p>
-              </div>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-4 max-w-87.5">
-              <div className="flex">
-                <Image
-                  src="/home-page-hero.jpg"
-                  alt="home-page-hero-image"
-                  width={380}
-                  height={300}
-                  className="rounded-lg h-75 w-full object-cover"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">{t("section-2-block-3-title")}</h3>
-                <p className="text-md md:text-lg leading-relaxed">{t("section-2-block-3-subtitle")}</p>
+              <div className="mt-4 space-y-2">
+                <h3 className="text-xl font-semibold">
+                  {t("section-2-block-3-title")}
+                </h3>
+                <p className="text-gray-400">
+                  {t("section-2-block-3-subtitle")}
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="flex justify-center mx-auto px-6 py-12 md:py-24">
-        <div className="flex flex-col gap-8 max-w-6xl">
-          <div className="flex flex-col justify-center items-center text-center gap-8">
-            <h1 className="text-xl md:text-4xl text-center max-w-3xl">{t("section-3-title")}</h1>
-            <h2 className="text-lg md:text-2xl max-w-3xl">{t("section-3-subtitle")}</h2>
-            <Link href="/project-3" className="flex flex-row gap-2 items-center">
-              <span>
-                <svg
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M12 2l.324 .005a10 10 0 1 1 -.648 0l.324 -.005zm.613 5.21a1 1 0 0 0 -1.32 1.497l2.291 2.293h-5.584l-.117 .007a1 1 0 0 0 .117 1.993h5.584l-2.291 2.293l-.083 .094a1 1 0 0 0 1.497 1.32l4 -4l.073 -.082l.064 -.089l.062 -.113l.044 -.11l.03 -.112l.017 -.126l.003 -.075l-.007 -.118l-.029 -.148l-.035 -.105l-.054 -.113l-.071 -.111a1.008 1.008 0 0 0 -.097 -.112l-4 -4z" />
-                </svg>
+
+      <section className="px-6 py-28 text-white">
+        <div className="max-w-7xl mx-auto flex flex-col gap-12">
+          {/* HEADER */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+            <div className="space-y-4 max-w-2xl">
+              <h1 className="text-3xl md:text-5xl font-bold">
+                {t("section-3-title")}
+              </h1>
+              <p className="text-gray-400 text-lg">{t("section-3-subtitle")}</p>
+            </div>
+
+            <Link
+              href="/project-3"
+              className="group flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition"
+            >
+              <span>{t("section-project-link")}</span>
+              <span className="transition-transform group-hover:translate-x-1">
+                →
               </span>
-              {t("section-project-link")}
             </Link>
           </div>
-          <div className="grid grid-col md:grid-cols-3 gap-6 w-fit md:place-items-start">
-            <div className="flex flex-col items-center gap-4 md:max-w-87.5">
-              <div className="flex">
+
+          {/* FEATURED */}
+          <div className="group relative rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="/project-3-main.jpg"
+              alt=""
+              width={1200}
+              height={600}
+              className="w-full h-[420px] object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+            <div className="absolute bottom-0 p-8">
+              <h2 className="text-2xl md:text-3xl font-semibold mb-2">
+                {t("section-3-block-1-title")}
+              </h2>
+              <p className="text-gray-300 max-w-xl">
+                {t("section-3-block-1-subtitle")}
+              </p>
+            </div>
+          </div>
+
+          {/* SECONDARY */}
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="group">
+              <div className="relative rounded-xl overflow-hidden">
                 <Image
-                  src="/home-page-hero.jpg"
-                  alt="home-page-hero-image"
-                  width={380}
-                  height={300}
-                  className="rounded-lg h-75 w-full object-cover"
+                  src="/project-3-2.jpg"
+                  alt=""
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover transition-transform group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">{t("section-3-block-1-title")}</h3>
-                <p className="text-md md:text-lg leading-relaxed">{t("section-3-block-1-subtitle")}</p>
+              <div className="mt-4 space-y-2">
+                <h3 className="text-xl font-semibold">
+                  {t("section-3-block-2-title")}
+                </h3>
+                <p className="text-gray-400">
+                  {t("section-3-block-2-subtitle")}
+                </p>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center gap-4 max-w-87.5">
-              <div className="flex">
+
+            <div className="group">
+              <div className="relative rounded-xl overflow-hidden">
                 <Image
-                  src="/home-page-hero.jpg"
-                  alt="home-page-hero-image"
-                  width={380}
-                  height={300}
-                  className="rounded-lg h-75 w-full object-cover"
+                  src="/project-3-3.jpg"
+                  alt=""
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover transition-transform group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">{t("section-3-block-2-title")}</h3>
-                <p className="text-md md:text-lg leading-relaxed">{t("section-3-block-2-subtitle")}</p>
-              </div>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-4 max-w-87.5">
-              <div className="flex">
-                <Image
-                  src="/home-page-hero.jpg"
-                  alt="home-page-hero-image"
-                  width={380}
-                  height={300}
-                  className="rounded-lg h-75 w-full object-cover"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-md md:text-xl font-bold">{t("section-3-block-3-title")}</h3>
-                <p className="text-md md:text-lg leading-relaxed">{t("section-3-block-3-subtitle")}</p>
+              <div className="mt-4 space-y-2">
+                <h3 className="text-xl font-semibold">
+                  {t("section-3-block-3-title")}
+                </h3>
+                <p className="text-gray-400">
+                  {t("section-3-block-3-subtitle")}
+                </p>
               </div>
             </div>
           </div>
