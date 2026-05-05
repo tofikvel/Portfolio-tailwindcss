@@ -1,18 +1,27 @@
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 export default function AboutPage() {
-
-  const t = useTranslations('About');
+  const t = useTranslations("About");
 
   return (
-    <main>
-      <section className="min-h-[calc(100svh-64px)] flex justify-center px-6 py-12 mx-auto">
-        <div className="flex flex-col-reverse items-center gap-12 max-w-6xl md:flex md:flex-row">
-          <div className="flex-1 space-y-6">
+    <main className="bg-slate-950 text-white overflow-hidden">
+      <section
+        className="relative min-h-screen flex justify-center px-6 py-20 overflow-hidden"
+        style={{
+          backgroundImage: `
+      radial-gradient(circle at 70% 40%, rgba(16,185,129,0.2), transparent 40%),
+      radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)`,
+        }}
+      >
+        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center">
+          {/* LEFT */}
+          <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-3xl font-bold text-center md:text-5xl md:text-start">Javad Zeynal</h1>
-              <p className="text-gray-600 text-md italic leading-relaxed md:text-xl">
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                Javad Zeynal
+              </h1>
+              <p className="text-lg md:text-xl text-gray-400 italic leading-relaxed max-w-xl">
                 {t("about-pre-desc")}
               </p>
             </div>
@@ -109,27 +118,31 @@ export default function AboutPage() {
                 </svg>
               </span>
             </div>
-            <div className="flex flex-col gap-4">
-              <span className="text-md font-bold md:text-xl">{t("about-title")}</span>
-              <p className="text-md text-gray-60 break-normal md:text-xl leading-relaxed">
+            <div className="space-y-4 pt-4 border-t border-white/10">
+              <span className="text-lg font-semibold text-[#697857]">
+                {t("about-title")}
+              </span>
+              <p className="text-gray-400 leading-relaxed max-w-xl">
                 {t("about-desc")}
               </p>
             </div>
           </div>
           {/* Image (right side) */}
-          <div className="flex-1 space-y-6 w-auto">
+          <div className="relative flex justify-center">
+            <div className="absolute inset-0 blur-3xl opacity-20 bg-emerald-500 rounded-full" />
             <Image
               src="/profile-img.jpg"
-              alt="home-page-hero-image"
-              width={680}
-              height={600}
-              className="rounded-full"
+              alt="profile"
+              width={500}
+              height={500}
+              className="relative rounded-full border border-white/10 shadow-2xl"
             />
           </div>
         </div>
       </section>
+
       {/* Certificates */}
-      <section className="flex justify-center px-6 py-12">
+      <section className="flex justify-center px-6 py-12 border-t border-slate-800 overflow-hidden">
         <div className="max-w-6xl w-full flex flex-col justify-center gap-12 items-center md:flex-row md:justify-between">
           <div className="grid grid-cols-2 gap-x-6 w-fit">
             <Image
