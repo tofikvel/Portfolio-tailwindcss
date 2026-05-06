@@ -37,8 +37,8 @@ export default function Navbar() {
         }
       `}
     >
-      <nav className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="flex justify-between items-center h-18 md:h-22">
+      <nav className="max-w-7xl mx-auto px-6 md:px-0">
+        <div className="flex justify-between items-center h-18 md:h-28">
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-3 group">
             {/* MOBILE LOGO */}
@@ -74,35 +74,35 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8">
             <Link
               href="/"
-              className="text-gray-300 hover:text-white transition text-sm font-medium"
+              className="text-gray-300 hover:text-white transition text-lg font-medium"
             >
               {t("home")}
             </Link>
 
             <Link
               href="/about"
-              className="text-gray-300 hover:text-white transition text-sm font-medium"
+              className="text-gray-300 hover:text-white transition text-lg font-medium"
             >
               {t("about")}
             </Link>
 
             <Link
               href="/services"
-              className="text-gray-300 hover:text-white transition text-sm font-medium"
+              className="text-gray-300 hover:text-white transition text-lg font-medium"
             >
               {t("services")}
             </Link>
 
             <Link
               href="/portfolio"
-              className="text-gray-300 hover:text-white transition text-sm font-medium"
+              className="text-gray-300 hover:text-white transition text-lg font-medium"
             >
               {t("portfolio")}
             </Link>
 
             <Link
               href="/contact"
-              className="text-gray-300 hover:text-white transition text-sm font-medium"
+              className="text-gray-300 hover:text-white transition text-lg font-medium"
             >
               {t("contact")}
             </Link>

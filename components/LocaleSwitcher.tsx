@@ -34,7 +34,7 @@ export default function LocaleSwitcher() {
         focus:text-white
         transition-all duration-200
         cursor-pointer
-        text-sm
+        text-lg
         font-medium
       "
     >
