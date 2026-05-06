@@ -51,9 +51,9 @@ export default function Contact() {
   };
 
   return (
-    <main className="bg-slate-950 text-white">
+    <main className="text-white">
       <section
-        className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden"
+        className="relative bg-gray-950 flex items-center justify-center px-6 py-20 overflow-hidden"
         style={{
           backgroundImage: `
             radial-gradient(circle at 20% 30%, rgba(16,185,129,0.15), transparent 40%),
@@ -61,7 +61,7 @@ export default function Contact() {
           `,
         }}
       >
-        <div className="w-full max-w-2xl">
+        <div className="w-full max-w-2xl m-24">
           {/* Heading */}
           <div className="text-center mb-12 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">

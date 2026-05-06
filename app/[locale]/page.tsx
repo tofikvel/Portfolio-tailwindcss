@@ -7,17 +7,17 @@ export default function Home() {
   const t = useTranslations("Home");
 
   return (
-    <main className="bg-slate-950 text-white overflow-hidden">
+    <main className="text-white overflow-hidden">
       {/* HERO */}
       <section
-        className="relative min-h-[calc(100svh-64px)] flex items-center px-6 py-12 mx-auto"
+        className="bg-gray-950 relative min-h-screen flex items-center px-6 py-12 mx-auto"
         style={{
           backgroundImage: `
       radial-gradient(circle at 70% 40%, rgba(16,185,129,0.2), transparent 40%),
       radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)`,
         }}
       >
-        <div className="max-w-7xl mx-auto w-full flex flex-col-reverse md:flex-row items-center gap-20">
+        <div className="max-w-7xl mx-auto w-full flex flex-col-reverse md:flex-row items-center gap-12 mt-24">
           <div className="flex-1 flex flex-col gap-8 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               {t("hero-title")}
@@ -47,8 +47,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SERVICES */}
-      <section className="relative py-32 px-6 border-t border-slate-800 overflow-hidden">
+      {/* Services section */}
+      <section className="bg-gray-900 relative py-32 px-6 border-t border-slate-800 overflow-hidden">
         {/* subtle background glow */}
         {/* <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,#10b981,transparent_40%)]" /> */}
         <div className="relative max-w-7xl mx-auto flex flex-col gap-24">
@@ -98,16 +98,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROJECTS */}
+      {/* Project results section */}
       <section
-        className="relative min-h-[calc(100svh-64px)] flex items-center px-6 py-20 border-t border-slate-800"
+        className="relative bg-gray-950 flex items-center px-6 py-20 border-t border-slate-800"
         style={{
           backgroundImage: `
       radial-gradient(circle at 70% 40%, rgba(16,185,129,0.2), transparent 40%),
       radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)`,
         }}
       >
-        <div className="relative max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-20">
+        <div className="relative max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
           {/* TEXT */}
           <div className="flex-1 flex flex-col gap-8 text-center md:text-left">
             <h2 className="text-4xl md:text-5xl font-bold leading-tight">

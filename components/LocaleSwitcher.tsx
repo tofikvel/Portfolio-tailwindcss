@@ -16,9 +16,35 @@ export default function LocaleSwitcher() {
   };
 
   return (
-    <select value={locale} onChange={(e) => switchLocale(e.target.value)} className="flex max-w-12 h-8 cursor-pointer">
-      <option value="en">EN</option>
-      <option value="de">DE</option>
+    <select
+      value={locale}
+      onChange={(e) => switchLocale(e.target.value)}
+      className="
+        h-9
+        px-3
+        rounded-lg
+        bg-transparent
+        text-gray-300
+        hover:bg-white/10
+        hover:text-white
+        border border-transparent
+        hover:border-white/10
+        focus:outline-none
+        focus:bg-black/60
+        focus:text-white
+        transition-all duration-200
+        cursor-pointer
+        text-sm
+        font-medium
+      "
+    >
+      <option value="en" className="bg-slate-900 text-white cursor-pointer">
+        EN
+      </option>
+
+      <option value="de" className="bg-slate-900 text-white cursor-pointer">
+        DE
+      </option>
     </select>
   );
 }

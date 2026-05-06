@@ -5,16 +5,16 @@ export default function AboutPage() {
   const t = useTranslations("About");
 
   return (
-    <main className="bg-slate-950 text-white overflow-hidden">
+    <main className="text-white overflow-hidden">
       <section
-        className="relative min-h-screen flex justify-center px-6 py-20 overflow-hidden"
+        className="relative min-h-screen flex justify-center px-6 py-20 bg-gray-950 overflow-hidden"
         style={{
           backgroundImage: `
       radial-gradient(circle at 70% 40%, rgba(16,185,129,0.2), transparent 40%),
       radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)`,
         }}
       >
-        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center mt-24">
           {/* LEFT */}
           <div className="space-y-8">
             <div className="space-y-4">
@@ -142,8 +142,8 @@ export default function AboutPage() {
       </section>
 
       {/* Certificates */}
-      <section className="flex justify-center px-6 py-12 border-t border-slate-800 overflow-hidden">
-        <div className="max-w-6xl w-full flex flex-col justify-center gap-12 items-center md:flex-row md:justify-between">
+      <section className="flex justify-center px-6 py-12 border-t border-slate-800 bg-gray-950 overflow-hidden">
+        <div className="max-w-7xl w-full flex flex-col justify-center gap-12 items-center md:flex-row md:justify-between">
           <div className="grid grid-cols-2 gap-x-6 w-fit">
             <Image
               src="/certs/aws-1.png"

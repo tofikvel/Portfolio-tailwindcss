@@ -6,9 +6,9 @@ export default function PortfolioPage() {
   const t = useTranslations("Portfolio");
 
   return (
-    <main className="bg-slate-950 text-white">
-      <section className="px-6 py-28 text-white">
-        <div className="max-w-7xl mx-auto flex flex-col gap-12">
+    <main className="text-white overflow-hidden">
+      <section className="bg-gray-900/90 px-6 py-28 text-white">
+        <div className="max-w-7xl mx-auto flex flex-col gap-12 mt-10 md:mt-26">
           {/* HEADER */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
@@ -17,7 +17,6 @@ export default function PortfolioPage() {
               </h1>
               <p className="text-gray-400 text-lg">{t("section-1-subtitle")}</p>
             </div>
-
             <Link
               href="/project-1"
               className="group flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition"
@@ -28,7 +27,6 @@ export default function PortfolioPage() {
               </span>
             </Link>
           </div>
-
           {/* FEATURED PROJECT */}
           <div className="group relative rounded-xl overflow-hidden shadow-lg">
             <Image
@@ -50,7 +48,6 @@ export default function PortfolioPage() {
               </p>
             </div>
           </div>
-
           {/* SECONDARY PROJECTS */}
           <div className="grid md:grid-cols-2 gap-6">
             {/* CARD 2 */}
@@ -65,7 +62,6 @@ export default function PortfolioPage() {
                 />
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
-
               <div className="mt-4 space-y-2">
                 <h3 className="text-xl font-semibold">
                   {t("section-1-block-2-title")}
@@ -75,7 +71,6 @@ export default function PortfolioPage() {
                 </p>
               </div>
             </div>
-
             {/* CARD 3 */}
             <div className="group">
               <div className="relative rounded-xl overflow-hidden">
@@ -88,7 +83,6 @@ export default function PortfolioPage() {
                 />
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
-
               <div className="mt-4 space-y-2">
                 <h3 className="text-xl font-semibold">
                   {t("section-1-block-3-title")}
@@ -102,8 +96,8 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <section className="bg-slate-900/40 px-6 py-28 text-white">
-        <div className="max-w-7xl mx-auto flex flex-col gap-12">
+      <section className="bg-gray-950/90 px-6 py-28 text-white">
+        <div className="max-w-6xl mx-auto flex flex-col gap-12">
           {/* HEADER */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
@@ -112,7 +106,6 @@ export default function PortfolioPage() {
               </h1>
               <p className="text-gray-400 text-lg">{t("section-2-subtitle")}</p>
             </div>
-
             <Link
               href="/project-2"
               className="group flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition"
@@ -123,7 +116,6 @@ export default function PortfolioPage() {
               </span>
             </Link>
           </div>
-
           {/* FEATURED */}
           <div className="group relative rounded-xl overflow-hidden shadow-lg">
             <Image
@@ -143,13 +135,12 @@ export default function PortfolioPage() {
               </p>
             </div>
           </div>
-
           {/* SECONDARY */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="group">
               <div className="relative rounded-xl overflow-hidden">
                 <Image
-                  src="/project-2-2.jpg"
+                  src="/devops-modernization.jpg"
                   alt=""
                   width={600}
                   height={400}
@@ -166,11 +157,10 @@ export default function PortfolioPage() {
                 </p>
               </div>
             </div>
-
             <div className="group">
               <div className="relative rounded-xl overflow-hidden">
                 <Image
-                  src="/project-2-3.jpg"
+                  src="/architech-consult.jpg"
                   alt=""
                   width={600}
                   height={400}
@@ -191,8 +181,8 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <section className="px-6 py-28 text-white">
-        <div className="max-w-7xl mx-auto flex flex-col gap-12">
+      <section className="bg-gray-900/90 px-6 py-28 text-white">
+        <div className="max-w-6xl mx-auto flex flex-col gap-12">
           {/* HEADER */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
@@ -216,7 +206,7 @@ export default function PortfolioPage() {
           {/* FEATURED */}
           <div className="group relative rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/project-3-main.jpg"
+              src="/cloud-cost.jpg"
               alt=""
               width={1200}
               height={600}
@@ -238,7 +228,7 @@ export default function PortfolioPage() {
             <div className="group">
               <div className="relative rounded-xl overflow-hidden">
                 <Image
-                  src="/project-3-2.jpg"
+                  src="/scalable-data.jpg"
                   alt=""
                   width={600}
                   height={400}
@@ -259,7 +249,7 @@ export default function PortfolioPage() {
             <div className="group">
               <div className="relative rounded-xl overflow-hidden">
                 <Image
-                  src="/project-3-3.jpg"
+                  src="/arch-advisory.jpg"
                   alt=""
                   width={600}
                   height={400}

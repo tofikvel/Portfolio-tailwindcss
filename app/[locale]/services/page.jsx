@@ -5,9 +5,9 @@ export default function ServicesPage() {
   const t = useTranslations("Services");
 
   return (
-    <main className="bg-slate-950 text-white">
-      <section className="flex justify-center px-6 min-h-[calc(100svh-64px)] bg-[url(/services-bg.jpg)] bg-cover bg-fixed bg-no-repeat bg-mist-900 bg-blend-overlay">
-        <div className="mx-auto flex flex-1 flex-col max-w-6xl">
+    <main className="text-white">
+      <section className="flex justify-center px-6 min-h-screen bg-[url(/services-bg.jpg)] bg-cover bg-fixed bg-no-repeat bg-mist-900 bg-blend-overlay">
+        <div className="mx-auto flex flex-1 flex-col max-w-7xl mt-24">
           <div className="flex flex-1 flex-col items-center justify-center text-center gap-6 md:gap-8">
             <h1 className="text-3xl font-bold text-white md:text-7xl">
               {t("hero-title")}
@@ -38,8 +38,8 @@ export default function ServicesPage() {
       </section>
       {/* Why work with me section */}
       <section
+        className="bg-gray-900 relative flex items-center justify-center px-6 py-32 overflow-hidden"
         id="why-work-with-me"
-        className="relative min-h-screen flex items-center justify-center px-6 py-24 overflow-hidden"
         style={{
           backgroundImage: `
       radial-gradient(circle at 20% 30%, rgba(16,185,129,0.12), transparent 40%),
@@ -60,7 +60,7 @@ export default function ServicesPage() {
           {/* CARDS */}
           <div className="grid md:grid-cols-3 gap-8">
             {/* CARD 1 */}
-            <div className="group p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:bg-white/10 transition">
+            <div className="group p-8 rounded-2xl bg-white/5 border border-[#697857] backdrop-blur-xl hover:bg-white/10 transition">
               <div className="flex flex-col items-start gap-6">
                 <div className="p-4 rounded-xl bg-emerald-500/10 text-emerald-400">
                   <svg
@@ -86,7 +86,7 @@ export default function ServicesPage() {
               </div>
             </div>
             {/* CARD 2 */}
-            <div className="group p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:bg-white/10 transition">
+            <div className="group p-8 rounded-2xl bg-white/5 border border-[#697857] backdrop-blur-xl hover:bg-white/10 transition">
               <div className="flex flex-col items-start gap-6">
                 <div className="p-4 rounded-xl bg-cyan-500/10 text-cyan-400">
                   <svg
@@ -112,7 +112,7 @@ export default function ServicesPage() {
               </div>
             </div>
             {/* CARD 3 */}
-            <div className="group p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:bg-white/10 transition">
+            <div className="group p-8 rounded-2xl bg-white/5 border border-[#697857] backdrop-blur-xl hover:bg-white/10 transition">
               <div className="flex flex-col items-start gap-6">
                 <div className="p-4 rounded-xl bg-purple-500/10 text-purple-400">
                   <svg
@@ -142,7 +142,7 @@ export default function ServicesPage() {
       </section>
 
       {/* My services section */}
-      <section className="text-white px-6 py-24 border-t border-slate-800 overflow-hidden">
+      <section className="relative bg-gray-950 text-white px-6 py-24 border-t border-slate-800 overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col gap-24">
           {/* HEADER */}
           <div className="text-center space-y-6 max-w-2xl mx-auto">
@@ -153,7 +153,6 @@ export default function ServicesPage() {
               {t("my-serv-subtitle")}
             </p>
           </div>
-
           {/* SERVICE 1 */}
           <div className="grid md:grid-cols-2 gap-12 items-center md:grid-flow-dense">
             {/* IMAGE */}
@@ -167,13 +166,11 @@ export default function ServicesPage() {
                 className="relative"
               />
             </div>
-
             {/* TEXT */}
             <div className="md:order-1 space-y-6">
               <h2 className="text-2xl md:text-3xl font-bold">
                 {t("service-1-title")}
               </h2>
-
               <p className="text-gray-400 leading-relaxed">
                 {t("service-1-desc")}
               </p>
@@ -187,14 +184,12 @@ export default function ServicesPage() {
                   <li>{t("service-1-li-3")}</li>
                   <li>{t("service-1-li-4")}</li>
                 </ul>
-
                 <p className="italic text-gray-300 font-medium pt-2">
                   {t("service-1-conclusion")}
                 </p>
               </div>
             </div>
           </div>
-
           {/* SERVICE 2 */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* IMAGE */}
@@ -208,13 +203,11 @@ export default function ServicesPage() {
                 className="relative"
               />
             </div>
-
             {/* TEXT */}
             <div className="md:order-2 space-y-6">
               <h2 className="text-2xl md:text-3xl font-bold">
                 {t("service-2-title")}
               </h2>
-
               <p className="text-gray-400 leading-relaxed">
                 {t("service-2-desc")}
               </p>
@@ -234,7 +227,6 @@ export default function ServicesPage() {
               </div>
             </div>
           </div>
-
           {/* SERVICE 3 */}
           <div className="grid md:grid-cols-2 gap-12 items-center md:grid-flow-dense">
             {/* IMAGE */}
@@ -248,7 +240,6 @@ export default function ServicesPage() {
                 className="relative"
               />
             </div>
-
             {/* TEXT */}
             <div className="md:order-1 space-y-6">
               <h2 className="text-2xl md:text-3xl font-bold">
@@ -277,8 +268,8 @@ export default function ServicesPage() {
       </section>
 
       {/* What will you get section */}
-      <section className="relative bg-gradient-to-b from-slate-800 via-slate-900 to-black px-6 py-24 text-white overflow-hidden">
-        <div className="max-w-6xl mx-auto flex flex-col gap-16">
+      <section className="relative bg-gray-900 px-6 py-24 text-white overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col gap-16">
           {/* HEADER */}
           <h1 className="text-3xl md:text-5xl font-bold text-center max-w-2xl mx-auto">
             {t("wwyg-title")}
@@ -288,18 +279,18 @@ export default function ServicesPage() {
             {[1, 2, 3].map((i) => (
               <div
                 key={i}
-                className="group p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:bg-white/10 transition"
+                className="group p-8 rounded-2xl bg-white/5 border border-[#697857] backdrop-blur-xl hover:bg-white/10 transition"
               >
                 <div className="flex flex-col gap-6 items-start">
                   {/* ICON */}
-                  <div className="p-4 rounded-xl bg-pink-500/10 text-pink-400">
+                  <div className="p-4 rounded-xl bg-[#697857] text-pink-400">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="#ff2d55"
+                      stroke="#fff"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"

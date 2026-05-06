@@ -117,7 +117,9 @@
     "project-body-desc": "For one of my recent projects, I had the opportunity to design and implement a cloud-native, serverless data lake architecture on AWS. The goal was to provide a scalable and flexible platform where structured and unstructured data could be securely ingested, managed, and made available for downstream processing — while ensuring full automation and compliance. At the core of the system, I implemented a RESTful API layer using Amazon API Gateway. This served as the main entry point for interacting with the data lake, enabling consistent and validated operations. Incoming API requests were processed by AWS Lambda functions, which handled data extraction, validation, and storage of metadata in Amazon DynamoDB. The database layer was carefully designed following AWS best practices to ensure both scalability and performance. Using DynamoDB Streams, changes to the database were propagated in real time to a second layer of Lambda functions. These functions orchestrated cloud infrastructure updates based on the current state of the system — ensuring that infrastructure and data evolved in sync. One of the key architectural decisions in this project was to separate the storage layer from the access management layer. While data was stored in Amazon S3, access was managed through S3 Access Points, providing fine-grained control. Access Points were created in the storage account, while IAM roles and users were provisioned in a separate access management account. This design provided strong governance and supported compliance with the client's cybersecurity policies. To support a robust and maintainable platform, additional capabilities were implemented, including S3 lifecycle rules, event notifications, and...",
     "project-conclusion-title": "Want to learn more?",
     "project-conclusion-desc": "If you are considering building a modern data platform or want to modernize your existing data architecture, I’d be happy to discuss how this kind of approach could help your organization. Let's talk!",
-    "project-contact-btn": "GET IN TOUCH"
+    "project-contact-btn": "GET IN TOUCH",
+    "project-pre-cta-title": "Interested in a similar solution?",
+    "project-pre-cta-subtitle": "Let’s discuss your infrastructure, automation, or cloud goals."
   },
   "project-2": {
     "project-title": "From legacy constraints to GitOps-enabled microservices: A journey with AWS ECS and Fargate",
@@ -134,7 +136,9 @@
     "project-body-4-desc": "To solve this, I introduced a GitOps-style approach. Each microservice was given its own logical boundary within the repository. The CI/CD pipeline was redesigned to detect changes at ...",
     "project-conclusion-title": "Want to learn more?",
     "project-conclusion-desc": "If you're working with a legacy ECS system, struggling with deployment bottlenecks, or curious about applying GitOps principles in your cloud environment — I’d be happy to share more. The right architectural improvements don’t always require starting over. Sometimes, they just require the right plan.",
-    "project-contact-btn": "GET IN TOUCH"
+    "project-contact-btn": "GET IN TOUCH",
+    "project-pre-cta-title": "Interested in a similar solution?",
+    "project-pre-cta-subtitle": "Let’s discuss your infrastructure, automation, or cloud goals."
   },
 
   "project-3": {
@@ -150,7 +154,9 @@
     "project-body-3-desc": "By the end of the project, the platform delivered the same insights — but at a fraction of the cost. The monthly bill dropped by more than 65%. And equally important, the team gained a clearer understanding of how their workloads consumed cloud resources. The system became event-driven rather than timer-driven, and reactive instead of always-on. The architecture didn’t change its purpose, but it changed its behavior — and that distinction was critical. What made this project successful wasn’t a radical new technology or wholesale replacement. It was about understanding the architecture in business terms and realigning technical decisions with actual needs. We didn’t chase the newest service or pattern — we just made the current one smarter. If you're facing similar issues — rising costs, unpredictable bills, or unclear usage patterns — you likely don’t need a rebuild. You need a strategy. And sometimes, the most impactful changes come from rethinking what you already have.",
     "project-conclusion-title": "Want to learn more?",
     "project-conclusion-desc": "If your AWS infrastructure has grown faster than your cost controls — you’re not alone. This project didn’t require a rewrite or new platform. It just required a rethink. If you're struggling with rising AWS bills, unclear usage, or legacy data workflows — let’s talk. The best cloud solutions aren’t always new — they’re better versions of what you already have.",
-    "project-contact-btn": "GET IN TOUCH"
+    "project-contact-btn": "GET IN TOUCH",
+    "project-pre-cta-title": "Interested in a similar solution?",
+    "project-pre-cta-subtitle": "Let’s discuss your infrastructure, automation, or cloud goals."
   },
 
   "Imprint": {
