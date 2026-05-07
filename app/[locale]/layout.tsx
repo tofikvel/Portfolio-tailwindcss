@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { NextIntlClientProvider, hasLocale } from 'next-intl';
-import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -12,12 +12,11 @@ export async function generateMetadata({ params }: any) {
   const { locale } = await params;
 
   return {
-    title: locale === 'de'
-      ? 'Baque Lösungen'
-      : 'Baque Solutions',
-    description: locale === 'de'
-      ? 'Cloud & DevOps Dienstleistungen'
-      : 'Cloud & DevOps Services'
+    title: locale === "de" ? "Baque Lösungen" : "Baque Solutions",
+    description:
+      locale === "de"
+        ? "Cloud & DevOps Dienstleistungen"
+        : "Cloud & DevOps Services",
   };
 }
 
@@ -27,7 +26,7 @@ export function generateStaticParams() {
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;

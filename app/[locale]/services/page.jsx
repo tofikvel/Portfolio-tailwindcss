@@ -157,7 +157,7 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center md:grid-flow-dense">
             {/* IMAGE */}
             <div className="md:order-2 relative">
-              <div className="absolute inset-0 bg-emerald-500/10 blur-2xl rounded-full" />
+              <div className="absolute inset-0 bg-emerald-500/10 blur-3xl rounded-full" />
               <Image
                 src="/custom-software-img.png"
                 alt="service 1"
@@ -194,7 +194,7 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* IMAGE */}
             <div className="md:order-1 relative">
-              <div className="absolute inset-0 bg-emerald-500/10 blur-2xl rounded-full" />
+              <div className="absolute inset-0 bg-emerald-500/10 blur-3xl rounded-full" />
               <Image
                 src="/cloud-mig-optimization.png"
                 alt="service 2"
@@ -231,7 +231,7 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center md:grid-flow-dense">
             {/* IMAGE */}
             <div className="md:order-2 relative">
-              <div className="absolute inset-0 bg-emerald-500/10 blur-2xl rounded-full" />
+              <div className="absolute inset-0 bg-emerald-500/10 blur-3xl rounded-full" />
               <Image
                 src="/ci-cd-devops-img.png"
                 alt="service 3"

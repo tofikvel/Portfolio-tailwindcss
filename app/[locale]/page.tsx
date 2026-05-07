@@ -13,7 +13,6 @@ export default function Home() {
         className="bg-gray-950 relative min-h-screen flex items-center px-6 py-12 mx-auto"
         style={{
           backgroundImage: `
-      radial-gradient(circle at 70% 40%, rgba(16,185,129,0.2), transparent 40%),
       radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)`,
         }}
       >
@@ -36,6 +35,7 @@ export default function Home() {
           </div>
           {/* IMAGE */}
           <div className="flex-1 relative">
+            <div className="absolute inset-0 bg-emerald-500/10 blur-3xl rounded-full" />
             <Image
               src="/hero-image.png"
               alt="hero"
@@ -48,12 +48,10 @@ export default function Home() {
       </section>
 
       {/* Services section */}
-      <section className="bg-gray-900 relative py-32 px-6 border-t border-slate-800 overflow-hidden">
-        {/* subtle background glow */}
-        {/* <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,#10b981,transparent_40%)]" /> */}
-        <div className="relative max-w-7xl mx-auto flex flex-col gap-24">
+      <section className="bg-gray-900 relative py-20 md:py-32 px-6 border-t border-slate-800 overflow-hidden">
+        <div className="relative max-w-7xl mx-auto flex flex-col gap-16 md:gap-24">
           {/* HEADER */}
-          <div className="text-center max-w-2xl mx-auto flex flex-col gap-6">
+          <div className="text-center max-w-2xl mx-auto flex flex-col">
             <h2 className="text-4xl md:text-5xl font-bold">
               {t("services-title")}
             </h2>
@@ -99,14 +97,7 @@ export default function Home() {
       </section>
 
       {/* Project results section */}
-      <section
-        className="relative bg-gray-950 flex items-center px-6 py-20 border-t border-slate-800"
-        style={{
-          backgroundImage: `
-      radial-gradient(circle at 70% 40%, rgba(16,185,129,0.2), transparent 40%),
-      radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)`,
-        }}
-      >
+      <section className="relative bg-gray-950 flex items-center px-6 py-20 border-t border-slate-800">
         <div className="relative max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
           {/* TEXT */}
           <div className="flex-1 flex flex-col gap-8 text-center md:text-left">
@@ -131,15 +122,14 @@ export default function Home() {
           {/* VISUAL SIDE */}
           <div className="flex-1 relative">
             {/* MAIN CARD */}
-            <div className="relative rounded-xl overflow-hidden">
-              <Image
-                src="/project-imgage.png"
-                alt="project"
-                width={720}
-                height={620}
-                className="w-full h-auto object-cover"
-              />
-            </div>
+            <div className="absolute inset-0 bg-emerald-500/10 blur-3xl rounded-full" />
+            <Image
+              src="/project-imgage.png"
+              alt="project"
+              width={720}
+              height={620}
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </section>

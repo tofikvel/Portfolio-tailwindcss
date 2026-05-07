@@ -20,7 +20,9 @@
     "contact-cta": "SANFRAGE SENDEN",
     "contact-placeholder-email": "Ihre E-mail",
     "contact-placeholder-name": "Ihr Name",
-    "contact-placeholder-text": "Ihre Nachrich"
+    "contact-placeholder-text": "Ihre Nachrich",
+    "contact-information-inner-title": "Kontaktinformationen",
+    "contact-addess": "Münchener Straße 42A, 10779 Berlin, Deutschland"
   },
   "About": {
     "about-pre-desc": "Ich arbeite mit Kunden in ganz Europa und international – auf Deutsch und Englisch.",

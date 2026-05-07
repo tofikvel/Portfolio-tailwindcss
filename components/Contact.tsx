@@ -53,7 +53,7 @@ export default function Contact() {
   return (
     <main className="text-white">
       <section
-        className="relative bg-gray-950 flex items-center justify-center px-6 py-20 overflow-hidden"
+        className="relative bg-gray-950 flex items-center justify-center px-6 pt-20 pb-20 overflow-hidden"
         style={{
           backgroundImage: `
             radial-gradient(circle at 20% 30%, rgba(16,185,129,0.15), transparent 40%),
@@ -61,7 +61,7 @@ export default function Contact() {
           `,
         }}
       >
-        <div className="w-full max-w-2xl m-24">
+        <div className="w-full max-w-6xl m-24">
           {/* Heading */}
           <div className="text-center mb-12 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">
@@ -72,40 +72,149 @@ export default function Contact() {
             </p>
           </div>
 
-          {/* Form Card */}
-          <div className="p-6 md:p-10 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl">
-            <div className="flex flex-col gap-5">
-              <input
-                type="text"
-                value={form.name}
-                onChange={(e) => setForm({ ...form, name: e.target.value })}
-                placeholder={t("contact-placeholder-name")}
-                className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#697857] focus:ring-1 focus:ring-[#697857] transition placeholder-gray-500"
-              />
+          <div className="grid grid-cols-2 gap-6 p-6 rounded-lg bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl">
+            {/* Contact details */}
+            <div className="flex flex-col justify-between h-full p-6 md:p-10">
+              {/* Heading */}
+              <div className="mb-12">
+                <h3 className="text-3xl font-semibold text-white">
+                  {t("contact-information-inner-title")}
+                </h3>
 
-              <input
-                type="email"
-                value={form.email}
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
-                placeholder={t("contact-placeholder-email")}
-                className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#697857] focus:ring-1 focus:ring-[#697857] transition placeholder-gray-500"
-              />
+                <p className="mt-3 max-w-sm text-gray-400 leading-relaxed">
+                  I usually respond within 24 hours. Feel free to contact me
+                  directly using the information below.
+                </p>
+              </div>
 
-              <textarea
-                rows={5}
-                value={form.message}
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
-                placeholder={t("contact-placeholder-text")}
-                className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#697857] focus:ring-1 focus:ring-[#697857] transition resize-none placeholder-gray-500"
-              />
+              {/* Contact Items */}
+              <div className="space-y-8">
+                {/* Phone */}
+                <div className="flex items-center gap-5">
+                  <div
+                    className="
+          flex h-12 w-12 shrink-0 items-center justify-center
+          rounded-xl border border-white/10 bg-white/[0.03]
+          text-gray-200
+        "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3"
+                      />
+                    </svg>
+                  </div>
 
-              <button
-                onClick={sendEmail}
-                disabled={loading}
-                className="mt-4 bg-[#697857] hover:bg-[#51603E] cursor-pointer px-8 py-4 rounded-lg font-semibold transition shadow-lg shadow-emerald-900/30 disabled:opacity-50"
-              >
-                {loading ? "Sending..." : t("contact-cta")}
-              </button>
+                  <div>
+                    <p className="text-sm text-gray-400">Phone</p>
+                    <p className="text-lg text-gray-100">+49 176 802 289 57</p>
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex items-center gap-5">
+                  <div
+                    className="
+          flex h-12 w-12 shrink-0 items-center justify-center
+          rounded-xl border border-white/10 bg-white/[0.03]
+          text-gray-200
+        "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-400">Email</p>
+                    <p className="text-lg text-gray-100">
+                      info@baque-solutions.com
+                    </p>
+                  </div>
+                </div>
+
+                {/* Address */}
+                <div className="flex items-center gap-5">
+                  <div
+                    className="
+          flex h-12 w-12 shrink-0 items-center justify-center
+          rounded-xl border border-white/10 bg-white/[0.03]
+          text-gray-200
+        "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 12q.825 0 1.413-.587T14 10t-.587-1.412T12 8t-1.412.588T10 10t.588 1.413T12 12m0 7.35q3.05-2.8 4.525-5.087T18 10.2q0-2.725-1.737-4.462T12 4T7.738 5.738T6 10.2q0 1.775 1.475 4.063T12 19.35M12 22q-4.025-3.425-6.012-6.362T4 10.2q0-3.75 2.413-5.975T12 2t5.588 2.225T20 10.2q0 2.5-1.987 5.438T12 22"
+                      />
+                    </svg>
+                  </div>
+                  <div className="">
+                    <p className="text-sm text-gray-400">Office</p>
+                    <p className="max-w-xs text-lg leading-relaxed text-gray-100">
+                      Münchener Straße 42A
+                      <br />
+                      10779 Berlin, Germany
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Form Card */}
+            <div className="rounded-2xl border border-white/5 bg-black/10 p-6 md:p-8">
+              <div className="flex flex-col gap-5">
+                <input
+                  type="text"
+                  value={form.name}
+                  onChange={(e) => setForm({ ...form, name: e.target.value })}
+                  placeholder={t("contact-placeholder-name")}
+                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#697857] focus:ring-1 focus:ring-[#697857] transition placeholder-gray-500"
+                />
+
+                <input
+                  type="email"
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  placeholder={t("contact-placeholder-email")}
+                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#697857] focus:ring-1 focus:ring-[#697857] transition placeholder-gray-500"
+                />
+
+                <textarea
+                  rows={5}
+                  value={form.message}
+                  onChange={(e) =>
+                    setForm({ ...form, message: e.target.value })
+                  }
+                  placeholder={t("contact-placeholder-text")}
+                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#697857] focus:ring-1 focus:ring-[#697857] transition resize-none placeholder-gray-500"
+                />
+
+                <button
+                  onClick={sendEmail}
+                  disabled={loading}
+                  className="mt-4 bg-[#697857] hover:bg-[#51603E] cursor-pointer px-8 py-4 rounded-lg font-semibold transition shadow-lg shadow-emerald-900/30 disabled:opacity-50"
+                >
+                  {loading ? "Sending..." : t("contact-cta")}
+                </button>
+              </div>
             </div>
           </div>
         </div>

@@ -4,9 +4,12 @@ import { useEffect, useState } from "react";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { Link } from "../i18n/navigation";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -38,7 +41,7 @@ export default function Navbar() {
       `}
     >
       <nav className="max-w-7xl mx-auto px-6 md:px-0">
-        <div className="flex justify-between items-center h-18 md:h-28">
+        <div className="flex justify-between items-center h-18 md:h-24">
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-3 group">
             {/* MOBILE LOGO */}
@@ -74,35 +77,55 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8">
             <Link
               href="/"
-              className="text-gray-300 hover:text-white transition text-lg font-medium"
+              className={
+                pathname === "/" || pathname === "/de"
+                  ? "active text-emerald-500 hover:text-white transition text-lg font-medium"
+                  : "text-gray-300 hover:text-white transition text-lg font-medium"
+              }
             >
               {t("home")}
             </Link>
 
             <Link
               href="/about"
-              className="text-gray-300 hover:text-white transition text-lg font-medium"
+              className={
+                pathname === "/about" || pathname === "/de/about"
+                  ? "active text-emerald-500 hover:text-white transition text-lg font-medium"
+                  : "text-gray-300 hover:text-white transition text-lg font-medium"
+              }
             >
               {t("about")}
             </Link>
 
             <Link
               href="/services"
-              className="text-gray-300 hover:text-white transition text-lg font-medium"
+              className={
+                pathname === "/services" || pathname === "/de/services"
+                  ? "active text-emerald-500 hover:text-white transition text-lg font-medium"
+                  : "text-gray-300 hover:text-white transition text-lg font-medium"
+              }
             >
               {t("services")}
             </Link>
 
             <Link
               href="/portfolio"
-              className="text-gray-300 hover:text-white transition text-lg font-medium"
+              className={
+                pathname === "/portfolio" || pathname === "/de/portfolio"
+                  ? "active text-emerald-500 hover:text-white transition text-lg font-medium"
+                  : "text-gray-300 hover:text-white transition text-lg font-medium"
+              }
             >
               {t("portfolio")}
             </Link>
 
             <Link
               href="/contact"
-              className="text-gray-300 hover:text-white transition text-lg font-medium"
+              className={
+                pathname === "/contact" || pathname === "/de/contact"
+                  ? "active text-emerald-500 hover:text-white transition text-lg font-medium"
+                  : "text-gray-300 hover:text-white transition text-lg font-medium"
+              }
             >
               {t("contact")}
             </Link>

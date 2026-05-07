@@ -20,7 +20,9 @@
     "contact-cta": "SEND INQUIRY",
     "contact-placeholder-email": "Your E-mail",
     "contact-placeholder-name": "Your Full Name",
-    "contact-placeholder-text": "Your comments"
+    "contact-placeholder-text": "Your comments",
+    "contact-information-inner-title": "Contact information",
+    "contact-addess": "Münchener Straße 42A, 10779 Berlin, Germany"
   },
   "About": {
     "about-pre-desc": "Based in Germany. I work with clients across Europe and internationally, in both German and English.",
