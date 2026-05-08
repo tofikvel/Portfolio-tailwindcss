@@ -53,7 +53,7 @@ export default function Contact() {
   return (
     <main className="text-white">
       <section
-        className="relative bg-gray-950 flex items-center justify-center px-6 pt-20 pb-20 overflow-hidden"
+        className="relative bg-gray-950 flex items-center justify-center px-6 pt-20 pb-12 overflow-hidden"
         style={{
           backgroundImage: `
             radial-gradient(circle at 20% 30%, rgba(16,185,129,0.15), transparent 40%),
@@ -61,7 +61,7 @@ export default function Contact() {
           `,
         }}
       >
-        <div className="w-full max-w-6xl m-24">
+        <div className="w-full max-w-6xl">
           {/* Heading */}
           <div className="text-center mb-12 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">
@@ -71,10 +71,9 @@ export default function Contact() {
               {t("contact-subtitle")}
             </p>
           </div>
-
-          <div className="grid grid-cols-2 gap-6 p-6 rounded-lg bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 px-4 py-6 rounded-lg bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl">
             {/* Contact details */}
-            <div className="flex flex-col justify-between h-full p-6 md:p-10">
+            <div className="order-2 lg:order-1 flex flex-col justify-between h-full md:p-10">
               {/* Heading */}
               <div className="mb-12">
                 <h3 className="text-3xl font-semibold text-white">
@@ -82,8 +81,7 @@ export default function Contact() {
                 </h3>
 
                 <p className="mt-3 max-w-sm text-gray-400 leading-relaxed">
-                  I usually respond within 24 hours. Feel free to contact me
-                  directly using the information below.
+                  {t("contact-information-notice")}
                 </p>
               </div>
 
@@ -145,7 +143,6 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
-
                 {/* Address */}
                 <div className="flex items-center gap-5">
                   <div
@@ -170,16 +167,14 @@ export default function Contact() {
                   <div className="">
                     <p className="text-sm text-gray-400">Office</p>
                     <p className="max-w-xs text-lg leading-relaxed text-gray-100">
-                      Münchener Straße 42A
-                      <br />
-                      10779 Berlin, Germany
+                      {t("contact-addess")}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             {/* Form Card */}
-            <div className="rounded-2xl border border-white/5 bg-black/10 p-6 md:p-8">
+            <div className="order-1 lg:order-2 rounded-2xl border border-white/5 bg-black/10 p-4 md:p-8">
               <div className="flex flex-col gap-5">
                 <input
                   type="text"

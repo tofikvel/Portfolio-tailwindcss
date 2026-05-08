@@ -40,8 +40,8 @@ export default function Navbar() {
         }
       `}
     >
-      <nav className="max-w-7xl mx-auto px-6 md:px-0">
-        <div className="flex justify-between items-center h-18 md:h-24">
+      <nav className="max-w-7xl mx-auto">
+        <div className="flex justify-between items-center px-12 h-18 md:h-24">
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-3 group">
             {/* MOBILE LOGO */}
@@ -176,7 +176,7 @@ export default function Navbar() {
         >
           <div
             className="
-              flex flex-col gap-6
+              flex flex-col items-center gap-8
               bg-black/70
               backdrop-blur-xl
               border border-white/10
@@ -219,16 +219,7 @@ export default function Navbar() {
             <Link
               onClick={closeMenu}
               href="/contact"
-              className="
-                bg-[#697857]
-                hover:bg-[#51603E]
-                px-5 py-3
-                rounded-full
-                text-white
-                text-center
-                font-semibold
-                transition
-              "
+              className="text-gray-300 hover:text-white transition"
             >
               {t("contact")}
             </Link>
