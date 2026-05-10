@@ -48,7 +48,7 @@ export default function Contact() {
   return (
     <main>
       <section
-        className="relative pt-28 md:pt-40 pb-40 bg-gray-950 flex items-center justify-center overflow-hidden min-h-screen"
+        className="relative pt-28 px-6 md:pt-40 pb-40 bg-gray-950 flex items-center justify-center overflow-hidden min-h-screen"
         style={{
           backgroundImage: `
             radial-gradient(circle at 20% 30%, rgba(16,185,129,0.15), transparent 40%),
@@ -56,7 +56,7 @@ export default function Contact() {
           `,
         }}
       >
-        <div className="w-full max-w-6xl">
+        <div className="max-w-6xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-12 space-y-4 px-4">
             <h2 className="text-4xl md:text-5xl text-[#F9F9F9] font-bold">{t("contact-title")}</h2>
@@ -66,9 +66,9 @@ export default function Contact() {
             {/* Contact details */}
             <div className="order-2 lg:order-1 flex flex-col justify-between h-full md:p-10">
               {/* Heading */}
-              <div className="mb-12">
-                <h3 className="text-3xl font-semibold text-white">{t("contact-information-inner-title")}</h3>
-                <p className="mt-3 max-w-sm text-gray-400 leading-relaxed">{t("contact-information-notice")}</p>
+              <div className="mb-12 px-4">
+                <h3 className="text-2xl font-semibold text-white">{t("contact-information-inner-title")}</h3>
+                <p className="text-md mt-3 max-w-sm text-gray-400 leading-relaxed">{t("contact-information-notice")}</p>
               </div>
               {/* Contact Items */}
               <div className="space-y-8">
@@ -91,7 +91,7 @@ export default function Contact() {
 
                   <div>
                     <p className="text-sm text-gray-400">Phone</p>
-                    <p className="text-lg text-[#F9F9F9]">+49 176 802 289 57</p>
+                    <p className="text-sm text-[#F9F9F9]">+49 176 802 289 57</p>
                   </div>
                 </div>
 
@@ -113,7 +113,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Email</p>
-                    <p className="text-lg text-[#F9F9F9]">info@baque-solutions.com</p>
+                    <p className="text-sm text-[#F9F9F9]">info@baque-solutions.com</p>
                   </div>
                 </div>
                 {/* Address */}
@@ -134,7 +134,7 @@ export default function Contact() {
                   </div>
                   <div className="">
                     <p className="text-sm text-gray-400">Office</p>
-                    <p className="max-w-xs text-lg leading-relaxed text-[#F9F9F9]">{t("contact-addess")}</p>
+                    <p className="max-w-sm text-md leading-relaxed text-[#F9F9F9]">{t("contact-addess")}</p>
                   </div>
                 </div>
               </div>
