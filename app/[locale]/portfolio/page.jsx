@@ -6,25 +6,21 @@ export default function PortfolioPage() {
   const t = useTranslations("Portfolio");
 
   return (
-    <main className="text-white overflow-hidden">
+    <main>
       <section className="bg-gray-900/90 px-6 py-28 text-white">
-        <div className="max-w-7xl mx-auto flex flex-col gap-12 mt-10 md:mt-26">
+        <div className="max-w-6xl mx-auto flex flex-col gap-12 mt-10 md:mt-26">
           {/* HEADER */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
-              <h1 className="text-3xl md:text-5xl font-bold">
-                {t("section-1-title")}
-              </h1>
+              <h1 className="text-3xl md:text-5xl font-bold text-[#F9F9F9]">{t("section-1-title")}</h1>
               <p className="text-gray-400 text-lg">{t("section-1-subtitle")}</p>
             </div>
             <Link
               href="/project-1"
-              className="group flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition"
+              className="group flex items-center gap-2 text-[#B1C795] hover:text-[#A3B88A] transition"
             >
               <span>{t("section-project-link")}</span>
-              <span className="transition-transform group-hover:translate-x-1">
-                →
-              </span>
+              <span>→</span>
             </Link>
           </div>
           {/* FEATURED PROJECT */}
@@ -40,12 +36,8 @@ export default function PortfolioPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
             {/* Content */}
             <div className="absolute bottom-0 p-8">
-              <h2 className="text-2xl md:text-3xl font-semibold mb-2">
-                {t("section-1-block-1-title")}
-              </h2>
-              <p className="text-gray-300 max-w-xl">
-                {t("section-1-block-1-subtitle")}
-              </p>
+              <h2 className="text-2xl md:text-3xl font-semibold mb-2 text-[#F9F9F9]">{t("section-1-block-1-title")}</h2>
+              <p className="text-gray-300 max-w-xl">{t("section-1-block-1-subtitle")}</p>
             </div>
           </div>
           {/* SECONDARY PROJECTS */}
@@ -63,12 +55,8 @@ export default function PortfolioPage() {
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
               <div className="mt-4 space-y-2">
-                <h3 className="text-xl font-semibold">
-                  {t("section-1-block-2-title")}
-                </h3>
-                <p className="text-gray-400">
-                  {t("section-1-block-2-subtitle")}
-                </p>
+                <h3 className="text-xl font-semibold text-[#F9F9F9]">{t("section-1-block-2-title")}</h3>
+                <p className="text-gray-400">{t("section-1-block-2-subtitle")}</p>
               </div>
             </div>
             {/* CARD 3 */}
@@ -84,36 +72,28 @@ export default function PortfolioPage() {
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
               <div className="mt-4 space-y-2">
-                <h3 className="text-xl font-semibold">
-                  {t("section-1-block-3-title")}
-                </h3>
-                <p className="text-gray-400">
-                  {t("section-1-block-3-subtitle")}
-                </p>
+                <h3 className="text-xl font-semibold text-[#F9F9F9]">{t("section-1-block-3-title")}</h3>
+                <p className="text-gray-400">{t("section-1-block-3-subtitle")}</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-gray-950/90 px-6 py-28 text-white">
+      <section className="bg-gray-950/90 px-6 py-28">
         <div className="max-w-6xl mx-auto flex flex-col gap-12">
           {/* HEADER */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
-              <h1 className="text-3xl md:text-5xl font-bold">
-                {t("section-2-title")}
-              </h1>
+              <h1 className="text-3xl md:text-5xl font-bold text-[#F9F9F9]">{t("section-2-title")}</h1>
               <p className="text-gray-400 text-lg">{t("section-2-subtitle")}</p>
             </div>
             <Link
               href="/project-2"
-              className="group flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition"
+              className="group flex items-center gap-2 text-[#B1C795] hover:text-[#A3B88A] transition"
             >
               <span>{t("section-project-link")}</span>
-              <span className="transition-transform group-hover:translate-x-1">
-                →
-              </span>
+              <span>→</span>
             </Link>
           </div>
           {/* FEATURED */}
@@ -127,12 +107,8 @@ export default function PortfolioPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
             <div className="absolute bottom-0 p-8">
-              <h2 className="text-2xl md:text-3xl font-semibold mb-2">
-                {t("section-2-block-1-title")}
-              </h2>
-              <p className="text-gray-300 max-w-xl">
-                {t("section-2-block-1-subtitle")}
-              </p>
+              <h2 className="text-2xl md:text-3xl font-semibold mb-2 text-[#F9F9F9]">{t("section-2-block-1-title")}</h2>
+              <p className="text-gray-300 max-w-xl">{t("section-2-block-1-subtitle")}</p>
             </div>
           </div>
           {/* SECONDARY */}
@@ -149,12 +125,8 @@ export default function PortfolioPage() {
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
               <div className="mt-4 space-y-2">
-                <h3 className="text-xl font-semibold">
-                  {t("section-2-block-2-title")}
-                </h3>
-                <p className="text-gray-400">
-                  {t("section-2-block-2-subtitle")}
-                </p>
+                <h3 className="text-xl font-semibold text-[#F9F9F9]">{t("section-2-block-2-title")}</h3>
+                <p className="text-gray-400">{t("section-2-block-2-subtitle")}</p>
               </div>
             </div>
             <div className="group">
@@ -169,40 +141,30 @@ export default function PortfolioPage() {
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
               <div className="mt-4 space-y-2">
-                <h3 className="text-xl font-semibold">
-                  {t("section-2-block-3-title")}
-                </h3>
-                <p className="text-gray-400">
-                  {t("section-2-block-3-subtitle")}
-                </p>
+                <h3 className="text-xl font-semibold text-[#F9F9F9]">{t("section-2-block-3-title")}</h3>
+                <p className="text-gray-400">{t("section-2-block-3-subtitle")}</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-gray-900/90 px-6 py-28 text-white">
+      <section className="bg-gray-900/90 px-6 py-28">
         <div className="max-w-6xl mx-auto flex flex-col gap-12">
           {/* HEADER */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
-              <h1 className="text-3xl md:text-5xl font-bold">
-                {t("section-3-title")}
-              </h1>
+              <h1 className="text-3xl md:text-5xl font-bold text-[#F9F9F9]">{t("section-3-title")}</h1>
               <p className="text-gray-400 text-lg">{t("section-3-subtitle")}</p>
             </div>
-
             <Link
               href="/project-3"
-              className="group flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition"
+              className="group flex items-center gap-2 text-[#B1C795] hover:text-[#A3B88A] transition"
             >
               <span>{t("section-project-link")}</span>
-              <span className="transition-transform group-hover:translate-x-1">
-                →
-              </span>
+              <span>→</span>
             </Link>
           </div>
-
           {/* FEATURED */}
           <div className="group relative rounded-xl overflow-hidden shadow-lg">
             <Image
@@ -214,12 +176,8 @@ export default function PortfolioPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
             <div className="absolute bottom-0 p-8">
-              <h2 className="text-2xl md:text-3xl font-semibold mb-2">
-                {t("section-3-block-1-title")}
-              </h2>
-              <p className="text-gray-300 max-w-xl">
-                {t("section-3-block-1-subtitle")}
-              </p>
+              <h2 className="text-2xl md:text-3xl font-semibold mb-2 text-[#F9F9F9]">{t("section-3-block-1-title")}</h2>
+              <p className="text-gray-300 max-w-xl">{t("section-3-block-1-subtitle")}</p>
             </div>
           </div>
 
@@ -237,15 +195,10 @@ export default function PortfolioPage() {
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
               <div className="mt-4 space-y-2">
-                <h3 className="text-xl font-semibold">
-                  {t("section-3-block-2-title")}
-                </h3>
-                <p className="text-gray-400">
-                  {t("section-3-block-2-subtitle")}
-                </p>
+                <h3 className="text-xl font-semibold text-[#F9F9F9]">{t("section-3-block-2-title")}</h3>
+                <p className="text-gray-400">{t("section-3-block-2-subtitle")}</p>
               </div>
             </div>
-
             <div className="group">
               <div className="relative rounded-xl overflow-hidden">
                 <Image
@@ -258,12 +211,8 @@ export default function PortfolioPage() {
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
               </div>
               <div className="mt-4 space-y-2">
-                <h3 className="text-xl font-semibold">
-                  {t("section-3-block-3-title")}
-                </h3>
-                <p className="text-gray-400">
-                  {t("section-3-block-3-subtitle")}
-                </p>
+                <h3 className="text-xl font-semibold text-[#F9F9F9]">{t("section-3-block-3-title")}</h3>
+                <p className="text-gray-400">{t("section-3-block-3-subtitle")}</p>
               </div>
             </div>
           </div>

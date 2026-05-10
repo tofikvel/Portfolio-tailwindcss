@@ -9,12 +9,9 @@ import Image from "next/image";
 
 export default function Navbar() {
   const pathname = usePathname();
-
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
   const t = useTranslations("Navbar");
-
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
@@ -28,31 +25,41 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [menuOpen]);
+
   return (
     <header
       className={`
-        fixed top-0 left-0 w-full z-50
-        transition-all duration-300
-        ${
-          scrolled
-            ? "bg-black/50 backdrop-blur-xl border-b border-white/10 shadow-lg"
-            : "bg-transparent"
-        }
-      `}
+    fixed top-0 left-0 z-50 w-full
+    bg-[#1B1B1B]
+    transition-all duration-300
+    ${
+      scrolled
+        ? "md:shadow-lg md:border-b md:border-white/10"
+        : "md:bg-transparent md:backdrop-blur-none md:border-transparent md:shadow-none"
+    }
+  `}
     >
-      <nav className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center px-12 h-18 md:h-24">
+      <nav>
+        <div className="flex justify-between items-center max-w-6xl mx-auto px-6 h-18 md:h-22 md:p-0">
           {/* LOGO */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3== group">
             {/* MOBILE LOGO */}
             <Image
               className="
                 block md:hidden
                 object-contain
-                transition-transform duration-300
-                group-hover:scale-105
               "
-              src="/icons/baque-primary-symbol-white.png"
+              src="/icons/baque-primary-symbol.png"
               width={42}
               height={42}
               alt="brand-nav-logo-small"
@@ -63,12 +70,10 @@ export default function Navbar() {
               className="
                 hidden md:block
                 object-contain
-                transition-transform duration-300
-                group-hover:scale-105
               "
-              src="/icons/baque-primary-logo-white.png"
-              width={170}
-              height={170}
+              src="/icons/brand-logo-olive-white.png"
+              width={150}
+              height={150}
               alt="brand-nav-logo-large"
             />
           </Link>
@@ -79,8 +84,8 @@ export default function Navbar() {
               href="/"
               className={
                 pathname === "/" || pathname === "/de"
-                  ? "active text-emerald-500 hover:text-white transition text-lg font-medium"
-                  : "text-gray-300 hover:text-white transition text-lg font-medium"
+                  ? "active text-[#B1C795] transition text-md"
+                  : "text-[#F9F9F9] hover:text-gray-300 transition text-md"
               }
             >
               {t("home")}
@@ -90,8 +95,8 @@ export default function Navbar() {
               href="/about"
               className={
                 pathname === "/about" || pathname === "/de/about"
-                  ? "active text-emerald-500 hover:text-white transition text-lg font-medium"
-                  : "text-gray-300 hover:text-white transition text-lg font-medium"
+                  ? "active text-[#B1C795] transition text-md"
+                  : "text-[#F9F9F9] hover:text-gray-300 transition text-md"
               }
             >
               {t("about")}
@@ -101,8 +106,8 @@ export default function Navbar() {
               href="/services"
               className={
                 pathname === "/services" || pathname === "/de/services"
-                  ? "active text-emerald-500 hover:text-white transition text-lg font-medium"
-                  : "text-gray-300 hover:text-white transition text-lg font-medium"
+                  ? "active text-[#B1C795] transition text-md"
+                  : "text-[#F9F9F9] hover:text-gray-300 transition text-md"
               }
             >
               {t("services")}
@@ -112,8 +117,8 @@ export default function Navbar() {
               href="/portfolio"
               className={
                 pathname === "/portfolio" || pathname === "/de/portfolio"
-                  ? "active text-emerald-500 hover:text-white transition text-lg font-medium"
-                  : "text-gray-300 hover:text-white transition text-lg font-medium"
+                  ? "active text-[#B1C795] transition text-md"
+                  : "text-[#F9F9F9] hover:text-gray-300 transition text-md"
               }
             >
               {t("portfolio")}
@@ -123,8 +128,8 @@ export default function Navbar() {
               href="/contact"
               className={
                 pathname === "/contact" || pathname === "/de/contact"
-                  ? "active text-emerald-500 hover:text-white transition text-lg font-medium"
-                  : "text-gray-300 hover:text-white transition text-lg font-medium"
+                  ? "active text-[#B1C795] transition text-md"
+                  : "text-[#F9F9F9] hover:text-gray-300 transition text-md"
               }
             >
               {t("contact")}
@@ -170,57 +175,34 @@ export default function Navbar() {
         {/* MOBILE MENU */}
         <div
           className={`
-            md:hidden overflow-hidden transition-all duration-300
-            ${menuOpen ? "max-h-96 pb-6" : "max-h-0"}
+            md:hidden overflow-hidden transition-all duration-300 border border-white/10
+            ${menuOpen ? "max-h-96" : "max-h-0"}
           `}
         >
           <div
             className="
               flex flex-col items-center gap-8
-              bg-black/70
-              backdrop-blur-xl
-              border border-white/10
-              rounded-2xl
+              bg-[#1B1B1B]
               p-6
             "
           >
-            <Link
-              onClick={closeMenu}
-              href="/"
-              className="text-gray-300 hover:text-white transition"
-            >
+            <Link onClick={closeMenu} href="/" className="text-gray-300 hover:text-white transition">
               {t("home")}
             </Link>
 
-            <Link
-              onClick={closeMenu}
-              href="/about"
-              className="text-gray-300 hover:text-white transition"
-            >
+            <Link onClick={closeMenu} href="/about" className="text-gray-300 hover:text-white transition">
               {t("about")}
             </Link>
 
-            <Link
-              onClick={closeMenu}
-              href="/services"
-              className="text-gray-300 hover:text-white transition"
-            >
+            <Link onClick={closeMenu} href="/services" className="text-gray-300 hover:text-white transition">
               {t("services")}
             </Link>
 
-            <Link
-              onClick={closeMenu}
-              href="/portfolio"
-              className="text-gray-300 hover:text-white transition"
-            >
+            <Link onClick={closeMenu} href="/portfolio" className="text-gray-300 hover:text-white transition">
               {t("portfolio")}
             </Link>
 
-            <Link
-              onClick={closeMenu}
-              href="/contact"
-              className="text-gray-300 hover:text-white transition"
-            >
+            <Link onClick={closeMenu} href="/contact" className="text-gray-300 hover:text-white transition">
               {t("contact")}
             </Link>
 

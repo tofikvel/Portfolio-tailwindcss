@@ -5,7 +5,19 @@ import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Plus_Jakarta_Sans, Poppins } from "next/font/google";
 import "./globals.css";
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-heading",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-body",
+});
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function generateMetadata({ params }: any) {
@@ -13,10 +25,7 @@ export async function generateMetadata({ params }: any) {
 
   return {
     title: locale === "de" ? "Baque Lösungen" : "Baque Solutions",
-    description:
-      locale === "de"
-        ? "Cloud & DevOps Dienstleistungen"
-        : "Cloud & DevOps Services",
+    description: locale === "de" ? "Cloud & DevOps Dienstleistungen" : "Cloud & DevOps Services",
   };
 }
 
@@ -40,7 +49,7 @@ export default async function RootLayout({
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
   return (
-    <html lang={locale} className="scroll-smooth">
+    <html lang={locale} className={`${plusJakarta.variable} ${poppins.variable}`}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />

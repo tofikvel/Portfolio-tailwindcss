@@ -16,7 +16,7 @@
   },
   "Contact": {
     "contact-title": "Get in touch today",
-    "contact-subtitle": "I would be happy to discuss your project with you.Please complete the form below or contact me directly.",
+    "contact-subtitle": "I would be happy to discuss your project with you. Please complete the form below or contact me directly.",
     "contact-cta": "SEND INQUIRY",
     "contact-placeholder-email": "Your E-mail",
     "contact-placeholder-name": "Your Full Name",
@@ -245,6 +245,7 @@
     "portfolio": "Portfolio",
     "contact": "Contact",
     "imprint": "Imprint",
-    "privacy-policy": "Privacy Policy"
+    "privacy-policy": "Privacy Policy",
+    "footer-addess": "Münchener Straße 42A, 10779 Berlin, Germany"
   }
 }
