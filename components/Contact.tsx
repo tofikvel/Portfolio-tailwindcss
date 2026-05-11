@@ -67,7 +67,7 @@ export default function Contact() {
             <div className="order-2 lg:order-1 flex flex-col justify-between h-full md:p-10">
               {/* Heading */}
               <div className="mb-12 px-4">
-                <h3 className="text-2xl font-semibold text-white">{t("contact-information-inner-title")}</h3>
+                <h3 className="text-xl font-semibold text-white">{t("contact-information-inner-title")}</h3>
                 <p className="text-md mt-3 max-w-sm text-gray-400 leading-relaxed">{t("contact-information-notice")}</p>
               </div>
               {/* Contact Items */}

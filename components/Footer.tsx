@@ -8,7 +8,7 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="bg-[#1B1B1B] text-[#F9F9F9] px-6 py-12 border-t border-white/10">
+    <footer className="bg-[#1B1B1B] text-[#F9F9F9] px-6 py-6 border-t border-white/10">
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-12 md:flex-row md:justify-between mb-12">
         {/* Brand logo and contact details (left side) */}
         <div className="flex flex-col gap-12 py-6 mb-4">
@@ -25,8 +25,8 @@ export default function Footer() {
               <Image
                 className="hidden md:block object-contain"
                 src="/icons/brand-logo-olive-white.png"
-                width={200}
-                height={200}
+                width={170}
+                height={170}
                 alt="brand-nav-logo-large"
               />
             </Link>

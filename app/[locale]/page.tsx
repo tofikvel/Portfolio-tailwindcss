@@ -32,7 +32,7 @@ export default function Home() {
           {/* IMAGE */}
           <div className="flex-1 relative">
             <div className="absolute inset-0 bg-emerald-500/10 blur-3xl rounded-full" />
-            <Image src="/hero-image.png" alt="hero" width={700} height={600} className="relative w-full h-auto" />
+            <Image src="/landing-hero-img.png" alt="hero" width={800} height={600} className="relative w-full h-auto" />
           </div>
         </div>
       </section>
