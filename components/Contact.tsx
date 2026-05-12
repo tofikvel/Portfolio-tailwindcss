@@ -181,7 +181,7 @@ export default function Contact() {
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   placeholder={t("contact-placeholder-name")}
-                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#697857] focus:ring-1 focus:ring-[#697857] transition placeholder-gray-500"
+                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#B1C795] focus:ring-1 focus:ring-[#697857] transition placeholder-gray-500"
                 />
 
                 <input
@@ -189,7 +189,7 @@ export default function Contact() {
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   placeholder={t("contact-placeholder-email")}
-                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#697857] focus:ring-1 focus:ring-[#697857] transition placeholder-gray-500"
+                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#B1C795] focus:ring-1 focus:ring-[#697857] transition placeholder-gray-500"
                 />
 
                 <textarea
@@ -199,7 +199,7 @@ export default function Contact() {
                     setForm({ ...form, message: e.target.value })
                   }
                   placeholder={t("contact-placeholder-text")}
-                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#697857] focus:ring-1 focus:ring-[#697857] transition resize-none placeholder-gray-500"
+                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#B1C795] focus:ring-1 focus:ring-[#697857] transition resize-none placeholder-gray-500"
                 />
 
                 <button

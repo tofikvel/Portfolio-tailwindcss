@@ -27,7 +27,7 @@ export default function AboutPage() {
                 {t("about-pre-desc")}
               </p>
             </div>
-            <hr className="my-8 border-gray-700" />
+            {/* <hr className="my-8 border-gray-700" /> */}
             {/* Flags */}
             <div className="flex flex-row items-center justify-center gap-6 md:justify-start">
               <span>
@@ -132,14 +132,12 @@ export default function AboutPage() {
 
           {/* RIGHT IMAGE */}
           <div className="relative flex justify-center">
-            <div className="absolute inset-0 blur-3xl opacity-20 bg-emerald-500 rounded-full" />
-
             <Image
               src="/profile-img.jpg"
               alt="profile"
-              width={500}
-              height={500}
-              className="relative rounded-full border border-white/10 shadow-2xl"
+              width={400}
+              height={400}
+              className="relative rounded-sm border border-white/10 shadow-2xl"
             />
           </div>
         </div>
@@ -173,80 +171,133 @@ export default function AboutPage() {
       </section>
 
       {/* CERTIFICATIONS */}
-      <section className="flex justify-center px-6 py-20 bg-gray-950">
-        <div className="max-w-6xl w-full flex flex-col justify-center gap-12 items-center md:flex-row md:justify-between">
-          {/* AWS */}
-          <div className="grid grid-cols-2 gap-x-6 w-fit">
-            <Image
-              src="/certs/aws-1.png"
-              alt="cert-img"
-              width={150}
-              height={150}
-              className="w-[150px] h-[150px] object-contain"
-            />
+      <section className="relative overflow-hidden px-6 py-24 md:py-32">
+        {/* Background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.06),transparent_40%)]" />
 
-            <Image
-              src="/certs/aws-2.png"
-              alt="cert-img"
-              width={150}
-              height={150}
-              className="w-[150px] h-[150px] object-contain"
-            />
+        <div className="relative z-10 mx-auto max-w-7xl">
+          {/* Header */}
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="mt-6 text-4xl font-bold tracking-tight text-white md:text-6xl">
+              Trusted Technologies & Certifications
+            </h2>
 
-            <Image
-              src="/certs/aws-3.png"
-              alt="cert-img"
-              width={150}
-              height={150}
-              className="w-[150px] h-[150px] object-contain col-span-2 justify-self-center"
-            />
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-400">
+              Certified across cloud architecture, DevOps, Kubernetes,
+              infrastructure automation, agile delivery, and enterprise data
+              engineering.
+            </p>
           </div>
 
-          {/* PSM */}
-          <div className="flex justify-center">
-            <Image
-              src="/certs/psm.png"
-              alt="cert-img"
-              width={135}
-              height={135}
-              className="w-[135px] h-[135px] object-contain"
-            />
-          </div>
+          {/* Certifications Grid */}
+          <div className="mt-20 grid gap-8 lg:grid-cols-3">
+            {/* AWS */}
+            <div className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-emerald-500/30 hover:bg-white/[0.05]">
+              <div className="mb-8">
+                <p className="text-sm uppercase tracking-[0.2em] text-emerald-300">
+                  AWS & Cloud
+                </p>
 
-          {/* Kubernetes */}
-          <div className="flex justify-center">
-            <div className="grid grid-cols-2">
-              <Image
-                src="/certs/kubernetes-1.png"
-                alt="cert-img"
-                width={150}
-                height={150}
-                className="w-[150px] h-[150px] object-contain"
-              />
+                <h3 className="mt-4 text-2xl font-semibold text-white">
+                  Enterprise Cloud Architecture
+                </h3>
+              </div>
 
-              <Image
-                src="/certs/kubernetes-2.png"
-                alt="cert-img"
-                width={150}
-                height={150}
-                className="w-[150px] h-[150px] object-contain"
-              />
+              <div className="grid grid-cols-2 gap-4">
+                <Image
+                  src="/certs/aws-1.png"
+                  alt="aws cert"
+                  width={150}
+                  height={150}
+                  className="h-[140px] w-full object-contain"
+                />
 
-              <Image
-                src="/certs/terraform.png"
-                alt="cert-img"
-                width={150}
-                height={150}
-                className="w-[150px] h-[150px] object-contain"
-              />
+                <Image
+                  src="/certs/aws-2.png"
+                  alt="aws cert"
+                  width={150}
+                  height={150}
+                  className="h-[140px] w-full object-contain"
+                />
 
-              <Image
-                src="/certs/databricks.png"
-                alt="cert-img"
-                width={150}
-                height={150}
-                className="w-[150px] h-[150px] object-contain"
-              />
+                <Image
+                  src="/certs/aws-3.png"
+                  alt="aws cert"
+                  width={150}
+                  height={150}
+                  className="col-span-2 mx-auto h-[140px] w-full object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Agile */}
+            <div className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-cyan-500/30 hover:bg-white/[0.05]">
+              <div className="mb-8">
+                <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
+                  Agile Delivery
+                </p>
+
+                <h3 className="mt-4 text-2xl font-semibold text-white">
+                  Scrum & Product Leadership
+                </h3>
+              </div>
+
+              <div className="flex items-center justify-center pt-8">
+                <Image
+                  src="/certs/psm.png"
+                  alt="psm cert"
+                  width={220}
+                  height={220}
+                  className="h-[220px] w-[220px] object-contain"
+                />
+              </div>
+            </div>
+
+            {/* DevOps */}
+            <div className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-purple-500/30 hover:bg-white/[0.05]">
+              <div className="mb-8">
+                <p className="text-sm uppercase tracking-[0.2em] text-purple-300">
+                  DevOps & Automation
+                </p>
+
+                <h3 className="mt-4 text-2xl font-semibold text-white">
+                  Kubernetes, IaC & Data Engineering
+                </h3>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                <Image
+                  src="/certs/kubernetes-1.png"
+                  alt="kubernetes cert"
+                  width={150}
+                  height={150}
+                  className="h-[140px] w-full object-contain"
+                />
+
+                <Image
+                  src="/certs/kubernetes-2.png"
+                  alt="kubernetes cert"
+                  width={150}
+                  height={150}
+                  className="h-[140px] w-full object-contain"
+                />
+
+                <Image
+                  src="/certs/terraform.png"
+                  alt="terraform cert"
+                  width={150}
+                  height={150}
+                  className="h-[140px] w-full object-contain"
+                />
+
+                <Image
+                  src="/certs/databricks.png"
+                  alt="databricks cert"
+                  width={150}
+                  height={150}
+                  className="h-[140px] w-full object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>

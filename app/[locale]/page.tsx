@@ -82,14 +82,14 @@ export default function Home() {
           {/* GRID */}
           <div className="mt-20 grid gap-8 lg:grid-cols-12">
             {/* FEATURED CARD */}
-            <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-10 backdrop-blur-xl transition-all duration-500 hover:border-emerald-500/30 hover:bg-white/[0.05] lg:col-span-7">
+            <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-10 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05] lg:col-span-7">
               {/* Glow */}
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.18),transparent_40%)] opacity-70 transition-opacity duration-500 group-hover:opacity-100" />
 
               <div className="relative z-10 flex h-full flex-col justify-between">
                 {/* TOP */}
                 <div>
-                  <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-300/80">
+                  <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#B1C795]">
                     {t("services-1-subtitle")}
                   </p>
 
@@ -131,11 +131,11 @@ export default function Home() {
             {/* RIGHT SIDE */}
             <div className="flex flex-col gap-8 lg:col-span-5">
               {/* CARD 1 */}
-              <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-emerald-500/30 hover:bg-white/[0.05]">
+              <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
 
                 <div className="relative z-10">
-                  <p className="text-xs font-medium uppercase tracking-[0.2em] text-cyan-300/80">
+                  <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#B1C795]">
                     {t("services-2-subtitle")}
                   </p>
 
@@ -150,11 +150,11 @@ export default function Home() {
               </div>
 
               {/* CARD 2 */}
-              <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-emerald-500/30 hover:bg-white/[0.05]">
+              <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
 
                 <div className="relative z-10">
-                  <p className="text-xs font-medium uppercase tracking-[0.2em] text-cyan-300/80">
+                  <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#B1C795]">
                     {t("services-3-subtitle")}
                   </p>
 
