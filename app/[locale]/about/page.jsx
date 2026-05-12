@@ -5,24 +5,30 @@ export default function AboutPage() {
   const t = useTranslations("About");
 
   return (
-    <main>
+    <main className="bg-gray-950 overflow-hidden">
+      {/* HERO / ABOUT */}
       <section
-        className="relative min-h-screen flex justify-center px-6 py-20 bg-gray-950 overflow-hidden"
+        className="relative flex justify-center px-6 pt-20 pb-40 overflow-hidden"
         style={{
           backgroundImage: `
-      radial-gradient(circle at 70% 40%, rgba(16,185,129,0.2), transparent 40%),
-      radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)`,
+            radial-gradient(circle at 70% 40%, rgba(16,185,129,0.2), transparent 40%),
+            radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)
+          `,
         }}
       >
-        <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center mt-24">
+        <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center mt-24 relative z-10">
           {/* LEFT */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl text-[#F9F9F9] font-bold leading-tight">Javad Zeynal</h1>
-              <p className="text-lg md:text-xl text-gray-400 italic leading-relaxed max-w-xl">{t("about-pre-desc")}</p>
+              <h1 className="text-4xl md:text-6xl text-[#F9F9F9] font-bold leading-tight">
+                Javad Zeynal
+              </h1>
+              <p className="text-lg md:text-lg text-gray-400 italic leading-relaxed max-w-xl">
+                {t("about-pre-desc")}
+              </p>
             </div>
-            <hr className="my-8 border-gray-400" />
-            {/* Flag icons */}
+            <hr className="my-8 border-gray-700" />
+            {/* Flags */}
             <div className="flex flex-row items-center justify-center gap-6 md:justify-start">
               <span>
                 <svg
@@ -115,13 +121,19 @@ export default function AboutPage() {
               </span>
             </div>
             <div className="flex flex-col pt-4 border-t border-white/10 gap-4">
-              <span className="text-lg font-semibold text-[#F9F9F9]">{t("about-title")}</span>
-              <p className="text-gray-400 leading-relaxed max-w-xl">{t("about-desc")}</p>
+              <span className="text-lg font-semibold text-[#F9F9F9]">
+                {t("about-title")}
+              </span>
+              <p className="text-gray-400 leading-relaxed max-w-xl">
+                {t("about-desc")}
+              </p>
             </div>
           </div>
-          {/* Image (right side) */}
+
+          {/* RIGHT IMAGE */}
           <div className="relative flex justify-center">
             <div className="absolute inset-0 blur-3xl opacity-20 bg-emerald-500 rounded-full" />
+
             <Image
               src="/profile-img.jpg"
               alt="profile"
@@ -131,11 +143,39 @@ export default function AboutPage() {
             />
           </div>
         </div>
+
+        {/* WAVY DIVIDER */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+          <svg
+            viewBox="0 0 1440 320"
+            className="relative block w-[calc(100%+1.3px)] h-[180px]"
+            preserveAspectRatio="none"
+          >
+            {/* Back wave */}
+            <path
+              fill="rgba(255,255,255,0.08)"
+              d="M0,224L80,208C160,192,320,160,480,165.3C640,171,800,213,960,224C1120,235,1280,213,1360,202.7L1440,192L1440,320L0,320Z"
+            />
+
+            {/* Middle wave */}
+            <path
+              fill="rgba(255,255,255,0.14)"
+              d="M0,256L60,245.3C120,235,240,213,360,213.3C480,213,600,235,720,240C840,245,960,235,1080,224C1200,213,1320,203,1380,197.3L1440,192L1440,320L0,320Z"
+            />
+
+            {/* Front wave */}
+            <path
+              fill="#030712"
+              d="M0,288L80,282.7C160,277,320,267,480,256C640,245,800,235,960,240C1120,245,1280,267,1360,277.3L1440,288L1440,320L0,320Z"
+            />
+          </svg>
+        </div>
       </section>
 
-      {/* Certificates */}
-      <section className="flex justify-center px-6 py-12 border-t border-slate-800 bg-gray-950 overflow-hidden">
+      {/* CERTIFICATIONS */}
+      <section className="flex justify-center px-6 py-20 bg-gray-950">
         <div className="max-w-6xl w-full flex flex-col justify-center gap-12 items-center md:flex-row md:justify-between">
+          {/* AWS */}
           <div className="grid grid-cols-2 gap-x-6 w-fit">
             <Image
               src="/certs/aws-1.png"
@@ -161,6 +201,8 @@ export default function AboutPage() {
               className="w-[150px] h-[150px] object-contain col-span-2 justify-self-center"
             />
           </div>
+
+          {/* PSM */}
           <div className="flex justify-center">
             <Image
               src="/certs/psm.png"
@@ -170,6 +212,8 @@ export default function AboutPage() {
               className="w-[135px] h-[135px] object-contain"
             />
           </div>
+
+          {/* Kubernetes */}
           <div className="flex justify-center">
             <div className="grid grid-cols-2">
               <Image
@@ -179,6 +223,7 @@ export default function AboutPage() {
                 height={150}
                 className="w-[150px] h-[150px] object-contain"
               />
+
               <Image
                 src="/certs/kubernetes-2.png"
                 alt="cert-img"
@@ -186,6 +231,7 @@ export default function AboutPage() {
                 height={150}
                 className="w-[150px] h-[150px] object-contain"
               />
+
               <Image
                 src="/certs/terraform.png"
                 alt="cert-img"
@@ -193,6 +239,7 @@ export default function AboutPage() {
                 height={150}
                 className="w-[150px] h-[150px] object-contain"
               />
+
               <Image
                 src="/certs/databricks.png"
                 alt="cert-img"
