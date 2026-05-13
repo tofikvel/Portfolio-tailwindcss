@@ -48,7 +48,7 @@ export default function Home() {
             <div className="mt-10 flex justify-center">
               <Link
                 href="/#contactSection"
-                className="rounded-full px-8 py-4 font-semibold text-[#F9F9F9] transition border border-[#B1C795] hover:bg-[#51603E]"
+                className="rounded-full px-8 py-4 font-semibold text-[#F9F9F9] transition duration-300 border border-[#B1C795] hover:bg-[#51603E]"
               >
                 {t("hero-cta")}
               </Link>
@@ -84,7 +84,7 @@ export default function Home() {
             {/* FEATURED CARD */}
             <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-10 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05] lg:col-span-7">
               {/* Glow */}
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.18),transparent_40%)] opacity-70 transition-opacity duration-500 group-hover:opacity-100" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
 
               <div className="relative z-10 flex h-full flex-col justify-between">
                 {/* TOP */}
@@ -173,7 +173,8 @@ export default function Home() {
       </section>
 
       {/* PROJECT RESULTS */}
-      <section className="flex items-center border-t border-white/10 bg-gray-950 px-6 py-26">
+      <section className="relative flex items-center border-t border-white/10 bg-gray-950 px-6 py-26">
+        <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
         <div className="mx-auto flex max-w-6xl flex-col-reverse items-center gap-12 md:flex-row">
           {/* TEXT */}
           <div className="flex flex-1 flex-col gap-8 text-center md:text-left">

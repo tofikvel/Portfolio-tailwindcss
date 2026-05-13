@@ -164,6 +164,7 @@ export default function AboutPage() {
           <div className="mt-20 grid gap-8 lg:grid-cols-3">
             {/* AWS */}
             <div className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
               <div className="mb-8">
                 <p className="text-sm uppercase tracking-[0.2em] text-[#B1C795]">
                   AWS & Cloud
@@ -203,6 +204,7 @@ export default function AboutPage() {
 
             {/* Agile */}
             <div className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
               <div className="mb-8">
                 <p className="text-sm uppercase tracking-[0.2em] text-[#B1C795]">
                   Agile Delivery
@@ -226,6 +228,7 @@ export default function AboutPage() {
 
             {/* DevOps */}
             <div className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
               <div className="mb-8">
                 <p className="text-sm uppercase tracking-[0.2em] text-[#B1C795]">
                   DevOps & Automation

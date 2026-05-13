@@ -132,7 +132,8 @@
     "project-conclusion-desc": "Wenn Sie den Aufbau einer modernen Datenplattform in Erwägung ziehen oder Ihre bestehende Datenarchitektur modernisieren möchten, freue ich mich auf ein Gespräch darüber, wie dieser Ansatz Ihrer Organisation helfen kann. Lassen Sie uns sprechen!",
     "project-contact-btn": "ANFRAGE SENDEN",
     "project-pre-cta-title": "Interessiert an einer ähnlichen Lösung?",
-    "project-pre-cta-subtitle": "Lassen Sie uns über Ihre Infrastruktur-, Automatisierungs- oder Cloud-Ziele sprechen."
+    "project-pre-cta-subtitle": "Lassen Sie uns über Ihre Infrastruktur-, Automatisierungs- oder Cloud-Ziele sprechen.",
+    "back-to-projects-btn": "Zurück zum Portfolio"
   },
   "project-2": {
     "project-title": "Von Legacy zu GitOps-fähigen Microservices: Infrastruktur mit AWS ECS und Fargate",
@@ -151,7 +152,8 @@
     "project-conclusion-desc": "Wenn Sie mit einem veralteten ECS-System arbeiten, unter Deployment-Engpässen leiden oder daran interessiert sind, GitOps-Prinzipien in Ihrer Cloud-Umgebung umzusetzen – ich teile gerne mehr dazu. Die richtigen architektonischen Verbesserungen erfordern nicht immer einen kompletten Neuanfang. Manchmal braucht es nur den richtigen Plan.",
     "project-contact-btn": "ANFRAGE SENDEN",
     "project-pre-cta-title": "Interessiert an einer ähnlichen Lösung?",
-    "project-pre-cta-subtitle": "Lassen Sie uns über Ihre Infrastruktur-, Automatisierungs- oder Cloud-Ziele sprechen."
+    "project-pre-cta-subtitle": "Lassen Sie uns über Ihre Infrastruktur-, Automatisierungs- oder Cloud-Ziele sprechen.",
+    "back-to-projects-btn": "Zurück zum Portfolio"
   },
 
   "project-3": {
@@ -169,7 +171,8 @@
     "project-conclusion-desc": "Wenn Ihre AWS-Infrastruktur schneller gewachsen ist als Ihre Kostenkontrolle – Sie sind nicht allein. Dieses Projekt erforderte keinen kompletten Neuaufbau oder eine neue Plattform. Es brauchte nur ein Umdenken. Wenn Sie mit steigenden AWS-Rechnungen, unklarer Nutzung oder veralteten Datenprozessen zu kämpfen haben – lassen Sie uns sprechen. Die besten Cloud-Lösungen sind nicht immer neu – sondern einfach bessere Versionen dessen, was Sie bereits haben.",
     "project-contact-btn": "ANFRAGE SENDEN",
     "project-pre-cta-title": "Interessiert an einer ähnlichen Lösung?",
-    "project-pre-cta-subtitle": "Lassen Sie uns über Ihre Infrastruktur-, Automatisierungs- oder Cloud-Ziele sprechen."
+    "project-pre-cta-subtitle": "Lassen Sie uns über Ihre Infrastruktur-, Automatisierungs- oder Cloud-Ziele sprechen.",
+    "back-to-projects-btn": "Zurück zum Portfolio"
   },
 
   "Imprint": {

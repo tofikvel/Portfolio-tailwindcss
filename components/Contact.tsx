@@ -56,12 +56,6 @@ export default function Contact() {
       <section
         id="contactSection"
         className="relative pt-28 pb-12 px-6 bg-gray-950 flex items-center justify-center overflow-hidden min-h-screen"
-        style={{
-          backgroundImage: `
-            radial-gradient(circle at 20% 30%, rgba(16,185,129,0.15), transparent 40%),
-            radial-gradient(circle at 80% 70%, rgba(6,182,212,0.1), transparent 40%)
-          `,
-        }}
       >
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
@@ -73,7 +67,8 @@ export default function Contact() {
               {t("contact-subtitle")}
             </p>
           </div>
-          <div className="relative grid grid-cols-1 gap-6 lg:grid-cols-2 px-4 py-6 md:rounded-lg bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl">
+          <div className="relative grid grid-cols-1 gap-6 lg:grid-cols-2 px-4 py-6 md:rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl">
+            <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
             {/* Contact details */}
             <div className="order-2 lg:order-1 flex flex-col justify-between h-full md:p-10">
               {/* Heading */}

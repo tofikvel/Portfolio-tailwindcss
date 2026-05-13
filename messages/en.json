@@ -131,7 +131,8 @@
     "project-conclusion-desc": "If you are considering building a modern data platform or want to modernize your existing data architecture, I’d be happy to discuss how this kind of approach could help your organization. Let's talk!",
     "project-contact-btn": "GET IN TOUCH",
     "project-pre-cta-title": "Interested in a similar solution?",
-    "project-pre-cta-subtitle": "Let’s discuss your infrastructure, automation, or cloud goals."
+    "project-pre-cta-subtitle": "Let’s discuss your infrastructure, automation, or cloud goals.",
+    "back-to-projects-btn": "Back to portfolio"
   },
   "project-2": {
     "project-title": "From legacy constraints to GitOps-enabled microservices: A journey with AWS ECS and Fargate",
@@ -150,7 +151,8 @@
     "project-conclusion-desc": "If you're working with a legacy ECS system, struggling with deployment bottlenecks, or curious about applying GitOps principles in your cloud environment — I’d be happy to share more. The right architectural improvements don’t always require starting over. Sometimes, they just require the right plan.",
     "project-contact-btn": "GET IN TOUCH",
     "project-pre-cta-title": "Interested in a similar solution?",
-    "project-pre-cta-subtitle": "Let’s discuss your infrastructure, automation, or cloud goals."
+    "project-pre-cta-subtitle": "Let’s discuss your infrastructure, automation, or cloud goals.",
+    "back-to-projects-btn": "Back to portfolio"
   },
 
   "project-3": {
@@ -168,7 +170,8 @@
     "project-conclusion-desc": "If your AWS infrastructure has grown faster than your cost controls — you’re not alone. This project didn’t require a rewrite or new platform. It just required a rethink. If you're struggling with rising AWS bills, unclear usage, or legacy data workflows — let’s talk. The best cloud solutions aren’t always new — they’re better versions of what you already have.",
     "project-contact-btn": "GET IN TOUCH",
     "project-pre-cta-title": "Interested in a similar solution?",
-    "project-pre-cta-subtitle": "Let’s discuss your infrastructure, automation, or cloud goals."
+    "project-pre-cta-subtitle": "Let’s discuss your infrastructure, automation, or cloud goals.",
+    "back-to-projects-btn": "Back to portfolio"
   },
 
   "Imprint": {

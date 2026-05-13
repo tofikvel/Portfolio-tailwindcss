@@ -1,12 +1,27 @@
+"use client";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 export default function ServicesPage() {
   const t = useTranslations("Services");
 
+  const scrollButton = () => {
+    const element = document.getElementById("why-work-with-me");
+    if (element) {
+      const navbarHeight = 80;
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <main>
-      <section className="flex justify-center px-6 min-h-screen bg-[url(/services-bg.jpg)] bg-cover bg-fixed bg-no-repeat bg-mist-900 bg-blend-overlay">
+      <section className="flex justify-center px-6 min-h-screen bg-[url(/services-bg.jpg)] bg-cover bg-no-repeat bg-mist-900 bg-blend-overlay">
         <div className="mx-auto flex flex-1 flex-col max-w-6xl mt-24">
           <div className="flex flex-1 flex-col items-center justify-center text-center gap-6 md:gap-8">
             <h1 className="text-3xl font-bold text-[#F9F9F9] md:text-7xl">
@@ -17,7 +32,7 @@ export default function ServicesPage() {
             </p>
           </div>
           <div className="flex justify-center pb-6">
-            <a href="#why-work-with-me" className="cursor-pointer p-3">
+            <button className="cursor-pointer p-3" onClick={scrollButton}>
               <svg
                 className="w-8 h-8 text-[#F9F9F9] animate-bounce"
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,13 +47,13 @@ export default function ServicesPage() {
                   d="m19 9-7 7-7-7"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
       </section>
       {/* Why work with me section */}
       <section
-        className="bg-gray-900 relative flex items-center justify-center px-6 py-32 border-t border-white/10 overflow-hidden"
+        className="bg-gray-950 relative flex items-center justify-center px-6 py-40 border-t border-white/10 overflow-hidden"
         id="why-work-with-me"
         style={{
           backgroundImage: `
@@ -47,9 +62,10 @@ export default function ServicesPage() {
     `,
         }}
       >
+        <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
         <div className="max-w-6xl w-full flex flex-col gap-16">
           {/* HEADER */}
-          <div className="text-center space-y-6 max-w-2xl mx-auto">
+          <div className="text-center space-y-8 max-w-2xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold text-[#F9F9F9]">
               {t("wwwm-title")}
             </h1>
@@ -268,7 +284,8 @@ export default function ServicesPage() {
       </section>
 
       {/* What will you get section */}
-      <section className="bg-gray-900 px-6 py-24 border-t border-white/10 overflow-hidden">
+      <section className="relative bg-gray-900 px-6 py-24 border-t border-white/10 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
         <div className="max-w-6xl mx-auto flex flex-col gap-16">
           {/* HEADER */}
           <h1 className="text-3xl md:text-5xl font-bold text-center max-w-2xl mx-auto text-[#F9F9F9]">
