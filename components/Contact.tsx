@@ -200,7 +200,7 @@ export default function Contact() {
                 <button
                   onClick={sendEmail}
                   disabled={loading}
-                  className="mt-4 bg-[#697857] hover:bg-[#51603E] cursor-pointer px-8 py-4 rounded-sm font-semibold transition disabled:opacity-50"
+                  className="mt-4 cursor-pointer px-8 py-4 rounded-sm font-semibold transition disabled:opacity-50 border border-[#B1C795] bg-[#697857] hover:bg-[#51603E]"
                 >
                   {loading ? "Sending..." : t("contact-cta")}
                 </button>

@@ -50,7 +50,7 @@ export default function Navbar() {
   `}
     >
       <nav>
-        <div className="flex justify-between items-center max-w-6xl mx-auto px-6 h-18 md:h-22 md:p-0">
+        <div className="flex justify-between items-center max-w-6xl mx-auto px-6 h-18 md:h-26 md:p-0">
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-3== group">
             {/* MOBILE LOGO */}
@@ -186,23 +186,43 @@ export default function Navbar() {
               p-6
             "
           >
-            <Link onClick={closeMenu} href="/" className="text-gray-300 hover:text-white transition">
+            <Link
+              onClick={closeMenu}
+              href="/"
+              className="text-gray-300 hover:text-white transition"
+            >
               {t("home")}
             </Link>
 
-            <Link onClick={closeMenu} href="/about" className="text-gray-300 hover:text-white transition">
+            <Link
+              onClick={closeMenu}
+              href="/about"
+              className="text-gray-300 hover:text-white transition"
+            >
               {t("about")}
             </Link>
 
-            <Link onClick={closeMenu} href="/services" className="text-gray-300 hover:text-white transition">
+            <Link
+              onClick={closeMenu}
+              href="/services"
+              className="text-gray-300 hover:text-white transition"
+            >
               {t("services")}
             </Link>
 
-            <Link onClick={closeMenu} href="/portfolio" className="text-gray-300 hover:text-white transition">
+            <Link
+              onClick={closeMenu}
+              href="/portfolio"
+              className="text-gray-300 hover:text-white transition"
+            >
               {t("portfolio")}
             </Link>
 
-            <Link onClick={closeMenu} href="/contact" className="text-gray-300 hover:text-white transition">
+            <Link
+              onClick={closeMenu}
+              href="/contact"
+              className="text-gray-300 hover:text-white transition"
+            >
               {t("contact")}
             </Link>
 
