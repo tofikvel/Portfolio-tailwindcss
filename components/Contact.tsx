@@ -55,7 +55,7 @@ export default function Contact() {
     <main>
       <section
         id="contactSection"
-        className="relative pt-28 px-6 md:pt-40 pb-40 bg-gray-950 flex items-center justify-center overflow-hidden min-h-screen"
+        className="relative pt-28 pb-12 px-6 bg-gray-950 flex items-center justify-center overflow-hidden min-h-screen"
         style={{
           backgroundImage: `
             radial-gradient(circle at 20% 30%, rgba(16,185,129,0.15), transparent 40%),

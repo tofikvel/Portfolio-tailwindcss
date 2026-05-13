@@ -141,37 +141,10 @@ export default function AboutPage() {
             />
           </div>
         </div>
-
-        {/* WAVY DIVIDER */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-          <svg
-            viewBox="0 0 1440 320"
-            className="relative block w-[calc(100%+1.3px)] h-[180px]"
-            preserveAspectRatio="none"
-          >
-            {/* Back wave */}
-            <path
-              fill="rgba(255,255,255,0.08)"
-              d="M0,224L80,208C160,192,320,160,480,165.3C640,171,800,213,960,224C1120,235,1280,213,1360,202.7L1440,192L1440,320L0,320Z"
-            />
-
-            {/* Middle wave */}
-            <path
-              fill="rgba(255,255,255,0.14)"
-              d="M0,256L60,245.3C120,235,240,213,360,213.3C480,213,600,235,720,240C840,245,960,235,1080,224C1200,213,1320,203,1380,197.3L1440,192L1440,320L0,320Z"
-            />
-
-            {/* Front wave */}
-            <path
-              fill="#030712"
-              d="M0,288L80,282.7C160,277,320,267,480,256C640,245,800,235,960,240C1120,245,1280,267,1360,277.3L1440,288L1440,320L0,320Z"
-            />
-          </svg>
-        </div>
       </section>
 
       {/* CERTIFICATIONS */}
-      <section className="relative overflow-hidden px-6 py-24 md:py-32">
+      <section className="relative overflow-hidden px-6 py-24 md:py-32 border-t border-white/10">
         {/* Background */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.06),transparent_40%)]" />
 
@@ -179,22 +152,20 @@ export default function AboutPage() {
           {/* Header */}
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mt-6 text-4xl font-bold tracking-tight text-white md:text-6xl">
-              Trusted Technologies & Certifications
+              {t("certification-section-title")}
             </h2>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-400">
-              Certified across cloud architecture, DevOps, Kubernetes,
-              infrastructure automation, agile delivery, and enterprise data
-              engineering.
+              {t("certification-section-subtitle")}
             </p>
           </div>
 
           {/* Certifications Grid */}
           <div className="mt-20 grid gap-8 lg:grid-cols-3">
             {/* AWS */}
-            <div className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-emerald-500/30 hover:bg-white/[0.05]">
+            <div className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
               <div className="mb-8">
-                <p className="text-sm uppercase tracking-[0.2em] text-emerald-300">
+                <p className="text-sm uppercase tracking-[0.2em] text-[#B1C795]">
                   AWS & Cloud
                 </p>
 
@@ -231,9 +202,9 @@ export default function AboutPage() {
             </div>
 
             {/* Agile */}
-            <div className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-cyan-500/30 hover:bg-white/[0.05]">
+            <div className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
               <div className="mb-8">
-                <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
+                <p className="text-sm uppercase tracking-[0.2em] text-[#B1C795]">
                   Agile Delivery
                 </p>
 
@@ -254,9 +225,9 @@ export default function AboutPage() {
             </div>
 
             {/* DevOps */}
-            <div className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-purple-500/30 hover:bg-white/[0.05]">
+            <div className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
               <div className="mb-8">
-                <p className="text-sm uppercase tracking-[0.2em] text-purple-300">
+                <p className="text-sm uppercase tracking-[0.2em] text-[#B1C795]">
                   DevOps & Automation
                 </p>
 

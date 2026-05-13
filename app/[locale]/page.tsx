@@ -48,7 +48,7 @@ export default function Home() {
             <div className="mt-10 flex justify-center">
               <Link
                 href="/#contactSection"
-                className="rounded-full bg-[#697857] px-8 py-4 font-semibold text-[#F9F9F9] transition hover:bg-[#51603E]"
+                className="rounded-full px-8 py-4 font-semibold text-[#F9F9F9] transition border border-[#B1C795] hover:bg-[#51603E]"
               >
                 {t("hero-cta")}
               </Link>
@@ -58,7 +58,7 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section className="relative overflow-hidden border-t border-slate-800 py-24 md:py-32">
+      <section className="relative overflow-hidden border-t border-white/10 py-24 md:py-32">
         {/* Background Effects */}
         <div className="absolute inset-0 opacity-[0.04] mix-blend-lighten">
           <Image
@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       {/* PROJECT RESULTS */}
-      <section className="flex items-center border-t border-slate-800 bg-gray-950 px-6 py-20">
+      <section className="flex items-center border-t border-white/10 bg-gray-950 px-6 py-26">
         <div className="mx-auto flex max-w-6xl flex-col-reverse items-center gap-12 md:flex-row">
           {/* TEXT */}
           <div className="flex flex-1 flex-col gap-8 text-center md:text-left">
@@ -214,22 +214,5 @@ export default function Home() {
         <Contact />
       </section>
     </main>
-  );
-}
-
-type ServiceCardProps = {
-  subtitle: string;
-  title: string;
-};
-
-function ServiceCard({ subtitle, title }: ServiceCardProps) {
-  return (
-    <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-6 transition hover:border-[#697857]">
-      <p className="mb-2 text-sm uppercase text-gray-400">{subtitle}</p>
-
-      <p className="text-lg font-semibold leading-relaxed text-[#F9F9F9]">
-        {title}
-      </p>
-    </div>
   );
 }

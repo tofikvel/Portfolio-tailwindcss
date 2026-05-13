@@ -21,9 +21,13 @@ export default function ProjectOne() {
         <div className="relative max-w-6xl mx-auto flex flex-col gap-10 mt-10 md:mt-26">
           {/* TITLE */}
           <div className="max-w-3xl space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-[#F9F9F9]">{t("project-title")}</h1>
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-[#F9F9F9]">
+              {t("project-title")}
+            </h1>
 
-            <p className="text-gray-400 text-lg md:text-xl">{t("project-author")}</p>
+            <p className="text-gray-400 text-lg md:text-xl">
+              {t("project-author")}
+            </p>
           </div>
           {/* HERO IMAGE */}
           <div className="relative rounded-lg overflow-hidden shadow-2xl">
@@ -40,43 +44,57 @@ export default function ProjectOne() {
       </section>
 
       {/* CONTENT */}
-      <section className="bg-gray-900/90 px-6 pb-28">
+      <section className="bg-gray-900/90 px-6 pb-28 pt-12 border-t border-white/5">
         <div className="max-w-6xl mx-auto flex flex-col gap-20 mb-10 md:mb-12">
           {/* ABSTRACT */}
           <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#F9F9F9]">{t("project-abstract")}</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#F9F9F9]">
+                {t("project-abstract")}
+              </h2>
             </div>
-            <p className="text-gray-300 text-lg md:text-xl leading-relaxed">{t("project-abstract-intro")}</p>
+            <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
+              {t("project-abstract-intro")}
+            </p>
           </div>
 
           {/* BODY */}
           <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#F9F9F9]">{t("project-body-title")}</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#F9F9F9]">
+                {t("project-body-title")}
+              </h2>
             </div>
 
-            <p className="text-gray-300 text-lg md:text-xl leading-relaxed">{t("project-body-desc")}</p>
+            <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
+              {t("project-body-desc")}
+            </p>
           </div>
 
           {/* CONCLUSION */}
           <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#F9F9F9]">{t("project-conclusion-title")}</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#F9F9F9]">
+                {t("project-conclusion-title")}
+              </h2>
             </div>
 
-            <p className="text-gray-300 text-lg md:text-xl leading-relaxed">{t("project-conclusion-desc")}</p>
+            <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
+              {t("project-conclusion-desc")}
+            </p>
           </div>
 
           {/* CTA */}
           <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="space-y-2 text-center md:text-left">
-              <h3 className="text-2xl font-semibold text-[#F9F9F9]">{t("project-pre-cta-title")}</h3>
+              <h3 className="text-2xl font-semibold text-[#F9F9F9]">
+                {t("project-pre-cta-title")}
+              </h3>
               <p className="text-gray-400">{t("project-pre-cta-subtitle")}</p>
             </div>
             <Link
               href="/contact"
-              className="bg-[#697857] hover:bg-[#51603E] px-8 py-4 rounded-sm font-semibold text-[#F9F9F9] transition"
+              className="rounded-sm px-8 py-4 font-semibold text-[#F9F9F9] transition border border-[#B1C795] hover:bg-[#51603E]"
             >
               {t("project-contact-btn")}
             </Link>

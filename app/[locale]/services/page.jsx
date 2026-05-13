@@ -38,7 +38,7 @@ export default function ServicesPage() {
       </section>
       {/* Why work with me section */}
       <section
-        className="bg-gray-900 relative flex items-center justify-center px-6 py-32 overflow-hidden"
+        className="bg-gray-900 relative flex items-center justify-center px-6 py-32 border-t border-white/10 overflow-hidden"
         id="why-work-with-me"
         style={{
           backgroundImage: `
@@ -142,7 +142,7 @@ export default function ServicesPage() {
       </section>
 
       {/* My services section */}
-      <section className="relative bg-gray-950 px-6 py-24 border-t border-slate-800 overflow-hidden">
+      <section className="relative bg-gray-950 px-6 py-24 border-t border-white/10 overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col gap-24">
           {/* HEADER */}
           <div className="text-center space-y-6 max-w-2xl mx-auto">
@@ -268,7 +268,7 @@ export default function ServicesPage() {
       </section>
 
       {/* What will you get section */}
-      <section className="relative bg-gray-900 px-6 py-24 overflow-hidden">
+      <section className="bg-gray-900 px-6 py-24 border-t border-white/10 overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col gap-16">
           {/* HEADER */}
           <h1 className="text-3xl md:text-5xl font-bold text-center max-w-2xl mx-auto text-[#F9F9F9]">

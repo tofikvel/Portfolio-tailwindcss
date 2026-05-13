@@ -35,7 +35,9 @@
   "About": {
     "about-pre-desc": "Based in Germany. I work with clients across Europe and internationally, in both German and English.",
     "about-title": "About Me",
-    "about-desc": "I am an IT consultant with over 5 years of commercial experience in the Cloud, DevOps, and software development fields, specializing in the use of cloud technologies — particularly AWS — to enhance operational efficiency, scalability, and system reliability. Expertise includes designing and implementing RESTful interfaces, automation tools, and CI/CD pipelines that streamline workflows, improve system performance, and enable fast, secure, and reliable software delivery. Skilled in developing robust software solutions that align with organizational goals as well as building modern, resilient infrastructures that support business growth. My main focus is on helping clients leverage technology to achieve sustainable success through efficient architecture, automation, and development practices."
+    "about-desc": "I am an IT consultant with over 5 years of commercial experience in the Cloud, DevOps, and software development fields, specializing in the use of cloud technologies — particularly AWS — to enhance operational efficiency, scalability, and system reliability. Expertise includes designing and implementing RESTful interfaces, automation tools, and CI/CD pipelines that streamline workflows, improve system performance, and enable fast, secure, and reliable software delivery. Skilled in developing robust software solutions that align with organizational goals as well as building modern, resilient infrastructures that support business growth. My main focus is on helping clients leverage technology to achieve sustainable success through efficient architecture, automation, and development practices.",
+    "certification-section-title": "Trusted Technologies & Certifications",
+    "certification-section-subtitle": "Certified across cloud architecture, DevOps, Kubernetes, infrastructure automation, agile delivery, and enterprise data engineering."
   },
   "Services": {
     "hero-title": "IT and Cloud Consulting",
