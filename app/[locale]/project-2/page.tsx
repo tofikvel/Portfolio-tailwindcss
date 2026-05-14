@@ -116,18 +116,19 @@ export default function ProjectTwo() {
               <p className="text-gray-400">{t("project-pre-cta-subtitle")}</p>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-6">
-              <Link
-                href="/portfolio"
-                className="rounded-sm px-8 py-4 font-semibold text-[#F9F9F9] transition duration-300 border border-white/30 hover:border-white/50"
-              >
-                {t("back-to-projects-btn")}
-              </Link>
+            <div className="flex flex-col items-center md:flex-row gap-6">
               <Link
                 href="/contact"
                 className="rounded-sm px-8 py-4 font-semibold text-[#F9F9F9] transition duration-300 border border-[#B1C795] hover:bg-[#51603E]"
               >
                 {t("project-contact-btn")}
+              </Link>
+              <p className="text-gray-400">or</p>
+              <Link
+                href="/portfolio"
+                className="rounded-sm px-8 py-4 font-semibold text-[#F9F9F9] transition duration-300 border border-white/30 hover:border-white/50"
+              >
+                {t("back-to-projects-btn")}
               </Link>
             </div>
           </div>

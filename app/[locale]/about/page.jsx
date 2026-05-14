@@ -137,7 +137,7 @@ export default function AboutPage() {
               alt="profile"
               width={400}
               height={400}
-              className="relative rounded-sm border border-white/10 shadow-2xl"
+              className="relative rounded-full border border-white/10 shadow-2xl"
             />
           </div>
         </div>

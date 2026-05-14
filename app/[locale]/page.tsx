@@ -14,15 +14,13 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 -z-20">
           <Image
-            src="/landing-page-hero-img.jpg"
+            src="/home-page-hero-bg.jpg"
             alt="hero background"
             fill
             priority
             className="object-cover object-center opacity-80"
           />
         </div>
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 -z-10 bg-gray-950/50" />
 
         {/* Gradient Overlay */}
         <div
@@ -39,6 +37,9 @@ export default function Home() {
           <div className="max-w-4xl text-center">
             <h1 className="text-4xl font-bold leading-tight text-[#F9F9F9] md:text-6xl">
               {t("hero-title")}
+            </h1>
+            <h1 className="text-4xl font-bold leading-tight text-[#B1C795] md:text-6xl">
+              {t("hero-title-2")}
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 md:text-xl">

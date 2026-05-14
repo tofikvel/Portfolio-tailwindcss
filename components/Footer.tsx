@@ -8,10 +8,10 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="bg-[#1B1B1B] text-[#F9F9F9] px-6 py-6 border-t border-white/10">
+    <footer className="bg-[#1B1B1B] text-[#F9F9F9] px-6 py-8 border-t border-white/10">
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-12 md:flex-row md:justify-between mb-12">
         {/* Brand logo and contact details (left side) */}
-        <div className="flex flex-col gap-12 py-6 mb-4">
+        <div className="flex flex-col gap-12">
           {/* Brand logo */}
           <div className="md:text-start flex justify-center md:justify-start">
             <Link href="/" className="text-xl text-bold md:text-3xl">
@@ -32,16 +32,10 @@ export default function Footer() {
             </Link>
           </div>
           {/* Contact details and social links */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             {/* Phone */}
-            <div className="flex items-center gap-5">
-              <div
-                className="
-          flex h-12 w-12 shrink-0 items-center justify-center
-          rounded-xl border border-white/10 bg-white/[0.03]
-          text-gray-200
-        "
-              >
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center text-gray-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -54,7 +48,6 @@ export default function Footer() {
                   />
                 </svg>
               </div>
-
               <div>
                 <p className="text-sm text-gray-400">Phone</p>
                 <p className="text-md text-[#F9F9F9]">+49 176 802 289 57</p>
@@ -62,12 +55,10 @@ export default function Footer() {
             </div>
 
             {/* Email */}
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-3">
               <div
                 className="
-          flex h-12 w-12 shrink-0 items-center justify-center
-          rounded-xl border border-white/10 bg-white/[0.03]
-          text-gray-200
+                flex h-10 w-10 shrink-0 items-center justify-center text-gray-200
         "
               >
                 <svg
@@ -90,12 +81,10 @@ export default function Footer() {
               </div>
             </div>
             {/* Address */}
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-3">
               <div
                 className="
-          flex h-12 w-12 shrink-0 items-center justify-center
-          rounded-xl border border-white/10 bg-white/[0.03]
-          text-gray-200
+                flex h-10 w-10 shrink-0 items-center justify-center text-gray-200
         "
               >
                 <svg
