@@ -23,7 +23,7 @@ export default function ServicesPage() {
     <main>
       <section className="flex justify-center px-6 min-h-screen">
         <Image
-          src="/services-bg.jpg"
+          src="/cloud-cost.jpg"
           alt="Services background"
           fill
           priority
@@ -31,6 +31,7 @@ export default function ServicesPage() {
         />
         {/* OVERLAY */}
         <div className="absolute inset-0 bg-gray-950/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
         <div className="mx-auto flex flex-1 flex-col max-w-6xl mt-24 z-10">
           <div className="flex flex-1 flex-col items-center justify-center text-center gap-6 md:gap-8">

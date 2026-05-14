@@ -54,8 +54,8 @@ export default function Contact() {
   return (
     <main>
       <section
+        className="relative px-6 bg-gray-950 flex items-center justify-center pt-45 pb-32 overflow-hidden"
         id="contactSection"
-        className="relative px-6 bg-gray-950 flex items-center justify-center pt-40 pb-32 overflow-hidden"
       >
         <div className="absolute inset-0 -z-0">
           <Image

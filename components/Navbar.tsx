@@ -52,19 +52,15 @@ export default function Navbar() {
       <nav>
         <div className="flex justify-between items-center max-w-6xl mx-auto px-6 h-18 md:h-26 md:p-0">
           {/* LOGO */}
-          <Link href="/" className="flex items-center gap-3== group">
-            {/* MOBILE LOGO */}
-            <Image
-              className="
-                block md:hidden
-                object-contain
-              "
-              src="/icons/baque-primary-symbol.png"
-              width={42}
-              height={42}
-              alt="brand-nav-logo-small"
-            />
-
+          <button
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+            className="cursor-pointer"
+          >
             {/* DESKTOP LOGO */}
             <Image
               className="
@@ -76,7 +72,7 @@ export default function Navbar() {
               height={150}
               alt="brand-nav-logo-large"
             />
-          </Link>
+          </button>
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-8">

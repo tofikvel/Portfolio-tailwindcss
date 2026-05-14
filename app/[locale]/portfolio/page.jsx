@@ -35,7 +35,7 @@ export default function PortfolioPage() {
               className="w-full h-[420px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
             {/* Content */}
             <div className="absolute bottom-0 p-8">
               <h2 className="text-2xl md:text-3xl font-semibold mb-2 text-[#F9F9F9]">
@@ -121,7 +121,7 @@ export default function PortfolioPage() {
               height={600}
               className="w-full h-[420px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
             <div className="absolute bottom-0 p-8">
               <h2 className="text-2xl md:text-3xl font-semibold mb-2 text-[#F9F9F9]">
                 {t("section-2-block-1-title")}
@@ -198,13 +198,13 @@ export default function PortfolioPage() {
           {/* FEATURED */}
           <div className="group relative rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/cloud-cost.jpg"
+              src="/services-bg.jpg"
               alt=""
               width={1200}
               height={600}
-              className="w-full h-[420px] object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-[420px] object-cover transition-transform duration-500 group-hover:scale-105 opacity-65"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
             <div className="absolute bottom-0 p-8">
               <h2 className="text-2xl md:text-3xl font-semibold mb-2 text-[#F9F9F9]">
                 {t("section-3-block-1-title")}

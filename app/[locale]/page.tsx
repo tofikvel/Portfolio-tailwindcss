@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -8,9 +9,9 @@ export default function Home() {
   const t = useTranslations("Home");
 
   return (
-    <main className="overflow-hidden bg-gray-950 text-[#F9F9F9]">
+    <main className="overflow-hidden">
       {/* HERO */}
-      <section className="relative isolate flex min-h-screen items-center overflow-hidden px-6 py-12">
+      <section className="relative isolate flex items-center overflow-hidden px-6 py-55">
         {/* Background Image */}
         <div className="absolute inset-0 -z-20">
           <Image
@@ -38,7 +39,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold leading-tight text-[#F9F9F9] md:text-6xl">
               {t("hero-title")}
             </h1>
-            <h1 className="text-4xl font-bold leading-tight text-[#] md:text-6xl">
+            <h1 className="text-4xl font-bold leading-tight text-[#B1C795] md:text-6xl">
               {t("hero-title-2")}
             </h1>
 
@@ -47,22 +48,29 @@ export default function Home() {
             </p>
 
             <div className="mt-10 flex justify-center">
-              <Link
-                href="/#contactSection"
-                className="inline-flex items-center gap-3
-                rounded-full
-                border border-white/50
-                bg-white/[0.03]
-                px-8 py-4
-                font-semibold
-                text-white
-                backdrop-blur-xl
-                transition-all duration-300
-                hover:border-[#B1C795]
-                uppercase"
+              <button
+                onClick={() => {
+                  document
+                    .getElementById("contactSection")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="
+    inline-flex items-center gap-3
+    rounded-full
+    border border-white/50
+    bg-white/[0.03]
+    px-8 py-4
+    font-semibold
+    text-white
+    backdrop-blur-xl
+    transition-all duration-300
+    hover:border-[#B1C795]
+    uppercase
+    cursor-pointer
+  "
               >
                 {t("hero-cta")}
-              </Link>
+              </button>
             </div>
           </div>
         </div>
@@ -70,7 +78,7 @@ export default function Home() {
 
       {/* SERVICES */}
       <section
-        className="relative flex flex-col overflow-hidden py-24 space-y-24"
+        className="relative flex flex-col overflow-hidden py-24 space-y-24 bg-gray-950"
         style={{
           backgroundImage: `
             radial-gradient(circle at 70% 40%,rgba(6,182,212,0.1), transparent 40%),
