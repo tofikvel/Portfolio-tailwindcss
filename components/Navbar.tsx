@@ -84,8 +84,8 @@ export default function Navbar() {
               href="/"
               className={
                 pathname === "/" || pathname === "/de"
-                  ? "active text-[#B1C795] transition text-md"
-                  : "text-[#F9F9F9] hover:text-gray-300 transition text-md"
+                  ? "active text-[#D1E3B2] transition text-lg"
+                  : "text-[#F9F9F9] hover:text-gray-300 transition text-lg"
               }
             >
               {t("home")}
@@ -95,8 +95,8 @@ export default function Navbar() {
               href="/about"
               className={
                 pathname === "/about" || pathname === "/de/about"
-                  ? "active text-[#B1C795] transition text-md"
-                  : "text-[#F9F9F9] hover:text-gray-300 transition text-md"
+                  ? "active text-[#D1E3B2] transition text-lg"
+                  : "text-[#F9F9F9] hover:text-gray-300 transition text-lg"
               }
             >
               {t("about")}
@@ -106,8 +106,8 @@ export default function Navbar() {
               href="/services"
               className={
                 pathname === "/services" || pathname === "/de/services"
-                  ? "active text-[#B1C795] transition text-md"
-                  : "text-[#F9F9F9] hover:text-gray-300 transition text-md"
+                  ? "active text-[#D1E3B2] transition text-lg"
+                  : "text-[#F9F9F9] hover:text-gray-300 transition text-lg"
               }
             >
               {t("services")}
@@ -117,8 +117,8 @@ export default function Navbar() {
               href="/portfolio"
               className={
                 pathname === "/portfolio" || pathname === "/de/portfolio"
-                  ? "active text-[#B1C795] transition text-md"
-                  : "text-[#F9F9F9] hover:text-gray-300 transition text-md"
+                  ? "active text-[#D1E3B2] transition text-lg"
+                  : "text-[#F9F9F9] hover:text-gray-300 transition text-lg"
               }
             >
               {t("portfolio")}
@@ -128,8 +128,8 @@ export default function Navbar() {
               href="/contact"
               className={
                 pathname === "/contact" || pathname === "/de/contact"
-                  ? "active text-[#B1C795] transition text-md"
-                  : "text-[#F9F9F9] hover:text-gray-300 transition text-md"
+                  ? "active text-[#D1E3B2] transition text-lg"
+                  : "text-[#F9F9F9] hover:text-gray-300 transition text-lg"
               }
             >
               {t("contact")}

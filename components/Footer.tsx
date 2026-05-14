@@ -8,7 +8,7 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="bg-[#1B1B1B] text-[#F9F9F9] px-6 py-8 border-t border-white/10">
+    <footer className="bg-[#1B1B1B] text-[#F9F9F9] px-6 py-16 border-t border-white/10">
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-12 md:flex-row md:justify-between mb-12">
         {/* Brand logo and contact details (left side) */}
         <div className="flex flex-col gap-12">

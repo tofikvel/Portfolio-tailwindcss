@@ -63,13 +63,13 @@ export default function ServicesPage() {
       </section>
       {/* Why work with me section */}
       <section
-        className="bg-gray-950 relative flex items-center justify-center px-6 py-40 border-t border-white/10 overflow-hidden"
+        className="bg-gray-950 relative flex items-center justify-center px-6 pt-45 pb-45 border-t border-white/10 overflow-hidden"
         id="why-work-with-me"
         style={{
           backgroundImage: `
-      radial-gradient(circle at 20% 30%, rgba(16,185,129,0.12), transparent 40%),
-      radial-gradient(circle at 80% 70%, rgba(6,182,212,0.08), transparent 40%)
-    `,
+            radial-gradient(circle at 70% 40%,rgba(6,182,212,0.1), transparent 40%),
+            radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)
+          `,
         }}
       >
         <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
@@ -294,8 +294,15 @@ export default function ServicesPage() {
       </section>
 
       {/* What will you get section */}
-      <section className="relative bg-gray-900 px-6 py-24 border-t border-white/10 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
+      <section
+        className="relative bg-gray-950 px-6 pt-45 pb-45 border-t border-white/10 overflow-hidden"
+        style={{
+          backgroundImage: `
+            radial-gradient(circle at 70% 40%,rgba(6,182,212,0.1), transparent 40%),
+            radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)
+          `,
+        }}
+      >
         <div className="max-w-6xl mx-auto flex flex-col gap-16">
           {/* HEADER */}
           <h1 className="text-3xl md:text-5xl font-bold text-center max-w-2xl mx-auto text-[#F9F9F9]">

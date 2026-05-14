@@ -8,7 +8,7 @@ export default function Home() {
   const t = useTranslations("Home");
 
   return (
-    <main className="overflow-hidden bg-gray-950 text-white">
+    <main className="overflow-hidden bg-gray-950 text-[#F9F9F9]">
       {/* HERO */}
       <section className="relative isolate flex min-h-screen items-center overflow-hidden px-6 py-12">
         {/* Background Image */}
@@ -20,6 +20,7 @@ export default function Home() {
             priority
             className="object-cover object-center opacity-80"
           />
+          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black to-transparent" />
         </div>
 
         {/* Gradient Overlay */}
@@ -27,8 +28,7 @@ export default function Home() {
           className="absolute inset-0 -z-10"
           style={{
             backgroundImage: `
-              radial-gradient(circle at 20% 80%, rgba(6,182,212,0.18), transparent 40%),
-              radial-gradient(circle at 80% 20%, rgba(16,185,129,0.12), transparent 35%)
+              radial-gradient(circle at 80% 20%, rgba(6,182,212,0.18), transparent 35%)
             `,
           }}
         />
@@ -38,7 +38,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold leading-tight text-[#F9F9F9] md:text-6xl">
               {t("hero-title")}
             </h1>
-            <h1 className="text-4xl font-bold leading-tight text-[#B1C795] md:text-6xl">
+            <h1 className="text-4xl font-bold leading-tight text-[#] md:text-6xl">
               {t("hero-title-2")}
             </h1>
 
@@ -49,7 +49,17 @@ export default function Home() {
             <div className="mt-10 flex justify-center">
               <Link
                 href="/#contactSection"
-                className="rounded-full px-8 py-4 font-semibold text-[#F9F9F9] transition duration-300 border border-[#B1C795] hover:bg-[#51603E]"
+                className="inline-flex items-center gap-3
+                rounded-full
+                border border-white/50
+                bg-white/[0.03]
+                px-8 py-4
+                font-semibold
+                text-white
+                backdrop-blur-xl
+                transition-all duration-300
+                hover:border-[#B1C795]
+                uppercase"
               >
                 {t("hero-cta")}
               </Link>
@@ -59,20 +69,20 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section className="relative overflow-hidden border-t border-white/10 py-24 md:py-32">
-        {/* Background Effects */}
-        <div className="absolute inset-0 opacity-[0.04] mix-blend-lighten">
-          <Image
-            src="/blueprint-bg.png"
-            alt="background"
-            fill
-            className="object-cover"
-          />
-        </div>
-        <div className="relative mx-auto max-w-7xl px-6">
+      <section
+        className="relative flex flex-col overflow-hidden py-24 space-y-24"
+        style={{
+          backgroundImage: `
+            radial-gradient(circle at 70% 40%,rgba(6,182,212,0.1), transparent 40%),
+            radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)
+          `,
+        }}
+      >
+        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
+        <div className="mx-auto max-w-7xl px-6 py-24">
           {/* HEADER */}
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mt-6 text-4xl font-bold tracking-tight text-white md:text-6xl">
+            <h2 className="mt-6 text-4xl font-bold tracking-tight text-[#F9F9F9] md:text-6xl">
               {t("services-title")}
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-400">
@@ -86,15 +96,13 @@ export default function Home() {
             <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-10 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05] lg:col-span-7">
               {/* Glow */}
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
-
               <div className="relative z-10 flex h-full flex-col justify-between">
                 {/* TOP */}
                 <div>
                   <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#B1C795]">
                     {t("services-1-subtitle")}
                   </p>
-
-                  <h3 className="mt-8 max-w-2xl text-3xl font-semibold leading-tight text-white md:text-5xl">
+                  <h3 className="mt-8 max-w-2xl text-2xl font-semibold leading-tight text-[#F9F9F9] md:text-5xl">
                     {t("services-1-title")}
                   </h3>
 
@@ -106,21 +114,21 @@ export default function Home() {
                 {/* BOTTOM */}
                 <div className="mt-14 grid gap-6 border-t border-white/10 pt-8 sm:grid-cols-3">
                   <div>
-                    <p className="text-3xl font-bold text-white">10+</p>
+                    <p className="text-2xl font-bold text-[#F9F9F9]">10+</p>
                     <p className="mt-2 text-sm text-slate-400">
                       {t("metrics-1-subtitle")}
                     </p>
                   </div>
 
                   <div>
-                    <p className="text-3xl font-bold text-white">99.9%</p>
+                    <p className="text-2xl font-bold text-[#F9F9F9]">99.9%</p>
                     <p className="mt-2 text-sm text-slate-400">
                       {t("metrics-2-subtitle")}
                     </p>
                   </div>
 
                   <div>
-                    <p className="text-3xl font-bold text-white">24/7</p>
+                    <p className="text-2xl font-bold text-[#F9F9F9]">24/7</p>
                     <p className="mt-2 text-sm text-slate-400">
                       {t("metrics-3-subtitle")}
                     </p>
@@ -140,7 +148,7 @@ export default function Home() {
                     {t("services-2-subtitle")}
                   </p>
 
-                  <h3 className="mt-5 text-2xl font-semibold leading-snug text-white">
+                  <h3 className="mt-5 text-2xl font-semibold leading-snug text-[#F9F9F9]">
                     {t("services-2-title")}
                   </h3>
 
@@ -159,7 +167,7 @@ export default function Home() {
                     {t("services-3-subtitle")}
                   </p>
 
-                  <h3 className="mt-5 text-2xl font-semibold leading-snug text-white">
+                  <h3 className="mt-5 text-2xl font-semibold leading-snug text-[#F9F9F9]">
                     {t("services-3-title")}
                   </h3>
 
@@ -171,12 +179,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
 
-      {/* PROJECT RESULTS */}
-      <section className="relative flex items-center border-t border-white/10 bg-gray-950 px-6 py-26">
-        <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
-        <div className="mx-auto flex max-w-6xl flex-col-reverse items-center gap-12 md:flex-row">
+        {/* Proven project result */}
+        <div className="mx-auto flex max-w-6xl flex-col-reverse items-center gap-12 px-6 md:flex-row">
           {/* TEXT */}
           <div className="flex flex-1 flex-col gap-8 text-center md:text-left">
             <h2 className="text-4xl font-bold leading-tight text-[#F9F9F9] md:text-5xl">
@@ -187,10 +192,22 @@ export default function Home() {
               {t("proven-proj-desc")}
             </p>
 
-            <div className="flex justify-center md:justify-start">
+            <div className="mt-12">
               <Link
                 href="/portfolio"
-                className="rounded-full bg-[#697857] px-8 py-4 font-semibold uppercase transition hover:bg-[#51603E]"
+                className="
+            inline-flex items-center gap-3
+            rounded-full
+            border border-white/50
+            bg-white/[0.03]
+            px-8 py-4
+            font-semibold
+            text-white
+            backdrop-blur-xl
+            transition-all duration-300
+            hover:border-[#B1C795]
+            uppercase
+          "
               >
                 {t("proven-proj-cta")}
               </Link>
@@ -201,7 +218,7 @@ export default function Home() {
           <div className="relative flex-1">
             <div className="absolute inset-0 rounded-full bg-gray-700/10 blur-3xl" />
             <Image
-              src="/project-section-image.png"
+              src="/project-project-results-section-img.png"
               alt="project"
               width={720}
               height={620}

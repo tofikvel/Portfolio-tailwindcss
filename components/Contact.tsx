@@ -55,9 +55,19 @@ export default function Contact() {
     <main>
       <section
         id="contactSection"
-        className="relative pt-28 pb-12 px-6 bg-gray-950 flex items-center justify-center overflow-hidden min-h-screen"
+        className="relative px-6 bg-gray-950 flex items-center justify-center pt-40 pb-32 overflow-hidden"
       >
-        <div className="max-w-6xl mx-auto">
+        <div className="absolute inset-0 -z-0">
+          <Image
+            src="/contact-page-bg.jpg"
+            alt="hero background"
+            fill
+            priority
+            className="object-cover object-center opacity-70"
+          />
+        </div>
+
+        <div className="max-w-6xl mx-auto z-10">
           {/* Heading */}
           <div className="text-center mb-12 space-y-4 px-4">
             <h2 className="text-4xl md:text-5xl text-[#F9F9F9] font-bold">
@@ -67,7 +77,7 @@ export default function Contact() {
               {t("contact-subtitle")}
             </p>
           </div>
-          <div className="relative grid grid-cols-1 gap-6 lg:grid-cols-2 px-4 py-6 md:rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl">
+          <div className="relative grid grid-cols-1 gap-6 lg:grid-cols-2 px-4 py-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl">
             <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
             {/* Contact details */}
             <div className="order-2 lg:order-1 flex flex-col justify-between h-full md:p-10">
@@ -176,7 +186,7 @@ export default function Contact() {
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   placeholder={t("contact-placeholder-name")}
-                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#B1C795] focus:ring-1 focus:ring-[#697857] transition placeholder-gray-500"
+                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#B1C795] focus:ring-1 focus:ring-[#697857] transition duration-300 placeholder-gray-500"
                 />
 
                 <input
@@ -184,7 +194,7 @@ export default function Contact() {
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   placeholder={t("contact-placeholder-email")}
-                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#B1C795] focus:ring-1 focus:ring-[#697857] transition placeholder-gray-500"
+                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#B1C795] focus:ring-1 focus:ring-[#697857] transition duration-300 placeholder-gray-500"
                 />
 
                 <textarea
@@ -194,13 +204,13 @@ export default function Contact() {
                     setForm({ ...form, message: e.target.value })
                   }
                   placeholder={t("contact-placeholder-text")}
-                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#B1C795] focus:ring-1 focus:ring-[#697857] transition resize-none placeholder-gray-500"
+                  className="w-full bg-transparent border border-white/10 p-4 rounded-lg focus:outline-none focus:border-[#B1C795] focus:ring-1 focus:ring-[#697857] transition duration-300 resize-none placeholder-gray-500"
                 />
 
                 <button
                   onClick={sendEmail}
                   disabled={loading}
-                  className="mt-4 cursor-pointer px-8 py-4 rounded-sm font-semibold transition disabled:opacity-50 border border-[#B1C795] bg-[#697857] hover:bg-[#51603E]"
+                  className="mt-4 cursor-pointer px-8 py-4 rounded-sm font-semibold transition duration-300 disabled:opacity-50 border border-[#B1C795] bg-[#697857] hover:bg-[#51603E]"
                 >
                   {loading ? "Sending..." : t("contact-cta")}
                 </button>

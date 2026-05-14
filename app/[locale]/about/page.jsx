@@ -8,10 +8,10 @@ export default function AboutPage() {
     <main className="bg-gray-950 overflow-hidden">
       {/* HERO / ABOUT */}
       <section
-        className="relative flex justify-center px-6 pt-20 pb-40 overflow-hidden"
+        className="relative flex flex-col justify-center space-y-45 px-6 pt-20 pb-40 overflow-hidden"
         style={{
           backgroundImage: `
-            radial-gradient(circle at 70% 40%, rgba(16,185,129,0.2), transparent 40%),
+            radial-gradient(circle at 70% 40%,rgba(6,182,212,0.1), transparent 40%),
             radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)
           `,
         }}
@@ -141,14 +141,9 @@ export default function AboutPage() {
             />
           </div>
         </div>
-      </section>
 
-      {/* CERTIFICATIONS */}
-      <section className="relative overflow-hidden px-6 py-24 md:py-32 border-t border-white/10">
-        {/* Background */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.06),transparent_40%)]" />
-
-        <div className="relative z-10 mx-auto max-w-7xl">
+        {/* CERTIFICATIONS */}
+        <div className="relative z-10 mx-auto max-w-6xl">
           {/* Header */}
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mt-6 text-4xl font-bold tracking-tight text-white md:text-6xl">
@@ -276,6 +271,18 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* <section
+        className="relative overflow-hidden px-6 py-24 md:py-32 border-t border-white/10"
+        style={{
+          backgroundImage: `
+            radial-gradient(circle at 70% 40%,rgba(6,182,212,0.1), transparent 40%),
+            radial-gradient(circle at 20% 80%, rgba(6,182,212,0.1), transparent 40%)
+          `,
+        }}
+      >
+        
+      </section> */}
     </main>
   );
 }
