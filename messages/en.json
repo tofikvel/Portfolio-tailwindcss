@@ -26,6 +26,9 @@
     "contact-title": "Get in touch today",
     "contact-subtitle": "I would be happy to discuss your project with you. Please complete the form below or contact me directly.",
     "contact-cta": "SEND INQUIRY",
+    "contact-phone-title": "Phone",
+    "contact-email-title": "Email",
+    "contact-location-title": "Office",
     "contact-placeholder-email": "Your E-mail",
     "contact-placeholder-name": "Your Full Name",
     "contact-placeholder-text": "Your comments",
@@ -259,6 +262,10 @@
     "contact": "Contact",
     "imprint": "Imprint",
     "privacy-policy": "Privacy Policy",
-    "footer-addess": "Münchener Straße 42A, 10779 Berlin, Germany"
+    "footer-addess": "Münchener Straße 42A, 10779 Berlin, Germany",
+    "contact-footer-phone-title": "Phone",
+    "contact-footer-email-title": "Email",
+    "contact-footer-location-title": "Office",
+    "footer-copyrights": "Baque Solutions. All Rights Reserved."
   }
 }

@@ -87,7 +87,7 @@ export default function ServicesPage() {
           {/* CARDS */}
           <div className="grid md:grid-cols-3 gap-8">
             {/* CARD 1 */}
-            <div className="group p-8 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-emerald-500/30 hover:bg-white/[0.05]">
+            <div className="group p-8 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
               <div className="flex flex-col items-start gap-6">
                 <div className="p-4 rounded-xl bg-emerald-500/10 text-emerald-400">
                   <svg
@@ -113,7 +113,7 @@ export default function ServicesPage() {
               </div>
             </div>
             {/* CARD 2 */}
-            <div className="group p-8 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-emerald-500/30 hover:bg-white/[0.05]">
+            <div className="group p-8 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
               <div className="flex flex-col items-start gap-6">
                 <div className="p-4 rounded-xl bg-emerald-500/10 text-emerald-400">
                   <svg
@@ -139,7 +139,7 @@ export default function ServicesPage() {
               </div>
             </div>
             {/* CARD 3 */}
-            <div className="group p-8 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-emerald-500/30 hover:bg-white/[0.05]">
+            <div className="group p-8 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
               <div className="flex flex-col items-start gap-6">
                 <div className="p-4 rounded-xl bg-emerald-500/10 text-emerald-400">
                   <svg
@@ -316,7 +316,7 @@ export default function ServicesPage() {
               <div
                 key={i}
                 className="
-            group p-8 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-emerald-500/30 hover:bg-white/[0.05]
+            group p-8 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]
           "
               >
                 <div className="flex flex-col gap-6 items-start">

@@ -115,7 +115,9 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <p className="text-sm text-gray-400">Phone</p>
+                    <p className="text-sm text-gray-400">
+                      {t("contact-phone-title")}
+                    </p>
                     <p className="text-sm text-[#F9F9F9]">+49 176 802 289 57</p>
                   </div>
                 </div>
@@ -142,7 +144,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Email</p>
+                    <p className="text-sm text-gray-400">
+                      {t("contact-email-title")}
+                    </p>
                     <p className="text-sm text-[#F9F9F9]">
                       info@baque-solutions.com
                     </p>
@@ -170,7 +174,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div className="">
-                    <p className="text-sm text-gray-400">Office</p>
+                    <p className="text-sm text-gray-400">
+                      {t("contact-location-title")}
+                    </p>
                     <p className="max-w-sm text-md leading-relaxed text-[#F9F9F9]">
                       {t("contact-addess")}
                     </p>

@@ -49,7 +49,9 @@ export default function Footer() {
                 </svg>
               </div>
               <div>
-                <p className="text-sm text-gray-400">Phone</p>
+                <p className="text-sm text-gray-400">
+                  {t("contact-footer-phone-title")}
+                </p>
                 <p className="text-md text-[#F9F9F9]">+49 176 802 289 57</p>
               </div>
             </div>
@@ -74,7 +76,9 @@ export default function Footer() {
                 </svg>
               </div>
               <div>
-                <p className="text-sm text-gray-400">Email</p>
+                <p className="text-sm text-gray-400">
+                  {t("contact-footer-email-title")}
+                </p>
                 <p className="text-md text-[#F9F9F9]">
                   info@baque-solutions.com
                 </p>
@@ -100,7 +104,9 @@ export default function Footer() {
                 </svg>
               </div>
               <div className="">
-                <p className="text-sm text-gray-400">Office</p>
+                <p className="text-sm text-gray-400">
+                  {t("contact-footer-location-title")}
+                </p>
                 <p className="max-w-xs text-md leading-relaxed text-[#F9F9F9]">
                   {t("footer-addess")}
                 </p>
@@ -163,7 +169,7 @@ export default function Footer() {
       </div>
       <div className="text-center">
         <p className="text-md text-gray-400">
-          &copy; {copyRightDate} Baque Solutions. All Rights Reserved.
+          &copy; {copyRightDate} {t("footer-copyrights")}
         </p>
       </div>
     </footer>

@@ -26,6 +26,9 @@
     "contact-title": "Nehmen Sie noch heute Kontakt auf",
     "contact-subtitle": "Ich bespreche Ihr Projekt gerne mit Ihnen.Bitte füllen Sie das Formular unten aus oder kontaktieren Sie mich direkt..",
     "contact-cta": "SANFRAGE SENDEN",
+    "contact-phone-title": "Telefon",
+    "contact-email-title": "E-Mail",
+    "contact-location-title": "Büro",
     "contact-placeholder-email": "Ihre E-mail",
     "contact-placeholder-name": "Ihr Name",
     "contact-placeholder-text": "Ihre Nachrich",
@@ -260,6 +263,10 @@
     "contact": "Kontakt",
     "imprint": "Impressum",
     "privacy-policy": "Datenschutzerklärung",
-    "footer-addess": "Münchener Straße 42A, 10779 Berlin, Deutschland"
+    "footer-addess": "Münchener Straße 42A, 10779 Berlin, Deutschland",
+    "contact-footer-phone-title": "Telefon",
+    "contact-footer-email-title": "E-Mail",
+    "contact-footer-location-title": "Büro",
+    "footer-copyrights": "Baque Solutions. Alle Rechte vorbehalten."
   }
 }
