@@ -20,14 +20,9 @@ export default function AboutPage() {
           {/* LEFT */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl text-[#F9F9F9] font-bold leading-tight">
-                Javad Zeynal
-              </h1>
-              <p className="text-lg md:text-lg text-gray-400 italic leading-relaxed max-w-xl">
-                {t("about-pre-desc")}
-              </p>
+              <h1 className="text-4xl md:text-6xl text-[#F9F9F9] font-bold leading-tight">Javad Zeynal</h1>
+              <p className="text-lg md:text-lg text-gray-400 italic leading-relaxed max-w-xl">{t("about-pre-desc")}</p>
             </div>
-            {/* <hr className="my-8 border-gray-700" /> */}
             {/* Flags */}
             <div className="flex flex-row items-center justify-center gap-6 md:justify-start">
               <span>
@@ -121,12 +116,8 @@ export default function AboutPage() {
               </span>
             </div>
             <div className="flex flex-col pt-4 border-t border-white/10 gap-4">
-              <span className="text-lg font-semibold text-[#F9F9F9]">
-                {t("about-title")}
-              </span>
-              <p className="text-gray-400 leading-relaxed max-w-xl">
-                {t("about-desc")}
-              </p>
+              <span className="text-lg font-semibold text-[#F9F9F9]">{t("about-title")}</span>
+              <p className="text-gray-400 leading-relaxed max-w-xl">{t("about-desc")}</p>
             </div>
           </div>
 
@@ -161,13 +152,9 @@ export default function AboutPage() {
             <div className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
               <div className="mb-8">
-                <p className="text-sm uppercase tracking-[0.2em] text-[#B1C795]">
-                  AWS & Cloud
-                </p>
+                <p className="text-sm uppercase tracking-[0.2em] text-[#B1C795]">AWS & Cloud</p>
 
-                <h3 className="mt-4 text-2xl font-semibold text-white">
-                  Enterprise Cloud Architecture
-                </h3>
+                <h3 className="mt-4 text-2xl font-semibold text-white">Enterprise Cloud Architecture</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
@@ -201,13 +188,9 @@ export default function AboutPage() {
             <div className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
               <div className="mb-8">
-                <p className="text-sm uppercase tracking-[0.2em] text-[#B1C795]">
-                  Agile Delivery
-                </p>
+                <p className="text-sm uppercase tracking-[0.2em] text-[#B1C795]">Agile Delivery</p>
 
-                <h3 className="mt-4 text-2xl font-semibold text-white">
-                  Scrum & Product Leadership
-                </h3>
+                <h3 className="mt-4 text-2xl font-semibold text-white">Scrum & Product Leadership</h3>
               </div>
 
               <div className="flex items-center justify-center pt-8">
@@ -225,13 +208,9 @@ export default function AboutPage() {
             <div className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition-all duration-500 hover:border-[#B1C795] hover:bg-white/[0.05]">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.14),transparent_45%)] opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
               <div className="mb-8">
-                <p className="text-sm uppercase tracking-[0.2em] text-[#B1C795]">
-                  DevOps & Automation
-                </p>
+                <p className="text-sm uppercase tracking-[0.2em] text-[#B1C795]">DevOps & Automation</p>
 
-                <h3 className="mt-4 text-2xl font-semibold text-white">
-                  Kubernetes, IaC & Data Engineering
-                </h3>
+                <h3 className="mt-4 text-2xl font-semibold text-white">Kubernetes, IaC & Data Engineering</h3>
               </div>
 
               <div className="grid grid-cols-2 gap-4">

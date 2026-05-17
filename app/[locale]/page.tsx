@@ -11,7 +11,19 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       {/* HERO */}
-      <section className="relative isolate flex items-center overflow-hidden px-6 py-55">
+      <section
+        className="
+    relative
+    isolate
+    flex
+    min-h-screen
+    items-center
+    overflow-hidden
+    px-6
+    pt-32
+    pb-20
+  "
+      >
         {/* Background Image */}
         <div className="absolute inset-0 -z-20">
           <Image
@@ -19,58 +31,28 @@ export default function Home() {
             alt="hero background"
             fill
             priority
-            className="object-cover object-center opacity-80"
+            className="object-cover object-[70%_center] md:object-center opacity-80"
           />
           <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black to-transparent" />
         </div>
 
         {/* Gradient Overlay */}
-        <div
-          className="absolute inset-0 -z-10"
-          style={{
-            backgroundImage: `
-              radial-gradient(circle at 80% 20%, rgba(6,182,212,0.18), transparent 35%)
-            `,
-          }}
-        />
 
-        <div className="mx-auto mt-24 flex w-full max-w-6xl flex-col items-center justify-center">
-          <div className="max-w-4xl text-center">
-            <h1 className="text-4xl font-bold leading-tight text-[#F9F9F9] md:text-6xl">
-              {t("hero-title")}
-            </h1>
-            <h1 className="text-4xl font-bold leading-tight text-[#B1C795] md:text-6xl">
-              {t("hero-title-2")}
-            </h1>
-
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 md:text-xl">
-              {t("hero-subtitle")}
-            </p>
-
-            <div className="mt-10 flex justify-center">
-              <button
-                onClick={() => {
-                  document
-                    .getElementById("contactSection")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="
-    inline-flex items-center gap-3
-    rounded-full
-    border border-white/50
-    bg-white/[0.03]
-    px-8 py-4
-    font-semibold
-    text-white
-    backdrop-blur-xl
-    transition-all duration-300
-    hover:border-[#B1C795]
-    uppercase
-    cursor-pointer
-  "
+        {/* Hero text */}
+        <div className="mx-auto flex w-full items-center justify-center">
+          <div className="flex flex-col max-w-xl gap-8">
+            <div className="flex flex-col text-center">
+              <h1 className="font-bold leading-tight text-[#F9F9F9] text-4xl md:text-6xl">{t("hero-title")}</h1>
+              <h1 className="font-bold leading-tight text-[#B1C795] text-4xl md:text-6xl">{t("hero-title-2")}</h1>
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 md:text-xl">{t("hero-subtitle")}</p>
+            </div>
+            <div className="flex justify-center">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-3 rounded-full border border-white/50bg-white/[0.03] px-8 py-4 font-semibold text-[#F9F9F9] backdrop-blur-xl transition-all duration-300 hover:border-[#B1C795] uppercase cursor-pointer"
               >
                 {t("hero-cta")}
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -90,12 +72,8 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 py-24">
           {/* HEADER */}
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mt-6 text-4xl font-bold tracking-tight text-[#F9F9F9] md:text-6xl">
-              {t("services-title")}
-            </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-400">
-              {t("service-subtitle")}
-            </p>
+            <h2 className="mt-6 text-4xl font-bold tracking-tight text-[#F9F9F9] md:text-6xl">{t("services-title")}</h2>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-400">{t("service-subtitle")}</p>
           </div>
 
           {/* GRID */}
@@ -114,32 +92,24 @@ export default function Home() {
                     {t("services-1-title")}
                   </h3>
 
-                  <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-400">
-                    {t("service-1-desc")}
-                  </p>
+                  <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-400">{t("service-1-desc")}</p>
                 </div>
 
                 {/* BOTTOM */}
                 <div className="mt-14 grid gap-6 border-t border-white/10 pt-8 sm:grid-cols-3">
                   <div>
                     <p className="text-2xl font-bold text-[#F9F9F9]">10+</p>
-                    <p className="mt-2 text-sm text-slate-400">
-                      {t("metrics-1-subtitle")}
-                    </p>
+                    <p className="mt-2 text-sm text-slate-400">{t("metrics-1-subtitle")}</p>
                   </div>
 
                   <div>
                     <p className="text-2xl font-bold text-[#F9F9F9]">99.9%</p>
-                    <p className="mt-2 text-sm text-slate-400">
-                      {t("metrics-2-subtitle")}
-                    </p>
+                    <p className="mt-2 text-sm text-slate-400">{t("metrics-2-subtitle")}</p>
                   </div>
 
                   <div>
                     <p className="text-2xl font-bold text-[#F9F9F9]">24/7</p>
-                    <p className="mt-2 text-sm text-slate-400">
-                      {t("metrics-3-subtitle")}
-                    </p>
+                    <p className="mt-2 text-sm text-slate-400">{t("metrics-3-subtitle")}</p>
                   </div>
                 </div>
               </div>
@@ -156,13 +126,9 @@ export default function Home() {
                     {t("services-2-subtitle")}
                   </p>
 
-                  <h3 className="mt-5 text-2xl font-semibold leading-snug text-[#F9F9F9]">
-                    {t("services-2-title")}
-                  </h3>
+                  <h3 className="mt-5 text-2xl font-semibold leading-snug text-[#F9F9F9]">{t("services-2-title")}</h3>
 
-                  <p className="mt-5 text-base leading-relaxed text-slate-400">
-                    {t("service-2-desc")}
-                  </p>
+                  <p className="mt-5 text-base leading-relaxed text-slate-400">{t("service-2-desc")}</p>
                 </div>
               </div>
 
@@ -175,13 +141,9 @@ export default function Home() {
                     {t("services-3-subtitle")}
                   </p>
 
-                  <h3 className="mt-5 text-2xl font-semibold leading-snug text-[#F9F9F9]">
-                    {t("services-3-title")}
-                  </h3>
+                  <h3 className="mt-5 text-2xl font-semibold leading-snug text-[#F9F9F9]">{t("services-3-title")}</h3>
 
-                  <p className="mt-5 text-base leading-relaxed text-slate-400">
-                    {t("service-3-desc")}
-                  </p>
+                  <p className="mt-5 text-base leading-relaxed text-slate-400">{t("service-3-desc")}</p>
                 </div>
               </div>
             </div>
@@ -192,13 +154,9 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col-reverse items-center gap-12 px-6 md:flex-row">
           {/* TEXT */}
           <div className="flex flex-1 flex-col gap-8 text-center md:text-left">
-            <h2 className="text-4xl font-bold leading-tight text-[#F9F9F9] md:text-5xl">
-              {t("proven-proj-title")}
-            </h2>
+            <h2 className="text-4xl font-bold leading-tight text-[#F9F9F9] md:text-5xl">{t("proven-proj-title")}</h2>
 
-            <p className="max-w-xl text-lg text-gray-400">
-              {t("proven-proj-desc")}
-            </p>
+            <p className="max-w-xl text-lg text-gray-400">{t("proven-proj-desc")}</p>
 
             <div className="mt-12">
               <Link

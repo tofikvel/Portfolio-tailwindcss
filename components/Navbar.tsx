@@ -50,17 +50,17 @@ export default function Navbar() {
   `}
     >
       <nav>
-        <div className="flex justify-between items-center max-w-6xl mx-auto px-6 h-18 md:h-26 md:p-0">
+        <div className="flex justify-between items-center max-w-6xl mx-auto px-4 h-18 md:h-22">
           {/* LOGO */}
-          <button
-            onClick={() => {
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-              });
-            }}
-            className="cursor-pointer"
-          >
+          <Link href="/" className="cursor-pointer">
+            {/* Mobile Logo */}
+            <Image
+              className="block md:hidden object-contain"
+              src="/icons/mobile-brand-logo.png"
+              width={60}
+              height={60}
+              alt="brand-nav-logo-small"
+            />
             {/* DESKTOP LOGO */}
             <Image
               className="
@@ -72,7 +72,7 @@ export default function Navbar() {
               height={150}
               alt="brand-nav-logo-large"
             />
-          </button>
+          </Link>
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-8">
@@ -182,43 +182,23 @@ export default function Navbar() {
               p-6
             "
           >
-            <Link
-              onClick={closeMenu}
-              href="/"
-              className="text-gray-300 hover:text-white transition"
-            >
+            <Link onClick={closeMenu} href="/" className="text-gray-300 hover:text-white transition">
               {t("home")}
             </Link>
 
-            <Link
-              onClick={closeMenu}
-              href="/about"
-              className="text-gray-300 hover:text-white transition"
-            >
+            <Link onClick={closeMenu} href="/about" className="text-gray-300 hover:text-white transition">
               {t("about")}
             </Link>
 
-            <Link
-              onClick={closeMenu}
-              href="/services"
-              className="text-gray-300 hover:text-white transition"
-            >
+            <Link onClick={closeMenu} href="/services" className="text-gray-300 hover:text-white transition">
               {t("services")}
             </Link>
 
-            <Link
-              onClick={closeMenu}
-              href="/portfolio"
-              className="text-gray-300 hover:text-white transition"
-            >
+            <Link onClick={closeMenu} href="/portfolio" className="text-gray-300 hover:text-white transition">
               {t("portfolio")}
             </Link>
 
-            <Link
-              onClick={closeMenu}
-              href="/contact"
-              className="text-gray-300 hover:text-white transition"
-            >
+            <Link onClick={closeMenu} href="/contact" className="text-gray-300 hover:text-white transition">
               {t("contact")}
             </Link>
 
